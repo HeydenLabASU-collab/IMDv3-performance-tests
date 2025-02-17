@@ -2,20 +2,20 @@ structure               step3_input.psf
 coordinates             step3_input.pdb
 
 set temp                303.15;
-outputName              step5_production; # base name for output from this run
+outputName              ../output/step5_production_vanilla; # base name for output from this run
                                             # NAMD writes two files at the end, final coord and vel
                                             # in the format of first-dyn.coor and first-dyn.vel
 
-set inputname           step4_equilibration;
+set inputname           ../output/step4_equilibration;
 binCoordinates          $inputname.coor;    # coordinates from last run (binary)
 binVelocities           $inputname.vel;     # velocities from last run (binary)
 extendedSystem          $inputname.xsc;     # cell dimensions from last run (binary)
 
-dcdfreq                 50000;
-dcdUnitCell             yes;                # the file will contain unit cell info in the style of
+#dcdfreq                 50000;
+#dcdUnitCell             yes;                # the file will contain unit cell info in the style of
                                             # charmm dcd files. if yes, the dcd files will contain
                                             # unit cell information in the style of charmm DCD files.
-xstFreq                 5000;               # XSTFreq: control how often the extended systen configuration
+#xstFreq                 5000;               # XSTFreq: control how often the extended systen configuration
                                             # will be appended to the XST file
 outputEnergies          5000;               # 5000 steps = every 10ps
                                             # The number of timesteps between each energy output of NAMD
@@ -25,7 +25,6 @@ restartfreq             5000;               # 5000 steps = every 10ps
 
 # GPU Optimizations for NAMD 3
 CUDASOAIntegrate        on
-numCUDA                 1  # Change based on available GPUs
 
 # Force-Field Parameters
 paraTypeCharmm          on;                 # We're using charmm type parameter file(s)
