@@ -8,7 +8,7 @@
 #SBATCH --ntasks=1                       # Run a single job
 #SBATCH --cpus-per-task=48               # Total CPU cores requested
 #SBATCH --gres=gpu:a100:1                # Request 1 GPU
-#SBATCH --time=22:00:00                  # Max job time (24 hours)
+#SBATCH --time=22:00:00                  # Max job time (22 hours)
 #SBATCH --exclusive                   # Optional: exclusive access if desired
 
 # Number of runs for each test
@@ -18,7 +18,13 @@ n_runs=3
 NAMD_CORES=40
 GPU_DEVICE=0
 # Run NAMD equilibration
-./run/equi.sh ${NAMD_CORES} ${GPU_DEVICE}
+# check if there is a *.out file in the output/vanilla/performance/equil/run-1/ directory with "End of program" in it and only run if it doesn't exist
+if [ ! -f output/vanilla/performance/equil/run-1/step4_equilibration.out ] || ! grep -q "End of program" output/vanilla/performance/equil/run-1/step4_equilibration.out; then
+    echo "Running equilibration..."
+    ./run/equi.sh ${NAMD_CORES} ${GPU_DEVICE}
+else
+    echo "Equilibration already completed. Skipping..."
+fi
 
 # Loop over NAMD_CORES values [10,20,30,40]
 for NAMD_CORES in 6 10 12 20 24 30 36 40 48; do
