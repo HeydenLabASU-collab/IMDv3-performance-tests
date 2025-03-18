@@ -2,11 +2,11 @@ structure               step3_input.psf
 coordinates             step3_input.pdb
 
 set temp                303.15;
-outputName              ../output/step5_production_imdv3; # base name for output from this run
+outputName              ../step5_production_imdv3; # base name for output from this run
                                             # NAMD writes two files at the end, final coord and vel
                                             # in the format of first-dyn.coor and first-dyn.vel
 
-set inputname           ../output/step4_equilibration;
+set inputname           ../step4_equilibration;
 binCoordinates          $inputname.coor;    # coordinates from last run (binary)
 binVelocities           $inputname.vel;     # velocities from last run (binary)
 extendedSystem          $inputname.xsc;     # cell dimensions from last run (binary)

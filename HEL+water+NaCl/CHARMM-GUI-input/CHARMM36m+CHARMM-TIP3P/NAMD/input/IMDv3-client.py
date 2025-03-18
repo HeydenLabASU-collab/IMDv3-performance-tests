@@ -1,12 +1,19 @@
 from imdclient.IMD import IMDReader
 import MDAnalysis as mda
 import logging
+import sys
+
+if len(sys.argv) < 2:
+    print("Usage: python a.py <argument>")
+    sys.exit(1)
+
+output_dir = sys.argv[1]
 
 run = 1
 NAMD_TOPOL = "input/step3_input.pdb"
 
 logger = logging.getLogger("imdclient.IMDClient")
-file_handler = logging.FileHandler("output/run-"+str(run)+"/imdreader.log")
+file_handler = logging.FileHandler(str(output_dir) + "/IMDClient.log")
 formatter = logging.Formatter(
     "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )

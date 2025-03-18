@@ -2,11 +2,11 @@ structure               step3_input.psf
 coordinates             step3_input.pdb
 
 set temp                303.15;
-outputName              ../output/step5_production_imdv3_streaming; # base name for output from this run
+outputName              ../step5_production_streaming; # base name for output from this run
                                             # NAMD writes two files at the end, final coord and vel
                                             # in the format of first-dyn.coor and first-dyn.vel
 
-set inputname           ../output/step4_equilibration;
+set inputname           ../step4_equilibration;
 binCoordinates          $inputname.coor;    # coordinates from last run (binary)
 binVelocities           $inputname.vel;     # velocities from last run (binary)
 extendedSystem          $inputname.xsc;     # cell dimensions from last run (binary)
@@ -150,7 +150,7 @@ IMDon		yes
 # IMDport -- port number to listen on
 IMDport		8888
 # IMDfreq -- frequency to send data
-IMDfreq		500
+IMDfreq		imd_frequency
 # IMDwait -- wait for client to connect before starting simulation
 IMDwait		on
 
@@ -158,18 +158,18 @@ IMDwait		on
 IMDversion     3
 # IMD session info settings
 # IMDsendPositions -- sending positions of entire system
-IMDsendPositions        yes
+IMDsendPositions        send_positions
 # IMDsendEnergies -- sending energies and bonded, non-bonded and other contributions
 IMDsendEnergies     no
 # IMDsendTime -- sending time information (time, dt, step)
 IMDsendTime        no
 # IMDsendBoxDimensions -- sending box dimensions (lattice vectors a, b, c)
 # If box dimensions are not defined, default unit box is sent
-IMDsendBoxDimensions       no
+IMDsendBoxDimensions       send_box_dimensions
 # IMDsendVelocities -- sending velocities of entire system
-IMDsendVelocities       no
+IMDsendVelocities       send_velocities
 # IMDsendForces -- sending forces on all atoms
-IMDsendForces      no
+IMDsendForces      send_forces
 # IMDwrapPositions -- wrapping positions to box; applicable when IMDsendPositions is yes
 IMDwrapPositions       no
 

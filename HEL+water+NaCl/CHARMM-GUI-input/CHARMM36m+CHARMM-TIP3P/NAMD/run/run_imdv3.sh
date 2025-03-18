@@ -38,6 +38,7 @@ fi
 NAMD_CORES="$1"    # Number of CPU cores for NAMD
 GPU_DEVICE="$2"    # GPU device to use
 n_runs="$3"        # Number of runs
+typeprod="$4"      # Type of production (optimization or other)
 PYTHON_CORES=0
 
 # Check if enough cores are allocated
@@ -55,8 +56,10 @@ namd_core_list=$(IFS=, ; echo "${namd_cores_array[*]}")
 # Variables for file names and paths
 equi_prefix="step4_equilibration"
 prod_prefix="step5_production_imdv3"
-prod_step="step5_imdv3_${NAMD_CORES}"
+prod_step="step5_imdv3"
 namd="bin/namd3_IMDv3_gpu_mc"
+output_dir="output/imdv3/${typeprod}/1-1-${NAMD_CORES}"
+equi_dir="output/vanilla/performance/1-1-40/run-1"
 
 echo "Running production for $n_runs runs with NAMD core list: $namd_core_list and GPU device: $GPU_DEVICE"
 
@@ -65,27 +68,33 @@ cntmax=1
 
 for run in $(seq 1 "$n_runs"); do
     # Create output directory only if it doesn't exist
-    if [[ ! -d "output/run-${run}" ]]; then
-        mkdir -p "output/run-${run}"
+    if [[ ! -d "${output_dir}/run-${run}" ]]; then
+        mkdir -p "${output_dir}/run-${run}"
     fi
 
     cnt=1
     while [[ $cnt -le $cntmax ]]; do
         if [[ $cnt -eq 1 ]]; then
             outputname="${prod_step}_${cnt}"
-            sed "s/${prod_prefix}/${outputname}/" "input/${prod_prefix}.inp" > "input/${prod_step}_run.inp"
-            sed -i "0,/output\//s//output\/run-${run}\//" "input/${prod_step}_run.inp"
+            sed "s/${prod_prefix}/${outputname}/" "input/${prod_prefix}.inp" > "${output_dir}/run-${run}/${prod_step}_run.inp"
+            sed -i "0,/${outputname}\//s//${output_dir}\/run-${run}\/${outputname}\//" "${output_dir}/run-${run}/${prod_step}_run.inp"
+            sed -i "0,/${equi_prefix}\//s//${equi_dir}\/${equi_prefix}\//" "${output_dir}/run-${run}/${prod_step}_run.inp"
+            # sed -i "0,/${output_dir}\//s//${output_dir}\/run-${run}\//" "${output_dir}/run-${run}/${prod_step}_run.inp"
         else
             cntprev=$((cnt - 1))
             inputname="${prod_step}_${cntprev}"
             outputname="${prod_step}_${cnt}"
-            sed "s/${equi_prefix}/${inputname}/" "input/${prod_prefix}.inp" | \
-                sed "s/${prod_prefix}/${outputname}/" > "input/${prod_step}_run.inp"
-            sed -i "s|output/|output/run-${run}/|g" "input/${prod_step}_run.inp"
+            # sed "s/${equi_prefix}/${inputname}/" "input/${prod_prefix}.inp" | \
+            #     sed "s/${prod_prefix}/${outputname}/" > "input/${prod_step}_run.inp"
+            sed "s/${inputname}/${outputname}/" "${output_dir}/run-${run}/${prod_step}_run.inp" > "${output_dir}/run-${run}/${prod_step}_run.inp"
+            sed -i "0,/${equi_dir}\/${equi_prefix}\//s//${output_dir}\/run-${run}\/${inputname}\//" "${output_dir}/run-${run}/${prod_step}_run.inp"
+
+            # sed -i "s|${output_dir}/|${output_dir}/run-${run}/|g" "input/${prod_step}_run.inp"
         fi
 
-        # Run the simulation for 1 nanosecond with CPU affinity on the allocated NAMD cores
-        taskset -c "$namd_core_list" ./"$namd" +p"$NAMD_CORES" +devices "$GPU_DEVICE" "input/${prod_step}_run.inp" > "output/run-${run}/${outputname}.out" &
+        # Run the simulation for 1 nanosecond with dynamic taskset cores
+        # taskset -c "$namd_core_list" ./"$namd" +p"$NAMD_CORES" +devices "$GPU_DEVICE" "input/${prod_step}_run.inp" > "${output_dir}/run-${run}/${outputname}.out" &
+        taskset -c "$namd_core_list" ./"$namd" +p"$NAMD_CORES" +devices "$GPU_DEVICE" "${output_dir}/run-${run}/${prod_step}_run.inp" > "${output_dir}/run-${run}/${outputname}.out" &
         wait
 
         cnt=$((cnt + 1))
