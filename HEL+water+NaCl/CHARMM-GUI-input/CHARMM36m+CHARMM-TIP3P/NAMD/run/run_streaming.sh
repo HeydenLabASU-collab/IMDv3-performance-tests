@@ -136,7 +136,7 @@ for run in $(seq 1 "$n_runs"); do
         taskset -c "$namd_core_list" ./"$namd" +p"$NAMD_CORES" +devices "$GPU_DEVICE" "${output_dir}/run-${run}/${prod_step}_run.inp" > "${output_dir}/run-${run}/${outputname}.out" &
         sleep 2
         # Run the client process on the allocated Python cores
-        taskset -c "$python_core_list" python3 input/IMDv3-client.py "${output_dir}/run-${run}" &
+        taskset -c "$python_core_list" python3.11 input/IMDv3-client.py "${output_dir}/run-${run}" &
         wait
 
         cnt=$((cnt + 1))
