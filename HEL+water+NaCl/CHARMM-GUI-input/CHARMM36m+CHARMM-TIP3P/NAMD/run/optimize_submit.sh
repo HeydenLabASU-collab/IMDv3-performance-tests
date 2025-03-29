@@ -33,12 +33,13 @@ n_gpus=${n_gpus:-0}
 gpu_type=$(scontrol show job 24461568 | grep -oP 'gres\/gpu:\K[^=]+')
 gpu_type=${gpu_type:-"NA"}
 # GPU ID
-gpu_id=0
+gpu_id=$(nvidia-smi --query-gpu=index,name --format=csv,noheader | grep -i "$gpu_type" | head -n 1 | cut -d',' -f1)
 # Requested number of CPUs per task
 n_cpus=${SLURM_CPUS_PER_TASK:-"NA"}
 # CPU ID list
 cpu_ids=$(grep -oP '^Cpus_allowed_list:\s*\K.+' /proc/self/status)
-
+# type of production
+typeprod="optimization"
 # Write all information to the log file slurm jobnumber.log
 LOG_FILE="job_info_${SLURM_JOB_ID}.log"
 {
@@ -51,6 +52,7 @@ LOG_FILE="job_info_${SLURM_JOB_ID}.log"
   echo "GPU IDs: $gpu_id"
   echo "Requested number of CPUs: $cpu_req"
   echo "CPU IDs: $cpu_ids"
+  echo "Purpose of the job: $typeprod"
 } > $LOG_FILE
 # Number of runs for each test
 n_runs=3
@@ -66,8 +68,6 @@ if [ ! -f output/vanilla/performance/equil/run-1/step4_equilibration.out ] || ! 
 else
     echo "Equilibration already completed. Skipping..."
 fi
-
-typeprod="optimization"
 
 # Loop over NAMD_CORES values [10,20,30,40]
 for NAMD_CORES in 6 10 12 20 24 30 36 40 48; do
