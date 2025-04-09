@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=perf_test_NAMD  # Job name
+#SBATCH --job-name=perf_test_MD  # Job name
 #SBATCH --output=perf_test_%j.out    # Output file
 #SBATCH --error=perf_test_%j.err     # Error file
 #SBATCH --partition=general         # Specify partition
@@ -54,25 +54,13 @@ LOG_FILE="job_info_${SLURM_JOB_ID}.log"
 } > $LOG_FILE
 # Set number of cores
 TOTAL_CORES=48
-NAMD_CORES=40
+MD_CORES=40
 PYTHON_CORES=8
 GPU_DEVICE=0
 n_runs=3
 
-# Run NAMD equilibration
-# check if there is a *.out file in the output/vanilla/performance/equil/*/run-1/ directory with "End of program" in it and only run if it doesn't exist
-if [ ! -f output/vanilla/performance/equil/*/run-1/step4_equilibration.out ] || ! grep -q "End of program" output/vanilla/performance/equil/*/run-1/step4_equilibration.out; then
-    echo "Running equilibration..."
-    ./run/equi.sh ${NAMD_CORES} ${GPU_DEVICE}
-else
-    echo "Equilibration already completed. Skipping..."
-fi
-# Run NAMD production
-# vanilla NAMD
-# ./run/prod_vanilla.sh ${NAMD_CORES} ${GPU_DEVICE} ${n_runs} ${typeprod}
-
-# IMDv3 NAMD
-# ./run/prod_imdv3.sh ${NAMD_CORES} ${GPU_DEVICE} ${n_runs} ${typeprod}
+# Run MD equilibration
+# ..
 
 pos_freq=0
 vel_freq=0
@@ -82,24 +70,24 @@ freq=0
 
 # Loop over freq values 1, 5, 50, 500
 for freq in 1 5 50 500; do
-    echo "Running IMDv3 NAMD with file/streaming I/O with freq=${freq}..."
+    echo "Running IMDv3 MD with file/streaming I/O with freq=${freq}..."
     
     pos_freq=freq
     # vel_freq=freq
     # force_freq=freq
     # box_freq=freq
-    # IMDv3 NAMD with File I/O
-    ./run/prod_fileio.sh ${NAMD_CORES} ${GPU_DEVICE} ${n_runs} ${pos_freq} ${vel_freq} ${force_freq} ${box_freq} ${typeprod}
+    # IMDv3 MD with File I/O
+    # ..
     # copy log file into all run folders
     for i in $(seq 1 ${n_runs}); do
-        cp ${LOG_FILE} output/fileio/${typeprod}/1-1-${NAMD_CORES}/pos_freq-${pos_freq}_vel_freq-${vel_freq}_force_freq-${force_freq}_box_freq-${box_freq}/run-${i}/${LOG_FILE}
+        cp ${LOG_FILE} output/fileio/${typeprod}/1-1-${MD_CORES}/pos_freq-${pos_freq}_vel_freq-${vel_freq}_force_freq-${force_freq}_box_freq-${box_freq}/run-${i}/${LOG_FILE}
     done
 
-    # IMDv3 NAMD with streaming
-    ./run/prod_streaming.sh ${NAMD_CORES} ${GPU_DEVICE} ${PYTHON_CORES} ${n_runs} ${pos_freq} ${vel_freq} ${force_freq} ${box_freq} ${typeprod}
+    # IMDv3 MD with streaming
+    # ..
     # copy log file into all run folders
     for i in $(seq 1 ${n_runs}); do
-        cp ${LOG_FILE} output/streaming/${typeprod}/1-1-${NAMD_CORES}/pos_freq-${pos_freq}_vel_freq-${vel_freq}_force_freq-${force_freq}_box_freq-${box_freq}/run-${i}/${LOG_FILE}
+        cp ${LOG_FILE} output/streaming/${typeprod}/1-1-${MD_CORES}/pos_freq-${pos_freq}_vel_freq-${vel_freq}_force_freq-${force_freq}_box_freq-${box_freq}/run-${i}/${LOG_FILE}
     done
 
 done
