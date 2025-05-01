@@ -1,25 +1,19 @@
 #!/bin/bash
 
-# Production
-#gmx grompp -f ../GROMACS_INPUT/step5_production.mdp -o test.tpr -c step4.1_equilibration.gro -p ../GROMACS_INPUT/topol.top -n ../GROMACS_INPUT/index.ndx
-#gmx mdrun -v -deffnm test -ntmpi 1 -ntomp 12 -gpu_id 0 >& production.out
+input_folder="../../../../../GROMACS_INPUT"
 
 mkdir -p performance_streaming
 cd performance_streaming
 
-
 for (( i=1; i<=5; i++ )); do
     run_folder="run${i}"
     mkdir -p "${run_folder}"
-    #cd "${run_folder}"
     
     # Prepare the simulation input
-    gmx grompp -f ../../../GROMACS_INPUT/step5_production_imdv3_fileio.mdp -o ${run_folder}/run.tpr -c ../../../GROMACS_INPUT/step4.1_equilibration.gro -p ../../../GROMACS_INPUT/topol.top -n ../../../GROMACS_INPUT/index.ndx
+    gmx grompp -f ${input_folder}/step5_production_imdv3_streaming_500.mdp -o ${run_folder}/run.tpr -c ${input_folder}/step4.1_equilibration.gro -p ${input_folder}/topol.top -n ${input_folder}/index.ndx
 
     # Run the simulation
-    # Number of -ntmpi and -ntomp will need to multiply to the number of cores requested (e.g. 1 tmpi * 12 omp = 12 cores)
-    
-    gmx mdrun -v -deffnm ${run_folder}/run -ntmpi 1 -ntomp 12 -gpu_id 0 -imdwait -imdport 8888  >& "${run_folder}_production.out"
-    python ../../../GROMACS_INPUT/IMDv3-client.py
-    #cd ../
+    gmx mdrun -v -deffnm ${run_folder}/run -ntmpi 1 -ntomp 20 -gpu_id 0 -imdwait -imdport 8888  >& "${run_folder}_production.out" &
+    sleep 2
+    python3 ${input_folder}/IMDv3-client.py
 done
