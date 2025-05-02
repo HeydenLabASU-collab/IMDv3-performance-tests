@@ -1,0 +1,1276 @@
+Charm++: standalone mode (not using charmrun)
+Charm++> Running in Multicore mode: 40 threads (PEs)
+Charm++> Using recursive bisection (scheme 3) for topology aware partitions
+Converse/Charm++ Commit ID: v80000
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 1 hosts (2 sockets x 24 cores x 1 PUs = 48-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Info: Built with CUDA version 11080
+Pe 0 physical rank 0 will use CUDA device of pe 32
+Pe 23 physical rank 23 will use CUDA device of pe 32
+Pe 1 physical rank 1 will use CUDA device of pe 32
+Pe 7 physical rank 7 will use CUDA device of pe 32
+Pe 14 physical rank 14 will use CUDA device of pe 32
+Pe 22 physical rank 22 will use CUDA device of pe 32
+Pe 11 physical rank 11 will use CUDA device of pe 32
+Pe 27 physical rank 27 will use CUDA device of pe 32
+Pe 3 physical rank 3 will use CUDA device of pe 32
+Pe 17 physical rank 17 will use CUDA device of pe 32
+Pe 10 physical rank 10 will use CUDA device of pe 32
+Pe 29 physical rank 29 will use CUDA device of pe 32
+Pe 26 physical rank 26 will use CUDA device of pe 32
+Pe 39 physical rank 39 will use CUDA device of pe 32
+Pe 36 physical rank 36 will use CUDA device of pe 32
+Pe 31 physical rank 31 will use CUDA device of pe 32
+Pe 19 physical rank 19 will use CUDA device of pe 32
+Pe 13 physical rank 13 will use CUDA device of pe 32
+Pe 6 physical rank 6 will use CUDA device of pe 32
+Pe 35 physical rank 35 will use CUDA device of pe 32
+Pe 37 physical rank 37 will use CUDA device of pe 32
+Pe 8 physical rank 8 will use CUDA device of pe 32
+Pe 15 physical rank 15 will use CUDA device of pe 32
+Pe 18 physical rank 18 will use CUDA device of pe 32
+Pe 21 physical rank 21 will use CUDA device of pe 32
+Pe 25 physical rank 25 will use CUDA device of pe 32
+Pe 4 physical rank 4 will use CUDA device of pe 32
+Pe 30 physical rank 30 will use CUDA device of pe 32
+Pe 12 physical rank 12 will use CUDA device of pe 32
+Pe 32 physical rank 32 binding to CUDA device 0 on sg012: 'NVIDIA A100-SXM4-80GB'  Mem: 81155MB  Rev: 8.0  PCI: 0:1:0
+Pe 9 physical rank 9 will use CUDA device of pe 32
+Pe 24 physical rank 24 will use CUDA device of pe 32
+Pe 16 physical rank 16 will use CUDA device of pe 32
+Pe 28 physical rank 28 will use CUDA device of pe 32
+Pe 33 physical rank 33 will use CUDA device of pe 32
+Pe 34 physical rank 34 will use CUDA device of pe 32
+Pe 20 physical rank 20 will use CUDA device of pe 32
+Pe 38 physical rank 38 will use CUDA device of pe 32
+Pe 5 physical rank 5 will use CUDA device of pe 32
+Pe 2 physical rank 2 will use CUDA device of pe 32
+CharmLB> Load balancing instrumentation for communication is off.
+Info: NAMD 3.1alpha2 for Linux-x86_64-multicore-CUDA
+Info: 
+Info: Please visit http://www.ks.uiuc.edu/Research/namd/
+Info: for updates, documentation, and support information.
+Info: 
+Info: Please cite Phillips et al., J. Chem. Phys. 153:044130 (2020) doi:10.1063/5.0014475
+Info: in all publications reporting results obtained with NAMD.
+Info: 
+Info: Based on Charm++/Converse 80000 for multicore-linux-x86_64
+Info: Built Wed Feb 26 02:26:55 MST 2025 by athiru12 on sg005
+Info: 1 NAMD  3.1alpha2  Linux-x86_64-multicore-CUDA  40    sg012  athiru12
+Info: Running on 40 processors, 1 nodes, 1 physical nodes.
+Info: CPU topology information available.
+Info: Charm++/Converse parallel runtime startup completed at 1.02689 s
+CkLoopLib is used in SMP with simple dynamic scheduling (converse-level notification)
+Info: 0 MB of memory in use based on /proc/self/stat
+Info: Configuration file is input/step5_vanilla_40_run.inp
+Info: Changed directory to input
+TCL: Suspending until startup complete.
+Warning: Option "1-4scaling" has been deprecated. Instead use "oneFourScaling".
+Warning: Option "CUDASOAintegrate" has been deprecated. Instead use "GPUresident".
+Info: EXTENDED SYSTEM FILE   ../output/step4_equilibration.xsc
+Info: Tuning parameters to improve GPU-resident performance
+Info: Setting margin to 4
+Warning: The Langevin gamma parameters differ over the particles,
+Warning: requiring extra work per step to constrain rigid bonds.
+Info: Enabling PMEOffload because PMEInterpOrder > 4.
+Info: Running with GPU-resident mode
+Warning: Always using force tables for GPU nonbonded kernel due to unsupported config parameters.
+Info: SIMULATION PARAMETERS:
+Info: TIMESTEP               2
+Info: NUMBER OF STEPS        500000
+Info: STEPS PER CYCLE        20
+Info: PERIODIC CELL BASIS 1  69 0 0
+Info: PERIODIC CELL BASIS 2  0 69 0
+Info: PERIODIC CELL BASIS 3  0 0 69
+Info: PERIODIC CELL CENTER   0 0 0
+Info: WRAPPING WATERS AROUND PERIODIC BOUNDARIES ON OUTPUT.
+Info: WRAPPING ALL CLUSTERS AROUND PERIODIC BOUNDARIES ON OUTPUT.
+Info: LOAD BALANCER  Centralized
+Info: LOAD BALANCING STRATEGY  New Load Balancers -- DEFAULT
+Info: LDB PERIOD             4000 steps
+Info: FIRST LDB TIMESTEP     100
+Info: LAST LDB TIMESTEP     -1
+Info: LDB BACKGROUND SCALING 1
+Info: HOM BACKGROUND SCALING 1
+Info: PME BACKGROUND SCALING 1
+Info: MIN ATOMS PER PATCH    40
+Info: EMPTY PATCH LOAD       40 ATOMS
+Info: VELOCITY FILE          ../output/step4_equilibration.vel
+Info: CENTER OF MASS MOVING INITIALLY? NO
+Info: DIELECTRIC             1
+Info: EXCLUDE                SCALED ONE-FOUR
+Info: 1-4 ELECTROSTATICS SCALED BY 1
+Info: MODIFIED 1-4 VDW PARAMETERS WILL BE USED
+Info: NO DCD TRAJECTORY OUTPUT
+Info: NO EXTENDED SYSTEM TRAJECTORY OUTPUT
+Info: NO VELOCITY DCD OUTPUT
+Info: NO FORCE DCD OUTPUT
+Info: OUTPUT FILENAME        ../output/run-2/step5_vanilla_40_1
+Info: BINARY OUTPUT FILES WILL BE USED
+Info: RESTART FILENAME       ../output/run-2/step5_vanilla_40_1.restart
+Info: RESTART FREQUENCY      5000
+Info: BINARY RESTART FILES WILL BE USED
+Info: SWITCHING ACTIVE
+Info: VDW FORCE SWITCHING ACTIVE
+Info: SWITCHING ON           10
+Info: SWITCHING OFF          12
+Info: PAIRLIST DISTANCE      16
+Info: PAIRLIST SHRINK RATE   0.01
+Info: PAIRLIST GROW RATE     0.01
+Info: PAIRLIST TRIGGER       0.3
+Info: PAIRLISTS PER CYCLE    2
+Info: PAIRLISTS ENABLED
+Info: MARGIN                 4
+Info: HYDROGEN GROUP CUTOFF  2.5
+Info: PATCH DIMENSION        22.5
+Info: ENERGY OUTPUT STEPS    5000
+Info: ENERGY EVALUATION STEPS    5000
+Info: OUTPUT ENERGY PRECISION 4
+Info: CROSSTERM ENERGY INCLUDED IN DIHEDRAL
+Info: TIMING OUTPUT STEPS    5000
+Info: LANGEVIN DYNAMICS ACTIVE
+Info: LANGEVIN TEMPERATURE   303.15
+Info: LANGEVIN USING BBK INTEGRATOR
+Info: LANGEVIN DAMPING COEFFICIENT IS 1 INVERSE PS
+Info: LANGEVIN DYNAMICS NOT APPLIED TO HYDROGENS
+Info: LANGEVIN PISTON PRESSURE CONTROL ACTIVE
+Info:        TARGET PRESSURE IS 1.01325 BAR
+Info:     OSCILLATION PERIOD IS 50 FS
+Info:             DECAY TIME IS 25 FS
+Info:     PISTON TEMPERATURE IS 303.15 K
+Info:       PRESSURE CONTROL IS GROUP-BASED
+Info:    INITIAL STRAIN RATE IS 0 0 0
+Info:       CELL FLUCTUATION IS ISOTROPIC
+Info: PARTICLE MESH EWALD (PME) ACTIVE
+Info: PME TOLERANCE               1e-06
+Info: PME EWALD COEFFICIENT       0.257952
+Info: PME INTERPOLATION ORDER     6
+Info: PME GRID DIMENSIONS         72 72 72
+Info: PME MAXIMUM GRID SPACING    1
+Info: PME RECIPROCAL SUM OFFLOADED TO GPU
+Info: PME CALCULATION WILL BE PERFORMED ON GPU
+Info: FULL ELECTROSTATIC EVALUATION FREQUENCY      1
+Info: USING VERLET I (r-RESPA) MTS SCHEME.
+Info: C1 SPLITTING OF LONG RANGE ELECTROSTATICS
+Info: PLACING ATOMS IN PATCHES BY HYDROGEN GROUPS
+Info: RIGID BONDS TO HYDROGEN : ALL
+Info:         ERROR TOLERANCE : 1e-08
+Info:          MAX ITERATIONS : 100
+Info: RIGID WATER USING SETTLE ALGORITHM
+Info: RANDOM NUMBER SEED     1742608381
+Info: USE HYDROGEN BONDS?    NO
+Info: COORDINATE PDB         step3_input.pdb
+Info: STRUCTURE FILE         step3_input.psf
+Info: PARAMETER file: CHARMM format! 
+Info: PARAMETERS             toppar/par_all36m_prot.prm
+Info: PARAMETERS             toppar/par_all36_na.prm
+Info: PARAMETERS             toppar/par_all36_carb.prm
+Info: PARAMETERS             toppar/par_all36_lipid.prm
+Info: PARAMETERS             toppar/par_all36_cgenff.prm
+Info: PARAMETERS             toppar/par_interface.prm
+Info: PARAMETERS             toppar/toppar_all36_moreions.str
+Info: PARAMETERS             toppar/toppar_all36_nano_lig.str
+Info: PARAMETERS             toppar/toppar_all36_nano_lig_patch.str
+Info: PARAMETERS             toppar/toppar_all36_synthetic_polymer.str
+Info: PARAMETERS             toppar/toppar_all36_synthetic_polymer_patch.str
+Info: PARAMETERS             toppar/toppar_all36_polymer_solvent.str
+Info: PARAMETERS             toppar/toppar_water_ions.str
+Info: PARAMETERS             toppar/toppar_dum_noble_gases.str
+Info: PARAMETERS             toppar/toppar_ions_won.str
+Info: PARAMETERS             toppar/cam.str
+Info: PARAMETERS             toppar/toppar_all36_prot_arg0.str
+Info: PARAMETERS             toppar/toppar_all36_prot_c36m_d_aminoacids.str
+Info: PARAMETERS             toppar/toppar_all36_prot_fluoro_alkanes.str
+Info: PARAMETERS             toppar/toppar_all36_prot_heme.str
+Info: PARAMETERS             toppar/toppar_all36_prot_na_combined.str
+Info: PARAMETERS             toppar/toppar_all36_prot_retinol.str
+Info: PARAMETERS             toppar/toppar_all36_prot_model.str
+Info: PARAMETERS             toppar/toppar_all36_prot_modify_res.str
+Info: PARAMETERS             toppar/toppar_all36_na_nad_ppi.str
+Info: PARAMETERS             toppar/toppar_all36_na_rna_modified.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_sphingo.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_archaeal.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_bacterial.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_cardiolipin.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_cholesterol.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_dag.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_inositol.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_lnp.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_lps.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_mycobacterial.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_miscellaneous.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_model.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_prot.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_tag.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_yeast.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_hmmm.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_detergent.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_ether.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_oxidized.str
+Info: PARAMETERS             toppar/toppar_all36_carb_glycolipid.str
+Info: PARAMETERS             toppar/toppar_all36_carb_glycopeptide.str
+Info: PARAMETERS             toppar/toppar_all36_carb_imlab.str
+Info: PARAMETERS             toppar/toppar_all36_label_spin.str
+Info: PARAMETERS             toppar/toppar_all36_label_fluorophore.str
+Info: USING ARITHMETIC MEAN TO COMBINE L-J SIGMA PARAMETERS
+Info: BINARY COORDINATES     ../output/step4_equilibration.coor
+Warning: SKIPPING PART OF PARAMETER FILE AFTER RETURN STATEMENT
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR HAL1-CTO1-C-NHL
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=0  n=1  delta=0INCREASING MULTIPLICITY TO: 2
+  k=0  n=3  delta=0
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR HAL1-CTO1-C-O
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=0  n=1  delta=0INCREASING MULTIPLICITY TO: 2
+  k=0  n=2  delta=3.14159
+Warning: SKIPPING PART OF PARAMETER FILE AFTER RETURN STATEMENT
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR CTL2-CG2O5-CTL1-CTL3
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=0.75  n=1  delta=0  k=0.18  n=2  delta=3.14159INCREASING MULTIPLICITY TO: 3
+  k=0.065  n=3  delta=0
+
+Warning: DUPLICATE BOND ENTRY FOR CEL1-CL
+PREVIOUS VALUES  k=440  x0=1.489
+   USING VALUES  k=300  x0=1.48
+Info: SUMMARY OF PARAMETERS:
+Info: 1988 BONDS
+Info: 6776 ANGLES
+Info: 19939 DIHEDRAL
+Info: 430 IMPROPER
+Info: 28 CROSSTERM
+Info: 751 VDW
+Info: 122 VDW_PAIRS
+Info: 0 NBTHOLE_PAIRS
+Warning: Ignored 9467 bonds with zero force constants.
+Warning: Will get H-H distance in rigid H2O from H-O-H angle.
+Info: TIME FOR READING PSF FILE: 0.061326
+Info: Reading pdb file step3_input.pdb
+Info: TIME FOR READING PDB FILE: 0.0265069
+Info: 
+Info: ****************************
+Info: STRUCTURE SUMMARY:
+Info: 30423 ATOMS
+Info: 20918 BONDS
+Info: 13014 ANGLES
+Info: 5187 DIHEDRALS
+Info: 373 IMPROPERS
+Info: 127 CROSSTERMS
+Info: 0 EXCLUSIONS
+Info: 29360 RIGID BONDS
+Info: 61909 DEGREES OF FREEDOM
+Info: 10530 HYDROGEN GROUPS
+Info: 4 ATOMS IN LARGEST HYDROGEN GROUP
+Info: 10530 MIGRATION GROUPS
+Info: 4 ATOMS IN LARGEST MIGRATION GROUP
+Info: TOTAL MASS = 186727 amu
+Info: TOTAL CHARGE = 1.31875e-06 e
+Info: MASS DENSITY = 0.943883 g/cm^3
+Info: ATOM DENSITY = 0.0926093 atoms/A^3
+Info: *****************************
+Info: Reading from binary file ../output/step4_equilibration.coor
+Info: 
+Info: Entering startup at 1.46145 s, 0 MB of memory in use
+Info: Startup phase 0 took 0.000284987 s, 0 MB of memory in use
+Info: ADDED 39038 IMPLICIT EXCLUSIONS
+Info: Startup phase 1 took 0.00645381 s, 0 MB of memory in use
+Info: NONBONDED TABLE R-SQUARED SPACING: 0.0625
+Info: NONBONDED TABLE SIZE: 769 POINTS
+Info: INCONSISTENCY IN FAST TABLE ENERGY VS FORCE: 0.000325096 AT 11.9556
+Info: INCONSISTENCY IN SCOR TABLE ENERGY VS FORCE: 0.000324844 AT 11.9556
+Info: INCONSISTENCY IN VDWA TABLE ENERGY VS FORCE: 0.0040507 AT 0.251946
+Info: INCONSISTENCY IN VDWB TABLE ENERGY VS FORCE: 0.00150189 AT 0.251946
+Info: Startup phase 2 took 0.0114363 s, 0 MB of memory in use
+Info: Startup phase 3 took 0.000241685 s, 0 MB of memory in use
+Info: Startup phase 4 took 0.0013439 s, 0 MB of memory in use
+Info: Startup phase 5 took 0.000237217 s, 0 MB of memory in use
+Info: PATCH GRID IS 6 (PERIODIC) BY 3 (PERIODIC) BY 3 (PERIODIC)
+Info: PATCH GRID IS 2-AWAY BY 1-AWAY BY 1-AWAY
+Info: Reading from binary file ../output/step4_equilibration.vel
+Info: REMOVING COM VELOCITY 0.0102651 -0.01707 0.00842024
+Info: LARGEST PATCH (27) HAS 671 ATOMS
+Info: TORUS A SIZE 1 USING 0
+Info: TORUS B SIZE 1 USING 0
+Info: TORUS C SIZE 1 USING 0
+Info: TORUS MINIMAL MESH SIZE IS 1 BY 1 BY 1
+Info: Placed 100% of base nodes on same physical node as patch
+Info: Startup phase 6 took 0.0131781 s, 0 MB of memory in use
+Info: Use 3D box decompostion in PME FFT.
+Info: PME using 1 x 1 x 1 pencil grid for FFT and reciprocal sum.
+Info: Startup phase 7 took 0.000622263 s, 0 MB of memory in use
+Info: Updated CUDA force table with 4096 elements.
+Info: Updated CUDA LJ table with 751 x 751 elements.
+Info: Startup phase 8 took 0.00583844 s, 0 MB of memory in use
+Info: Startup phase 9 took 0.000245853 s, 0 MB of memory in use
+Info: Startup phase 10 took 0.000225315 s, 0 MB of memory in use
+Info: Startup phase 11 took 0.0789867 s, 0 MB of memory in use
+LDB: Central LB being created...
+Info: Startup phase 12 took 0.0580027 s, 0 MB of memory in use
+Info: CREATING 1940 COMPUTE OBJECTS
+Info: Found 268 unique exclusion lists needing 4316 bytes
+Info: useSync: 0 useProxySync: 0
+Info: Startup phase 13 took 0.302005 s, 0 MB of memory in use
+Info: Startup phase 14 took 0.0449912 s, 0 MB of memory in use
+Info: Startup phase 15 took 8.2495e-05 s, 0 MB of memory in use
+Info: Finished startup at 1.98563 s, 0 MB of memory in use
+
+TCL: Original numsteps 500000 will be ignored.
+TCL: Running for 500000 steps
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:       0       393.7844      1151.3863      1140.5717        75.7877        -111381.5562      9211.0927         0.0000         0.0000     18671.3312         -80737.6021       303.5372    -99408.9333    -80737.6021       303.5372          -1002.7054     -1000.5904    328509.0000     -1002.7054     -1000.5904
+
+Info: Initial time: 40 CPUs 0.00213881 s/step 80.7926 ns/day 0 MB memory
+Info: Initial time: 40 CPUs 0.0021201 s/step 81.5057 ns/day 0 MB memory
+Info: Initial time: 40 CPUs 0.00212953 s/step 81.1445 ns/day 0 MB memory
+Info: Benchmark time: 40 CPUs 0.00211933 s/step 81.5354 ns/day 0 MB memory
+Info: Benchmark time: 40 CPUs 0.00212181 s/step 81.4401 ns/day 0 MB memory
+Info: Benchmark time: 40 CPUs 0.00261449 s/step 66.0931 ns/day 0 MB memory
+Info: Benchmark time: 40 CPUs 0.00185376 s/step 93.2161 ns/day 0 MB memory
+Info: Benchmark time: 40 CPUs 0.00090147 s/step 191.687 ns/day 0 MB memory
+Info: Benchmark time: 40 CPUs 0.000906173 s/step 190.692 ns/day 0 MB memory
+TIMING: 5000  CPU: 5.71933, 0.00101368/step  Wall: 5.63309, 0.00102708/step, 168.244 ns/days, 0.141223 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 5000  averaging 168.244 ns/day, 0.00102708 sec/step with standard deviation 0
+ENERGY:    5000       439.7289      1115.7502      1122.0911        79.1812        -113924.1132      9768.7098         0.0000         0.0000     18731.3687         -82667.2831       304.5132   -101398.6518    -81702.4426       304.0252            155.6271       146.8587    299422.9464      -423.5392      -426.8659
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 5000
+WRITING COORDINATES TO RESTART FILE AT STEP 5000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=5000) takes 0.014 seconds, 0.000 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 5000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=5000) takes 0.013 seconds, 0.000 MB of memory in use
+TIMING: 10000  CPU: 11.6936, 0.00119486/step  Wall: 11.8021, 0.00123381/step, 140.055 ns/days, 0.167935 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 10000  averaging 152.861 ns/day, 0.00113044 sec/step with standard deviation 0.000146179
+ENERGY:   10000       435.6990      1157.8465      1134.6482        69.7162        -113953.2874      9736.3211         0.0000         0.0000     18600.0950         -82818.9613       302.3791   -101419.0563    -82074.6155       303.4765             76.0497        81.7399    301095.6560      -257.0095      -257.3306
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 10000
+WRITING COORDINATES TO RESTART FILE AT STEP 10000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=10000) takes 0.010 seconds, 0.000 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 10000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=10000) takes 0.010 seconds, 0.000 MB of memory in use
+TIMING: 15000  CPU: 21.7454, 0.00201036/step  Wall: 22.0394, 0.00204747/step, 84.397 ns/days, 0.275839 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 15000  averaging 120.325 ns/day, 0.00143612 sec/step with standard deviation 0.00053944
+ENERGY:   15000       423.2211      1115.7034      1103.6600        63.2606        -113698.5570      9519.0456         0.0000         0.0000     18491.9644         -82981.7019       300.6212   -101473.6663    -82301.3871       302.7627           -355.9241      -352.7371    302269.2859      -281.7382      -281.1822
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 15000
+WRITING COORDINATES TO RESTART FILE AT STEP 15000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=15000) takes 0.009 seconds, 0.000 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 15000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=15000) takes 0.008 seconds, 0.000 MB of memory in use
+TIMING: 20000  CPU: 27.4639, 0.0011437/step  Wall: 27.7968, 0.00115146/step, 150.07 ns/days, 0.153528 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 20000  averaging 126.598 ns/day, 0.00136495 sec/step with standard deviation 0.000462875
+ENERGY:   20000       387.5098      1112.2354      1127.8229        72.2660        -114229.1899      9758.5349         0.0000         0.0000     18759.7505         -83011.0703       304.9746   -101770.8208    -82443.3237       303.2051            -31.0231       -32.5395    301209.1136      -231.5952      -231.4537
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 20000
+WRITING COORDINATES TO RESTART FILE AT STEP 20000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=20000) takes 0.010 seconds, 0.000 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 20000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=20000) takes 0.010 seconds, 0.000 MB of memory in use
+TIMING: 25000  CPU: 31.6508, 0.00083739/step  Wall: 32.0238, 0.000845406/step, 204.399 ns/days, 0.111547 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 25000  averaging 137.029 ns/day, 0.00126104 sec/step with standard deviation 0.000463331
+ENERGY:   25000       409.8471      1145.9564      1140.1404        72.6813        -114094.4787      9840.0486         0.0000         0.0000     18278.4998         -83207.3051       297.1510   -101485.8048    -82570.6540       302.1960            218.8477       219.5180    300538.0463      -156.5214      -156.2917
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 25000
+WRITING COORDINATES TO RESTART FILE AT STEP 25000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=25000) takes 0.008 seconds, 0.000 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 25000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=25000) takes 0.008 seconds, 0.000 MB of memory in use
+TIMING: 30000  CPU: 36.0675, 0.000883333/step  Wall: 36.4865, 0.000892535/step, 193.606 ns/days, 0.116525 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 30000  averaging 144.045 ns/day, 0.00119963 sec/step with standard deviation 0.000440878
+ENERGY:   30000       422.7353      1127.4917      1106.5086        71.2718        -113961.6766      9679.4148         0.0000         0.0000     18459.1920         -83095.0624       300.0885   -101554.2544    -82645.5695       301.8950            -37.2782       -33.4326    300328.1138      -139.4866      -138.7404
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 30000
+WRITING COORDINATES TO RESTART FILE AT STEP 30000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=30000) takes 0.009 seconds, 0.000 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 30000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 35000  CPU: 40.2396, 0.000834424/step  Wall: 40.6888, 0.000840468/step, 205.6 ns/days, 0.10856 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 35000  averaging 150.481 ns/day, 0.00114832 sec/step with standard deviation 0.000424742
+ENERGY:   35000       433.3260      1172.5794      1126.8104        71.3743        -114336.9773      9876.1540         0.0000         0.0000     18693.1497         -82963.5836       303.8919   -101656.7333    -82685.3212       302.1446            -51.8993       -50.8010    301332.8331      -128.5382      -127.7480
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 35000
+WRITING COORDINATES TO RESTART FILE AT STEP 35000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=35000) takes 0.011 seconds, 0.000 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 35000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 40000  CPU: 46.1223, 0.00117654/step  Wall: 46.6136, 0.00118496/step, 145.828 ns/days, 0.151411 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 40000  averaging 149.883 ns/day, 0.0011529 sec/step with standard deviation 0.000393448
+ENERGY:   40000       440.1613      1125.3873      1146.8183        68.0587        -113873.6579      9683.6263         0.0000         0.0000     18507.9380         -82901.6679       300.8809   -101409.6059    -82709.3597       302.0042           -126.0919      -128.3959    302168.3600      -128.2664      -127.8200
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 40000
+WRITING COORDINATES TO RESTART FILE AT STEP 40000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=40000) takes 0.010 seconds, 0.000 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 40000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 45000  CPU: 50.2969, 0.000834912/step  Wall: 50.8188, 0.000841039/step, 205.46 ns/days, 0.106298 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 45000  averaging 154.528 ns/day, 0.00111825 sec/step with standard deviation 0.000382436
+ENERGY:   45000       430.8561      1127.2317      1132.4236        78.8131        -113978.8434      9785.4722         0.0000         0.0000     18583.6549         -82840.3918       302.1118   -101424.0467    -82722.4630       302.0149             79.6060        82.6133    300541.4738      -107.4792      -106.7767
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 45000
+WRITING COORDINATES TO RESTART FILE AT STEP 45000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=45000) takes 0.010 seconds, 0.000 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 45000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 50000  CPU: 57.249, 0.00139042/step  Wall: 57.8168, 0.0013996/step, 123.464 ns/days, 0.17495 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 50000  averaging 150.735 ns/day, 0.00114638 sec/step with standard deviation 0.00037138
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:   50000       419.3740      1171.5241      1116.3960        65.2011        -113858.1959      9550.9591         0.0000         0.0000     18479.7890         -83054.9527       300.4233   -101534.7416    -82752.6893       301.8702           -327.6837      -327.3160    301690.2303      -127.4978      -126.8257
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 50000
+WRITING COORDINATES TO RESTART FILE AT STEP 50000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=50000) takes 0.010 seconds, 0.000 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 50000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 55000  CPU: 67.0712, 0.00196445/step  Wall: 67.7023, 0.0019771/step, 87.4008 ns/days, 0.244391 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 55000  averaging 141.419 ns/day, 0.0012219 sec/step with standard deviation 0.00043228
+ENERGY:   55000       411.0075      1152.6197      1132.8965        67.0909        -113822.1734      9515.8511         0.0000         0.0000     18698.3844         -82844.3232       303.9770   -101542.7076    -82760.3255       302.0458           -128.5792      -129.9392    301960.6656      -127.5879      -127.0851
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 55000
+WRITING COORDINATES TO RESTART FILE AT STEP 55000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 55000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 60000  CPU: 75.2881, 0.00164338/step  Wall: 75.9734, 0.00165421/step, 104.46 ns/days, 0.202182 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 60000  averaging 137.369 ns/day, 0.00125793 sec/step with standard deviation 0.000430642
+ENERGY:   60000       428.8672      1148.3506      1110.5498        65.8468        -113995.6965      9786.1364         0.0000         0.0000     18607.4224         -82848.5232       302.4982   -101455.9456    -82767.1099       302.0806           -124.9732      -123.4907    301469.6984      -127.3867      -126.8087
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 60000
+WRITING COORDINATES TO RESTART FILE AT STEP 60000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 60000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 65000  CPU: 83.8013, 0.00170264/step  Wall: 84.5422, 0.00171377/step, 100.83 ns/days, 0.20708 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 65000  averaging 133.643 ns/day, 0.00129299 sec/step with standard deviation 0.000431257
+ENERGY:   65000       424.3749      1153.7101      1158.4746        67.7707        -113827.9247      9699.5656         0.0000         0.0000     18623.1275         -82700.9013       302.7535   -101324.0288    -82762.3807       302.1287             70.5063        68.4978    300093.5759      -113.2515      -112.8582
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 65000
+WRITING COORDINATES TO RESTART FILE AT STEP 65000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 65000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 70000  CPU: 91.9172, 0.00162317/step  Wall: 92.7107, 0.00163371/step, 105.772 ns/days, 0.195137 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 70000  averaging 131.175 ns/day, 0.00131733 sec/step with standard deviation 0.000424226
+ENERGY:   70000       417.9794      1100.1826      1107.2190        64.4049        -113795.1914      9738.0246         0.0000         0.0000     18560.7707         -82806.6102       301.7398   -101367.3809    -82765.3293       302.1027              4.5248         6.1842    302062.3935      -105.3998      -104.9220
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 70000
+WRITING COORDINATES TO RESTART FILE AT STEP 70000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 70000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 75000  CPU: 102.024, 0.00202132/step  Wall: 102.882, 0.00203427/step, 84.9445 ns/days, 0.240157 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 75000  averaging 126.582 ns/day, 0.00136513 sec/step with standard deviation 0.000448754
+ENERGY:   75000       438.7408      1130.0955      1167.5372        69.7228        -113883.1281      9656.8951         0.0000         0.0000     18658.1799         -82761.9566       303.3234   -101420.1366    -82765.1185       302.1790            -78.9108       -78.3930    299916.7913      -103.7442      -103.2640
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 75000
+WRITING COORDINATES TO RESTART FILE AT STEP 75000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 75000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 80000  CPU: 112.138, 0.00202289/step  Wall: 113.062, 0.00203593/step, 84.875 ns/days, 0.237526 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 80000  averaging 122.81 ns/day, 0.00140705 sec/step with standard deviation 0.000464843
+ENERGY:   80000       410.9469      1097.3360      1124.3527        71.0894        -114408.1257      9969.8034         0.0000         0.0000     18604.2690         -83130.3283       302.4469   -101734.5973    -82786.6015       302.1948            176.0789       173.0370    300376.2195       -87.2840       -87.0110
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 80000
+WRITING COORDINATES TO RESTART FILE AT STEP 80000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 80000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 85000  CPU: 120.289, 0.00163023/step  Wall: 121.38, 0.00166356/step, 103.874 ns/days, 0.191771 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 85000  averaging 121.507 ns/day, 0.00142214 sec/step with standard deviation 0.000454361
+ENERGY:   85000       438.5629      1137.8960      1129.0056        68.9381        -113970.1641      9703.3360         0.0000         0.0000     18690.2690         -82802.1565       303.8450   -101492.4255    -82787.4656       302.2865             66.4868        68.9796    299683.2813       -78.7412       -78.3448
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 85000
+WRITING COORDINATES TO RESTART FILE AT STEP 85000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 85000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 90000  CPU: 124.781, 0.000898275/step  Wall: 125.902, 0.000904464/step, 191.052 ns/days, 0.103008 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 90000  averaging 124.015 ns/day, 0.00139338 sec/step with standard deviation 0.000457371
+ENERGY:   90000       449.2153      1106.3042      1103.3310        73.5190        -114005.1127      9657.6793         0.0000         0.0000     18508.8836         -83106.1803       300.8963   -101615.0639    -82804.2401       302.2133             22.7960        25.1766    300536.4276       -73.3971       -72.8963
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 90000
+WRITING COORDINATES TO RESTART FILE AT STEP 90000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 90000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 95000  CPU: 128.951, 0.000834111/step  Wall: 130.103, 0.000840244/step, 205.655 ns/days, 0.0945274 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 95000  averaging 126.661 ns/day, 0.00136427 sec/step with standard deviation 0.000462245
+ENERGY:   95000       440.1332      1151.7711      1139.3903        73.6748        -113870.8200      9777.2585         0.0000         0.0000     18632.9673         -82655.6247       302.9135   -101288.5920    -82796.8093       302.2483             26.6446        26.8270    300442.2961       -68.3950       -67.9102
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 95000
+WRITING COORDINATES TO RESTART FILE AT STEP 95000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 95000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 100000  CPU: 133.775, 0.000964773/step  Wall: 134.963, 0.000971907/step, 177.795 ns/days, 0.10799 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 100000  averaging 128.509 ns/day, 0.00134465 sec/step with standard deviation 0.00045839
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  100000       435.0449      1153.3999      1101.1265        63.9745        -114086.7543      9840.8869         0.0000         0.0000     18469.2469         -83023.0748       300.2519   -101492.3216    -82911.0830       302.0840            -41.9629       -35.8053    300341.5723       -20.3579       -19.6709
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 100000
+WRITING COORDINATES TO RESTART FILE AT STEP 100000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 100000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 105000  CPU: 137.95, 0.00083499/step  Wall: 139.165, 0.000840478/step, 205.597 ns/days, 0.0922191 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 105000  averaging 130.846 ns/day, 0.00132064 sec/step with standard deviation 0.00046013
+ENERGY:  105000       410.7094      1162.1833      1148.7055        74.2403        -114042.8715      9740.7384         0.0000         0.0000     18710.1843         -82796.1102       304.1688   -101506.2946    -82917.5243       302.0668             47.2805        51.9458    299848.6462       -25.7753       -24.4166
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 105000
+WRITING COORDINATES TO RESTART FILE AT STEP 105000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 105000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 110000  CPU: 144.149, 0.00123972/step  Wall: 145.406, 0.00124811/step, 138.449 ns/days, 0.135212 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 110000  averaging 131.173 ns/day, 0.00131734 sec/step with standard deviation 0.000449307
+ENERGY:  110000       420.4037      1116.7526      1136.6542        72.8408        -113974.0855      9751.3693         0.0000         0.0000     18444.0144         -83032.0507       299.8417   -101476.0650    -82928.1788       301.9400             -9.8756        -6.3713    299831.6884       -30.0715       -28.8221
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 110000
+WRITING COORDINATES TO RESTART FILE AT STEP 110000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 110000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 115000  CPU: 148.617, 0.000893656/step  Wall: 149.908, 0.000900474/step, 191.899 ns/days, 0.0963007 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 115000  averaging 133.003 ns/day, 0.00129922 sec/step with standard deviation 0.0004475
+ENERGY:  115000       433.8542      1185.8768      1120.5200        63.0411        -114245.5091      9733.3346         0.0000         0.0000     18473.8121         -83235.0704       300.3261   -101708.8825    -82940.8472       301.9252           -304.2119      -303.2772    300468.1144       -27.4859       -26.3491
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 115000
+WRITING COORDINATES TO RESTART FILE AT STEP 115000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 115000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 120000  CPU: 154.718, 0.00122022/step  Wall: 156.143, 0.00124696/step, 138.576 ns/days, 0.131624 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 120000  averaging 133.226 ns/day, 0.00129704 sec/step with standard deviation 0.000437794
+ENERGY:  120000       443.3513      1122.9359      1131.9829        66.4844        -113799.2895      9768.7808         0.0000         0.0000     18640.8934         -82624.8609       303.0423   -101265.7543    -82921.5367       301.8286             26.6002        21.8568    302121.2777       -24.6047       -23.6293
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 120000
+WRITING COORDINATES TO RESTART FILE AT STEP 120000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 120000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 125000  CPU: 159.153, 0.000886957/step  Wall: 160.609, 0.000893277/step, 193.445 ns/days, 0.0930497 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 125000  averaging 134.906 ns/day, 0.00128089 sec/step with standard deviation 0.000436117
+ENERGY:  125000       460.4840      1080.7827      1126.8597        69.3076        -114142.5546      9679.2334         0.0000         0.0000     18589.9092         -83135.9780       302.2135   -101725.8872    -82917.9704       302.0817           -103.8520      -104.8742    299779.7604       -40.7397       -39.8489
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 125000
+WRITING COORDINATES TO RESTART FILE AT STEP 125000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 125000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 130000  CPU: 167.452, 0.00165987/step  Wall: 168.962, 0.00167058/step, 103.437 ns/days, 0.171699 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 130000  averaging 133.346 ns/day, 0.00129588 sec/step with standard deviation 0.000434087
+ENERGY:  130000       441.8248      1209.3382      1128.3033        75.7083        -114072.4773      9843.2832         0.0000         0.0000     18449.9031         -82924.1165       299.9374   -101374.0196    -82909.4231       302.0742            152.4749       152.1419    299469.1903       -31.2521       -30.5702
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 130000
+WRITING COORDINATES TO RESTART FILE AT STEP 130000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 130000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 135000  CPU: 174.09, 0.00132753/step  Wall: 175.652, 0.00133793/step, 129.154 ns/days, 0.135652 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 135000  averaging 133.186 ns/day, 0.00129744 sec/step with standard deviation 0.000425734
+ENERGY:  135000       428.1974      1112.9725      1116.2200        67.8936        -113947.2613      9642.8013         0.0000         0.0000     18563.1716         -83016.0049       301.7788   -101579.1765    -82912.0442       301.9685           -238.5927      -239.5232    302097.9936       -40.5867       -40.0063
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 135000
+WRITING COORDINATES TO RESTART FILE AT STEP 135000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 135000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 140000  CPU: 178.636, 0.000909194/step  Wall: 180.228, 0.000915233/step, 188.804 ns/days, 0.0915233 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 140000  averaging 134.602 ns/day, 0.00128379 sec/step with standard deviation 0.000423973
+ENERGY:  140000       412.0252      1108.4773      1104.9458        66.0382        -114207.8669      9887.4548         0.0000         0.0000     18695.6796         -82933.2460       303.9330   -101628.9256    -82913.6231       302.1211            126.3227       125.4076    300438.3713       -27.9660       -27.3161
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 140000
+WRITING COORDINATES TO RESTART FILE AT STEP 140000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 140000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 145000  CPU: 185.655, 0.0014038/step  Wall: 187.294, 0.00141316/step, 122.279 ns/days, 0.139353 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 145000  averaging 134.136 ns/day, 0.00128825 sec/step with standard deviation 0.000417026
+ENERGY:  145000       394.0389      1112.4806      1106.4043        70.1305        -113937.1771      9707.0233         0.0000         0.0000     18569.7177         -82977.3819       301.8853   -101547.0995    -82920.4726       302.1098            -63.4884       -62.4625    301022.6184       -35.1207       -34.5699
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 145000
+WRITING COORDINATES TO RESTART FILE AT STEP 145000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 145000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 150000  CPU: 196.052, 0.00207951/step  Wall: 197.948, 0.00213087/step, 81.0937 ns/days, 0.207168 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 150000  averaging 131.274 ns/day, 0.00131634 sec/step with standard deviation 0.000437699
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  150000       398.2237      1132.3730      1103.8897        67.9818        -114118.0349     10056.4310         0.0000         0.0000     18534.6596         -82824.4761       301.3153   -101359.1357    -82908.9487       302.1544            285.5924       283.1382    300371.0147        -4.4569        -4.0472
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 150000
+WRITING COORDINATES TO RESTART FILE AT STEP 150000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 150000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 155000  CPU: 202.711, 0.00133168/step  Wall: 208.101, 0.00203065/step, 85.0958 ns/days, 0.194604 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 155000  averaging 129.015 ns/day, 0.00133938 sec/step with standard deviation 0.00044906
+ENERGY:  155000       407.7095      1109.9486      1105.2441        73.8497        -114350.1097      9843.8603         0.0000         0.0000     18404.1896         -83405.3078       299.1943   -101809.4975    -82936.9980       301.9153            -84.8758       -87.6253    299933.5638        -2.2718        -1.9315
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 155000
+WRITING COORDINATES TO RESTART FILE AT STEP 155000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 155000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 160000  CPU: 207.013, 0.000860402/step  Wall: 212.43, 0.000865694/step, 199.609 ns/days, 0.08176 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 160000  averaging 130.457 ns/day, 0.00132458 sec/step with standard deviation 0.000449623
+ENERGY:  160000       424.8449      1157.4448      1133.8302        75.6816        -114234.7866      9855.8796         0.0000         0.0000     18535.8763         -83051.2292       301.3351   -101587.1055    -82947.1333       301.8571            -58.6324       -56.1343    300702.7332         1.0453         1.4363
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 160000
+WRITING COORDINATES TO RESTART FILE AT STEP 160000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 160000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 165000  CPU: 213.678, 0.00133307/step  Wall: 219.152, 0.00134446/step, 128.527 ns/days, 0.12511 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 165000  averaging 130.398 ns/day, 0.00132518 sec/step with standard deviation 0.000442556
+ENERGY:  165000       440.4289      1119.1007      1114.3839        69.3184        -113774.4652      9656.9671         0.0000         0.0000     18503.7072         -82870.5590       300.8121   -101374.2662    -82955.6162       301.7600           -140.6782      -142.4075    302251.7480        -9.5139        -9.1090
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 165000
+WRITING COORDINATES TO RESTART FILE AT STEP 165000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 165000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 170000  CPU: 218.138, 0.000891936/step  Wall: 223.641, 0.000897714/step, 192.489 ns/days, 0.0822904 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 170000  averaging 131.647 ns/day, 0.00131261 sec/step with standard deviation 0.000441922
+ENERGY:  170000       440.2730      1170.7670      1110.8815        74.7714        -113981.8855      9749.7106         0.0000         0.0000     18582.3074         -82853.1746       302.0899   -101435.4820    -82957.9444       301.7775            123.5984       122.9183    301221.0951        -3.5603        -3.2722
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 170000
+WRITING COORDINATES TO RESTART FILE AT STEP 170000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 170000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 175000  CPU: 222.444, 0.000861255/step  Wall: 227.974, 0.000866669/step, 199.384 ns/days, 0.0782409 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 175000  averaging 132.937 ns/day, 0.00129986 sec/step with standard deviation 0.000441851
+ENERGY:  175000       417.2168      1145.3421      1113.2534        69.1968        -113931.7849      9711.5198         0.0000         0.0000     18558.7988         -82916.4573       301.7077   -101475.2561    -82965.6694       301.6968            -35.4557       -31.8648    302192.7164        -1.3875        -0.9458
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 175000
+WRITING COORDINATES TO RESTART FILE AT STEP 175000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 175000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 180000  CPU: 226.783, 0.000867659/step  Wall: 232.341, 0.000873424/step, 197.842 ns/days, 0.0776377 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 180000  averaging 134.16 ns/day, 0.00128802 sec/step with standard deviation 0.000441255
+ENERGY:  180000       428.5388      1128.2308      1141.9020        61.8349        -114161.3188      9774.9617         0.0000         0.0000     18325.2901         -83300.5605       297.9116   -101625.8506    -82974.1810       301.4700           -115.7327      -115.6613    300490.0748       -15.9781       -15.3808
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 180000
+WRITING COORDINATES TO RESTART FILE AT STEP 180000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 180000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 185000  CPU: 232.402, 0.00112394/step  Wall: 237.996, 0.00113099/step, 152.786 ns/days, 0.0989619 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 185000  averaging 134.603 ns/day, 0.00128377 sec/step with standard deviation 0.000435849
+ENERGY:  185000       408.2079      1114.2207      1121.3768        71.0538        -114067.4780      9843.9207         0.0000         0.0000     18634.1686         -82874.5296       302.9330   -101508.6982    -82977.7997       301.4244            148.2278       148.6688    299893.5209       -11.8910       -11.3963
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 185000
+WRITING COORDINATES TO RESTART FILE AT STEP 185000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 185000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 190000  CPU: 237.05, 0.000929564/step  Wall: 242.673, 0.000935423/step, 184.729 ns/days, 0.0805503 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 190000  averaging 135.571 ns/day, 0.00127461 sec/step with standard deviation 0.000433616
+ENERGY:  190000       443.0897      1147.7917      1110.8411        73.0085        -114530.5113     10007.2040         0.0000         0.0000     18495.0838         -83253.4924       300.6719   -101748.5763    -82985.1653       301.4132            396.6571       388.1297    299608.9025         6.8020         6.7514
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 190000
+WRITING COORDINATES TO RESTART FILE AT STEP 190000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 190000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 195000  CPU: 241.384, 0.000866723/step  Wall: 247.035, 0.000872352/step, 198.085 ns/days, 0.0739076 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 195000  averaging 136.677 ns/day, 0.00126429 sec/step with standard deviation 0.000432694
+ENERGY:  195000       451.8514      1155.0949      1120.4878        67.1311        -113801.1705      9577.2497         0.0000         0.0000     18671.4775         -82757.8781       303.5395   -101429.3556    -82990.2779       301.4445           -147.7704      -145.4830    300427.2345        -1.9187        -1.8641
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 195000
+WRITING COORDINATES TO RESTART FILE AT STEP 195000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 195000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 200000  CPU: 245.941, 0.000911563/step  Wall: 251.64, 0.000921016/step, 187.619 ns/days, 0.0767513 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 200000  averaging 137.611 ns/day, 0.00125571 sec/step with standard deviation 0.000430546
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  200000       431.4911      1146.3933      1113.5771        68.1998        -114305.1480      9740.8633         0.0000         0.0000     18685.3046         -83119.3188       303.7643   -101804.6234    -82995.0901       301.6201            -20.7208       -15.6063    300472.2538        -0.8566        -0.8542
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 200000
+WRITING COORDINATES TO RESTART FILE AT STEP 200000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 200000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 205000  CPU: 251.756, 0.00116283/step  Wall: 257.495, 0.0011711/step, 147.553 ns/days, 0.0959652 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 205000  averaging 137.838 ns/day, 0.00125365 sec/step with standard deviation 0.000425335
+ENERGY:  205000       407.9952      1111.5406      1119.1034        66.5938        -114777.7439     10173.6321         0.0000         0.0000     18711.8948         -83186.9840       304.1966   -101898.8788    -83014.6338       301.6215            300.6271       301.1141    299106.1734        11.8107        11.6042
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 205000
+WRITING COORDINATES TO RESTART FILE AT STEP 205000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 205000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 210000  CPU: 256.761, 0.00100103/step  Wall: 262.533, 0.00100745/step, 171.523 ns/days, 0.0811554 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 210000  averaging 138.485 ns/day, 0.00124779 sec/step with standard deviation 0.00042183
+ENERGY:  210000       405.5286      1150.6478      1128.1731        69.7110        -114114.8729      9771.1905         0.0000         0.0000     18490.6763         -83098.9456       300.6003   -101589.6219    -83017.9786       301.6594             47.5206        45.8315    300804.9146        14.6805        14.2144
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 210000
+WRITING COORDINATES TO RESTART FILE AT STEP 210000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 210000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 215000  CPU: 262.995, 0.00124677/step  Wall: 268.809, 0.00125525/step, 137.661 ns/days, 0.0993743 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 215000  averaging 138.466 ns/day, 0.00124796 sec/step with standard deviation 0.00041678
+ENERGY:  215000       409.6636      1078.4057      1109.5610        68.3656        -113996.5699      9692.4647         0.0000         0.0000     18579.4814         -83058.6280       302.0440   -101638.1094    -83009.1565       301.7453            -54.6160       -52.0522    300870.0593        27.1603        26.7756
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 215000
+WRITING COORDINATES TO RESTART FILE AT STEP 215000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 215000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 220000  CPU: 267.321, 0.00086533/step  Wall: 273.167, 0.000871507/step, 198.277 ns/days, 0.0677839 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 220000  averaging 139.422 ns/day, 0.0012394 sec/step with standard deviation 0.000415796
+ENERGY:  220000       444.6964      1154.8379      1090.6275        72.7630        -114192.3908      9680.3630         0.0000         0.0000     18631.3002         -83117.8028       302.8864   -101749.1030    -83033.8036       301.7375           -238.9924      -243.1713    301203.5786        13.8807        13.5242
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 220000
+WRITING COORDINATES TO RESTART FILE AT STEP 220000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 220000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 225000  CPU: 271.497, 0.000835212/step  Wall: 277.372, 0.000841092/step, 205.447 ns/days, 0.0642501 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 225000  averaging 140.425 ns/day, 0.00123055 sec/step with standard deviation 0.000415311
+ENERGY:  225000       414.2268      1139.7689      1104.8873        77.7252        -113882.2039      9716.4071         0.0000         0.0000     18509.5354         -82919.6532       300.9069   -101429.1886    -83022.9873       301.6722           -147.6467      -149.3420    302644.5401        11.6909        11.3008
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 225000
+WRITING COORDINATES TO RESTART FILE AT STEP 225000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 225000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 230000  CPU: 275.678, 0.000836101/step  Wall: 281.582, 0.000841969/step, 205.233 ns/days, 0.0631477 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 230000  averaging 141.395 ns/day, 0.0012221 sec/step with standard deviation 0.000414647
+ENERGY:  230000       442.7268      1125.3563      1107.3830        66.7259        -114052.2864      9777.4483         0.0000         0.0000     18610.2552         -82922.3909       302.5443   -101532.6461    -83022.9010       301.8025             48.0462        48.2927    300363.4592         6.4695         6.1083
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 230000
+WRITING COORDINATES TO RESTART FILE AT STEP 230000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 230000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 235000  CPU: 281.467, 0.00115781/step  Wall: 289.668, 0.00161731/step, 106.844 ns/days, 0.119052 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 235000  averaging 140.429 ns/day, 0.00123051 sec/step with standard deviation 0.000414147
+ENERGY:  235000       426.4507      1129.7283      1121.7689        66.3353        -114370.9299      9951.9597         0.0000         0.0000     18617.7627         -83056.9243       302.6663   -101674.6870    -83024.9470       301.8469            104.2441       104.9320    300932.4229        23.6113        23.3311
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 235000
+WRITING COORDINATES TO RESTART FILE AT STEP 235000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 235000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 240000  CPU: 285.755, 0.000857554/step  Wall: 293.993, 0.000865009/step, 199.767 ns/days, 0.0624729 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 240000  averaging 141.304 ns/day, 0.0012229 sec/step with standard deviation 0.0004131
+ENERGY:  240000       443.4193      1187.9665      1128.9059        88.5974        -114005.0908      9716.4248         0.0000         0.0000     18651.8206         -82787.9564       303.2200   -101439.7770    -83017.6825       301.8112             20.1453        19.1618    299712.7090        18.3025        18.0188
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 240000
+WRITING COORDINATES TO RESTART FILE AT STEP 240000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 240000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 245000  CPU: 292.016, 0.00125236/step  Wall: 300.291, 0.00125957/step, 137.189 ns/days, 0.0892197 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 245000  averaging 141.217 ns/day, 0.00122365 sec/step with standard deviation 0.000408808
+ENERGY:  245000       413.4641      1137.9725      1118.2425        70.5859        -114254.9660      9817.1171         0.0000         0.0000     18598.0137         -83099.5703       302.3453   -101697.5840    -83023.7919       301.8342            186.1486       178.5615    299856.7954        30.7843        30.0700
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 245000
+WRITING COORDINATES TO RESTART FILE AT STEP 245000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 245000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 250000  CPU: 298.754, 0.00134744/step  Wall: 307.066, 0.00135499/step, 127.529 ns/days, 0.0940963 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 250000  averaging 140.915 ns/day, 0.00122627 sec/step with standard deviation 0.000405041
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  250000       427.2559      1118.0443      1128.3858        72.2113        -114016.9103      9651.1180         0.0000         0.0000     18386.3551         -83233.5398       298.9044   -101619.8949    -83044.2451       301.7137           -162.4054      -161.5984    300382.3548         8.3844         7.8332
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 250000
+WRITING COORDINATES TO RESTART FILE AT STEP 250000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 250000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 255000  CPU: 306.027, 0.00145475/step  Wall: 314.485, 0.00148373/step, 116.463 ns/days, 0.100976 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 255000  averaging 140.337 ns/day, 0.00123132 sec/step with standard deviation 0.000402588
+ENERGY:  255000       441.4209      1149.2882      1122.2934        78.4464        -113899.8752      9770.6113         0.0000         0.0000     18742.9187         -82594.8964       304.7010   -101337.8151    -83003.7246       301.9890           -200.4385      -201.8105    301254.7804         2.6063         2.1239
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 255000
+WRITING COORDINATES TO RESTART FILE AT STEP 255000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 255000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 260000  CPU: 311.794, 0.00115325/step  Wall: 320.291, 0.00116123/step, 148.808 ns/days, 0.0774154 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 260000  averaging 140.491 ns/day, 0.00122997 sec/step with standard deviation 0.00039874
+ENERGY:  260000       418.4756      1122.2365      1111.3576        72.4393        -114138.3689      9704.3680         0.0000         0.0000     18445.7943         -83263.6977       299.8706   -101709.4920    -83014.3480       301.9158           -128.5173      -125.4993    300256.5181        -0.8879        -1.3443
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 260000
+WRITING COORDINATES TO RESTART FILE AT STEP 260000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 260000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 265000  CPU: 319.248, 0.00149084/step  Wall: 327.798, 0.00150137/step, 115.095 ns/days, 0.0980063 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 265000  averaging 139.908 ns/day, 0.0012351 sec/step with standard deviation 0.000396643
+ENERGY:  265000       403.2171      1054.4307      1148.0868        68.6044        -113954.4905      9699.5246         0.0000         0.0000     18510.7352         -83069.8917       300.9264   -101580.6269    -83024.3146       301.9215             -3.1927        -7.1429    300249.6743         5.9863         5.4189
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 265000
+WRITING COORDINATES TO RESTART FILE AT STEP 265000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 265000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 270000  CPU: 323.738, 0.000897995/step  Wall: 332.32, 0.000904423/step, 191.061 ns/days, 0.0577826 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 270000  averaging 140.605 ns/day, 0.00122897 sec/step with standard deviation 0.000395452
+ENERGY:  270000       425.3978      1121.5411      1084.6699        69.0777        -114218.3629      9960.9798         0.0000         0.0000     18586.4822         -82970.2142       302.1578   -101556.6965    -83030.1666       301.9249            188.5382       192.7288    300247.2487         9.2333         8.9094
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 270000
+WRITING COORDINATES TO RESTART FILE AT STEP 270000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 270000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 275000  CPU: 328.069, 0.000866317/step  Wall: 336.694, 0.000874721/step, 197.549 ns/days, 0.0546701 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 275000  averaging 141.346 ns/day, 0.00122253 sec/step with standard deviation 0.000394674
+ENERGY:  275000       431.0820      1113.9992      1128.8575        70.1078        -114180.9106      9837.2009         0.0000         0.0000     18625.1446         -82974.5187       302.7863   -101599.6632    -83033.0697       301.9788             11.3079        11.8237    300209.4141        11.5715        11.0939
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 275000
+WRITING COORDINATES TO RESTART FILE AT STEP 275000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 275000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 280000  CPU: 332.251, 0.000836246/step  Wall: 340.902, 0.000841634/step, 205.315 ns/days, 0.0514332 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 280000  averaging 142.137 ns/day, 0.00121573 sec/step with standard deviation 0.000394368
+ENERGY:  280000       429.3649      1115.8235      1105.5958        69.8548        -113639.0572      9556.1894         0.0000         0.0000     18596.1582         -82766.0706       302.3151   -101362.2287    -83006.3452       302.1990            -67.2135       -68.8217    299845.7916        13.9975        13.4358
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 280000
+WRITING COORDINATES TO RESTART FILE AT STEP 280000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 280000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 285000  CPU: 336.829, 0.000915699/step  Wall: 345.511, 0.000921938/step, 187.431 ns/days, 0.0550602 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 285000  averaging 142.742 ns/day, 0.00121057 sec/step with standard deviation 0.000392764
+ENERGY:  285000       442.6307      1106.1470      1121.1690        67.0748        -114098.0968      9777.5160         0.0000         0.0000     18720.3093         -82863.2499       304.3334   -101583.5593    -83005.7812       302.2690            -87.1211       -85.3198    300550.1064         2.2300         1.7364
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 285000
+WRITING COORDINATES TO RESTART FILE AT STEP 285000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 285000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 290000  CPU: 344.331, 0.00150043/step  Wall: 353.062, 0.00151018/step, 114.424 ns/days, 0.0880936 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 290000  averaging 142.136 ns/day, 0.00121574 sec/step with standard deviation 0.000391286
+ENERGY:  290000       398.7302      1125.4107      1135.5445        73.5547        -114333.5347     10034.2155         0.0000         0.0000     18586.6545         -82979.4246       302.1606   -101566.0791    -82992.0778       302.3435            279.3798       277.5656    300924.2139        -3.6339        -3.7918
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 290000
+WRITING COORDINATES TO RESTART FILE AT STEP 290000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 290000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 295000  CPU: 349.051, 0.000943953/step  Wall: 357.819, 0.000951333/step, 181.64 ns/days, 0.0541731 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 295000  averaging 142.662 ns/day, 0.00121126 sec/step with standard deviation 0.000389422
+ENERGY:  295000       414.7316      1106.8794      1109.9460        73.3645        -113941.1923      9707.9909         0.0000         0.0000     18624.3478         -82903.9322       302.7734   -101528.2799    -82999.3805       302.3052            114.9961       115.2748    299897.9775         9.5045         9.2461
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 295000
+WRITING COORDINATES TO RESTART FILE AT STEP 295000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 295000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 300000  CPU: 353.21, 0.000831698/step  Wall: 362.007, 0.000837495/step, 206.33 ns/days, 0.0465275 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 300000  averaging 143.399 ns/day, 0.00120503 sec/step with standard deviation 0.000389112
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  300000       400.5496      1142.9789      1083.6140        62.9597        -114216.6477      9817.9541         0.0000         0.0000     18851.2636         -82857.3278       306.4623   -101708.5914    -82986.2810       302.4401            127.2601       125.3037    300087.1455        16.9035        16.2916
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 300000
+WRITING COORDINATES TO RESTART FILE AT STEP 300000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 300000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 305000  CPU: 358.344, 0.00102697/step  Wall: 367.176, 0.00103399/step, 167.12 ns/days, 0.0560076 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 305000  averaging 143.733 ns/day, 0.00120223 sec/step with standard deviation 0.000386476
+ENERGY:  305000       404.0902      1154.8406      1120.8909        74.3561        -113886.2237      9754.0444         0.0000         0.0000     18622.1872         -82755.8144       302.7382   -101378.0016    -82964.7225       302.3671             27.3320        29.7722    300899.6101         3.2388         2.7245
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 305000
+WRITING COORDINATES TO RESTART FILE AT STEP 305000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 305000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 310000  CPU: 362.788, 0.00088865/step  Wall: 371.651, 0.000894993/step, 193.074 ns/days, 0.0472357 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 310000  averaging 144.328 ns/day, 0.00119727 sec/step with standard deviation 0.000385276
+ENERGY:  310000       446.7869      1160.2817      1097.7859        73.1068        -114047.3777      9563.0291         0.0000         0.0000     18851.2817         -82855.1057       306.4626   -101706.3874    -82952.5305       302.6603           -356.1338      -358.4087    300793.7555       -16.9440       -17.4875
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 310000
+WRITING COORDINATES TO RESTART FILE AT STEP 310000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 310000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 315000  CPU: 367.901, 0.00102271/step  Wall: 376.801, 0.00102982/step, 167.796 ns/days, 0.0529213 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 315000  averaging 144.649 ns/day, 0.00119461 sec/step with standard deviation 0.000382738
+ENERGY:  315000       434.3119      1147.4426      1112.3539        71.7199        -114353.0980     10143.7668         0.0000         0.0000     18643.1033         -82800.3995       303.0783   -101443.5029    -82939.6191       302.7120            301.6687       305.8191    299785.8683         0.8703         0.4061
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 315000
+WRITING COORDINATES TO RESTART FILE AT STEP 315000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 315000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 320000  CPU: 372.97, 0.00101376/step  Wall: 381.905, 0.00102082/step, 169.276 ns/days, 0.051041 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 320000  averaging 144.979 ns/day, 0.0011919 sec/step with standard deviation 0.00038031
+ENERGY:  320000       450.2919      1058.0326      1131.1905        79.3833        -114189.1236      9714.7432         0.0000         0.0000     18617.3686         -83138.1135       302.6599   -101755.4821    -82940.6346       302.7006           -119.8673      -120.0850    300024.5747         6.8265         6.5604
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 320000
+WRITING COORDINATES TO RESTART FILE AT STEP 320000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 320000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 325000  CPU: 377.786, 0.000963248/step  Wall: 386.854, 0.000989781/step, 174.584 ns/days, 0.0481143 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 325000  averaging 145.358 ns/day, 0.00118879 sec/step with standard deviation 0.000378159
+ENERGY:  325000       462.8489      1198.3023      1088.0537        69.9219        -114330.4812      9915.0568         0.0000         0.0000     18387.5242         -83208.7734       298.9234   -101596.2976    -82955.0906       302.6015             27.1883        28.7916    299943.0927        15.5683        15.4671
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 325000
+WRITING COORDINATES TO RESTART FILE AT STEP 325000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 325000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 330000  CPU: 387.799, 0.00200263/step  Wall: 396.928, 0.00201499/step, 85.7573 ns/days, 0.0951523 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 330000  averaging 143.844 ns/day, 0.00120131 sec/step with standard deviation 0.000388776
+ENERGY:  330000       446.8527      1136.9422      1114.1311        80.6611        -114219.4747      9832.7769         0.0000         0.0000     18565.7337         -83042.3771       301.8205   -101608.1108    -82961.0899       302.5653           -142.0875      -141.3822    302063.6867         6.0616         5.9833
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 330000
+WRITING COORDINATES TO RESTART FILE AT STEP 330000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 330000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 335000  CPU: 392.3, 0.000900176/step  Wall: 401.462, 0.000906801/step, 190.56 ns/days, 0.0415617 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 335000  averaging 144.372 ns/day, 0.00119691 sec/step with standard deviation 0.000387493
+ENERGY:  335000       422.0700      1122.8607      1137.8179        59.6457        -113827.7925      9795.5092         0.0000         0.0000     18573.3487         -82716.5403       301.9443   -101289.8891    -82944.0707       302.5292            134.1392       132.4840    300398.2662         7.5564         7.3609
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 335000
+WRITING COORDINATES TO RESTART FILE AT STEP 335000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 335000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 340000  CPU: 398.957, 0.00133134/step  Wall: 408.165, 0.00134047/step, 128.91 ns/days, 0.0595766 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 340000  averaging 144.118 ns/day, 0.00119902 sec/step with standard deviation 0.000384984
+ENERGY:  340000       449.3165      1145.8654      1118.8108        75.9183        -113825.9921      9580.4652         0.0000         0.0000     18484.1853         -82971.4306       300.4948   -101455.6159    -82953.2444       302.3929           -345.9329      -341.3510    300735.6237       -10.7475       -10.6647
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 340000
+WRITING COORDINATES TO RESTART FILE AT STEP 340000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 340000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 345000  CPU: 408.721, 0.00195279/step  Wall: 417.991, 0.00196533/step, 87.9241 ns/days, 0.0846184 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 345000  averaging 142.795 ns/day, 0.00121013 sec/step with standard deviation 0.000393121
+ENERGY:  345000       433.2220      1139.1584      1099.9200        74.8232        -113884.2832      9720.1913         0.0000         0.0000     18629.6942         -82787.2742       302.8603   -101416.9683    -82937.6296       302.4187            -29.4479       -31.2409    301215.6427       -21.5274       -21.1548
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 345000
+WRITING COORDINATES TO RESTART FILE AT STEP 345000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 345000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 350000  CPU: 413.174, 0.000890574/step  Wall: 422.487, 0.00089907/step, 192.199 ns/days, 0.0374613 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 350000  averaging 143.321 ns/day, 0.00120568 sec/step with standard deviation 0.000392029
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  350000       439.8318      1129.7031      1086.7152        60.9532        -114305.5587     10027.0270         0.0000         0.0000     18629.8068         -82931.5216       302.8621   -101561.3284    -82922.5287       302.6166             38.3274        38.8447    302492.6307       -11.4907       -11.1327
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 350000
+WRITING COORDINATES TO RESTART FILE AT STEP 350000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 350000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 355000  CPU: 417.818, 0.000928814/step  Wall: 427.164, 0.00093549/step, 184.716 ns/days, 0.0376794 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 355000  averaging 143.775 ns/day, 0.00120188 sec/step with standard deviation 0.000390537
+ENERGY:  355000       412.0697      1156.7105      1118.5735        69.5512        -114215.3164      9891.6456         0.0000         0.0000     18479.4356         -83087.3303       300.4175   -101566.7659    -82947.1504       302.4024            111.0045       111.4958    300466.5328         4.0814         4.5326
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 355000
+WRITING COORDINATES TO RESTART FILE AT STEP 355000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 355000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 360000  CPU: 421.975, 0.000831464/step  Wall: 431.351, 0.000837308/step, 206.376 ns/days, 0.032562 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 360000  averaging 144.383 ns/day, 0.00119681 sec/step with standard deviation 0.00039015
+ENERGY:  360000       439.0438      1115.6837      1104.0047        67.2043        -113690.4819      9439.4825         0.0000         0.0000     18589.6911         -82935.3717       302.2100   -101525.0628    -82930.7341       302.5194           -388.5395      -386.8571    300345.5193        -8.9197        -8.5353
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 360000
+WRITING COORDINATES TO RESTART FILE AT STEP 360000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 360000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 365000  CPU: 427.959, 0.00119678/step  Wall: 437.466, 0.00122311/step, 141.279 ns/days, 0.0458665 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 365000  averaging 144.34 ns/day, 0.00119717 sec/step with standard deviation 0.000387443
+ENERGY:  365000       412.1723      1140.7906      1108.5545        71.7235        -114050.2730      9646.1918         0.0000         0.0000     18796.6169         -82874.2234       305.5739   -101670.8403    -82920.9507       302.7517            -31.2008       -29.4124    300123.8109       -10.3201        -9.6487
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 365000
+WRITING COORDINATES TO RESTART FILE AT STEP 365000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 365000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 370000  CPU: 432.128, 0.0008337/step  Wall: 441.665, 0.00083973/step, 205.78 ns/days, 0.0303236 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 370000  averaging 144.925 ns/day, 0.00119234 sec/step with standard deviation 0.000387018
+ENERGY:  370000       423.3721      1157.9309      1146.9665        75.0710        -114320.8020      9846.8394         0.0000         0.0000     18721.7038         -82948.9183       304.3561   -101670.6221    -82919.8859       302.8616             13.8603        11.6783    301083.7745       -19.0540       -18.7013
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 370000
+WRITING COORDINATES TO RESTART FILE AT STEP 370000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 370000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 375000  CPU: 436.285, 0.000831442/step  Wall: 445.851, 0.000837261/step, 206.387 ns/days, 0.0290716 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 375000  averaging 145.502 ns/day, 0.00118761 sec/step with standard deviation 0.000386574
+ENERGY:  375000       427.7075      1101.5996      1119.3356        70.4874        -113985.3463      9877.5351         0.0000         0.0000     18565.5685         -82823.1126       301.8178   -101388.6811    -82912.3156       302.8132            125.7947       123.8784    301507.9720       -13.3297       -13.0985
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 375000
+WRITING COORDINATES TO RESTART FILE AT STEP 375000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 375000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 380000  CPU: 445.288, 0.00180057/step  Wall: 454.93, 0.00181582/step, 95.1638 ns/days, 0.0605272 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 380000  averaging 144.497 ns/day, 0.00119588 sec/step with standard deviation 0.000390691
+ENERGY:  380000       407.9369      1156.0539      1111.0510        56.8372        -114116.4127      9843.3744         0.0000         0.0000     18517.2535         -83023.9057       301.0323   -101541.1592    -82925.2073       302.7491            102.2758       101.4146    301763.9279        -4.8552        -4.5867
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 380000
+WRITING COORDINATES TO RESTART FILE AT STEP 380000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 380000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 385000  CPU: 449.468, 0.000836109/step  Wall: 459.142, 0.000842316/step, 205.149 ns/days, 0.0269073 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 385000  averaging 145.054 ns/day, 0.00119128 sec/step with standard deviation 0.000390198
+ENERGY:  385000       413.5242      1086.5275      1109.4502        73.9844        -114318.2228      9995.2630         0.0000         0.0000     18603.4156         -83036.0579       302.4331   -101639.4734    -82933.8477       302.6541            271.9734       274.6575    300686.0309        13.0995        13.4121
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 385000
+WRITING COORDINATES TO RESTART FILE AT STEP 385000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 385000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 390000  CPU: 453.93, 0.000892312/step  Wall: 463.635, 0.000898584/step, 192.303 ns/days, 0.0274567 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 390000  averaging 145.512 ns/day, 0.00118753 sec/step with standard deviation 0.00038907
+ENERGY:  390000       444.2728      1097.4607      1093.4094        71.0063        -113645.9318      9531.3033         0.0000         0.0000     18515.2235         -82893.2558       300.9993   -101408.4794    -82929.5393       302.5960           -221.7169      -220.5410    300651.6683       -11.9553       -11.4932
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 390000
+WRITING COORDINATES TO RESTART FILE AT STEP 390000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 390000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 395000  CPU: 458.455, 0.000905124/step  Wall: 468.191, 0.000911177/step, 189.645 ns/days, 0.026576 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 395000  averaging 145.942 ns/day, 0.00118403 sec/step with standard deviation 0.000387817
+ENERGY:  395000       427.3593      1119.0086      1117.5180        72.0173        -114084.0238      9890.4685         0.0000         0.0000     18760.1377         -82697.5144       304.9809   -101457.6521    -82919.2184       302.7064             93.8210        94.3638    298758.8149       -13.0141       -12.5387
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 395000
+WRITING COORDINATES TO RESTART FILE AT STEP 395000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 395000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 400000  CPU: 462.921, 0.000893118/step  Wall: 472.703, 0.000902454/step, 191.478 ns/days, 0.0250682 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 400000  averaging 146.377 ns/day, 0.00118051 sec/step with standard deviation 0.000386638
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  400000       432.7719      1147.9723      1119.7651        71.9519        -114464.9878     10020.3372         0.0000         0.0000     18859.8603         -82812.3292       306.6021   -101672.1894    -82916.9685       302.7134            368.5006       375.8789    298993.7025        -0.9520        -0.0100
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 400000
+WRITING COORDINATES TO RESTART FILE AT STEP 400000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 400000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 405000  CPU: 467.095, 0.000834771/step  Wall: 476.907, 0.000840822/step, 205.513 ns/days, 0.0221884 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 405000  averaging 146.899 ns/day, 0.00117632 sec/step with standard deviation 0.000386064
+ENERGY:  405000       440.7570      1134.6067      1109.7204        78.1937        -114241.3640      9967.4102         0.0000         0.0000     18575.1430         -82935.5330       301.9735   -101510.6760    -82925.9544       302.6751             39.6982        36.8889    300806.3136        -0.3337         0.3459
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 405000
+WRITING COORDINATES TO RESTART FILE AT STEP 405000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 405000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 410000  CPU: 471.449, 0.000870846/step  Wall: 481.29, 0.000876625/step, 197.12 ns/days, 0.0219156 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 410000  averaging 147.357 ns/day, 0.00117266 sec/step with standard deviation 0.000385098
+ENERGY:  410000       439.1316      1098.7333      1127.2268        66.7177        -114309.9774      9888.7176         0.0000         0.0000     18564.9603         -83124.4900       301.8079   -101689.4503    -82939.4236       302.4424             87.9375        87.9295    300823.7774        21.8698        22.6628
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 410000
+WRITING COORDINATES TO RESTART FILE AT STEP 410000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 410000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 415000  CPU: 476.013, 0.000912746/step  Wall: 485.895, 0.000920919/step, 187.639 ns/days, 0.0217439 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 415000  averaging 147.739 ns/day, 0.00116963 sec/step with standard deviation 0.000383739
+ENERGY:  415000       474.1616      1152.9819      1125.7766        67.2852        -114386.5091      9978.6853         0.0000         0.0000     18629.5847         -82958.0338       302.8585   -101587.6185    -82947.3053       302.4314            144.8137       140.2492    299428.7105        14.0271        14.3843
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 415000
+WRITING COORDINATES TO RESTART FILE AT STEP 415000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 415000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 420000  CPU: 480.19, 0.000835356/step  Wall: 490.101, 0.000841269/step, 205.404 ns/days, 0.0186949 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 420000  averaging 148.234 ns/day, 0.00116572 sec/step with standard deviation 0.000383099
+ENERGY:  420000       419.6919      1096.8076      1112.2148        66.3376        -113814.5954      9662.4473         0.0000         0.0000     18573.1484         -82883.9478       301.9410   -101457.0962    -82934.5971       302.3955           -138.3646      -133.1969    301213.3651        13.1022        13.7287
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 420000
+WRITING COORDINATES TO RESTART FILE AT STEP 420000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 420000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 425000  CPU: 485.068, 0.00097573/step  Wall: 495.014, 0.000982528/step, 175.873 ns/days, 0.0204693 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 425000  averaging 148.509 ns/day, 0.00116357 sec/step with standard deviation 0.00038133
+ENERGY:  425000       410.9767      1137.5427      1108.2743        63.6625        -113835.6956      9653.8386         0.0000         0.0000     18671.4492         -82789.9515       303.5391   -101461.4007    -82913.6560       302.6262            -37.0209       -35.2611    300417.2259         9.8918        10.5260
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 425000
+WRITING COORDINATES TO RESTART FILE AT STEP 425000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 425000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 430000  CPU: 489.316, 0.000849526/step  Wall: 499.29, 0.000855229/step, 202.051 ns/days, 0.0166295 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 430000  averaging 148.968 ns/day, 0.00115998 sec/step with standard deviation 0.000380535
+ENERGY:  430000       437.7076      1126.4135      1100.6186        66.8154        -113885.3516      9715.4783         0.0000         0.0000     18555.1351         -82883.1831       301.6482   -101438.3183    -82905.6963       302.6176           -185.1185      -182.8102    301173.4144         7.7402         8.4547
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 430000
+WRITING COORDINATES TO RESTART FILE AT STEP 430000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 430000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 435000  CPU: 496.171, 0.00137096/step  Wall: 506.189, 0.00137981/step, 125.234 ns/days, 0.0249133 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 435000  averaging 148.644 ns/day, 0.00116251 sec/step with standard deviation 0.00037905
+ENERGY:  435000       436.7981      1161.0935      1141.2962        72.1813        -114464.2382     10160.6053         0.0000         0.0000     18513.7534         -82978.5104       300.9754   -101492.2638    -82918.7948       302.5692            290.5854       287.3119    299572.1060        15.5625        16.1960
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 435000
+WRITING COORDINATES TO RESTART FILE AT STEP 435000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 435000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 440000  CPU: 500.901, 0.000946045/step  Wall: 510.997, 0.000961671/step, 179.687 ns/days, 0.0160279 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 440000  averaging 148.936 ns/day, 0.00116023 sec/step with standard deviation 0.000377473
+ENERGY:  440000       418.9719      1091.4917      1130.0136        71.5595        -114164.8609      9776.4818         0.0000         0.0000     18626.4833         -83049.8592       302.8081   -101676.3425    -82922.7162       302.6849            -71.5448       -70.6214    300954.3561        29.2819        29.7325
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 440000
+WRITING COORDINATES TO RESTART FILE AT STEP 440000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 440000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 445000  CPU: 505.15, 0.000849806/step  Wall: 515.277, 0.000855838/step, 201.907 ns/days, 0.0130753 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 445000  averaging 149.377 ns/day, 0.00115681 sec/step with standard deviation 0.000376706
+ENERGY:  445000       454.9677      1107.6523      1106.3402        73.4377        -114363.1996      9882.7582         0.0000         0.0000     18684.8759         -83053.1675       303.7574   -101738.0434    -82936.0109       302.7297             50.2474        45.4002    299438.7024        33.2667        33.5646
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 445000
+WRITING COORDINATES TO RESTART FILE AT STEP 445000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 445000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 450000  CPU: 509.76, 0.000921973/step  Wall: 519.918, 0.000928219/step, 186.163 ns/days, 0.0128919 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 450000  averaging 149.705 ns/day, 0.00115427 sec/step with standard deviation 0.000375358
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  450000       430.4938      1124.0630      1098.4276        71.8327        -114169.7617      9799.7777         0.0000         0.0000     18683.1786         -82961.9884       303.7298   -101645.1670    -82937.5342       302.7731           -150.5440      -151.7426    300023.4150        23.8231        24.0352
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 450000
+WRITING COORDINATES TO RESTART FILE AT STEP 450000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 450000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 455000  CPU: 516.912, 0.00143044/step  Wall: 527.116, 0.00143968/step, 120.027 ns/days, 0.017996 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 455000  averaging 149.3 ns/day, 0.0011574 sec/step with standard deviation 0.000374464
+ENERGY:  455000       410.6822      1156.8034      1100.5781        69.5240        -114288.5753      9847.0375         0.0000         0.0000     18657.3009         -83046.6492       303.3091   -101703.9501    -82935.5001       302.9177            -85.1597       -84.3239    301283.2266        14.0149        14.2442
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 455000
+WRITING COORDINATES TO RESTART FILE AT STEP 455000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 455000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 460000  CPU: 522.315, 0.00108069/step  Wall: 532.555, 0.00108773/step, 158.863 ns/days, 0.0120859 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 460000  averaging 149.398 ns/day, 0.00115665 sec/step with standard deviation 0.000372472
+ENERGY:  460000       416.8182      1092.2883      1127.9508        67.7399        -113814.9773      9594.1890         0.0000         0.0000     18607.8679         -82908.1232       302.5055   -101515.9912    -82934.1377       302.9324           -106.4567      -103.8470    300798.0448        28.1191        28.3947
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 460000
+WRITING COORDINATES TO RESTART FILE AT STEP 460000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 460000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 465000  CPU: 528.992, 0.00133536/step  Wall: 539.297, 0.00134848/step, 128.144 ns/days, 0.0131103 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 465000  averaging 149.132 ns/day, 0.00115871 sec/step with standard deviation 0.000370976
+ENERGY:  465000       457.8348      1129.4621      1118.3354        74.5220        -114012.6030      9899.0930         0.0000         0.0000     18610.2566         -82723.0992       302.5443   -101333.3558    -82926.5815       302.7810             12.5658        13.4005    301084.4941        30.3074        30.5354
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 465000
+WRITING COORDINATES TO RESTART FILE AT STEP 465000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 465000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 470000  CPU: 534.523, 0.00110621/step  Wall: 544.866, 0.00111375/step, 155.152 ns/days, 0.00928123 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 470000  averaging 149.193 ns/day, 0.00115823 sec/step with standard deviation 0.000369005
+ENERGY:  470000       433.6023      1134.4741      1151.4278        75.1997        -113893.8404      9643.4980         0.0000         0.0000     18621.7802         -82833.8584       302.7316   -101455.6385    -82920.8285       302.6997           -198.5418      -198.4234    301047.7296        19.6873        20.0303
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 470000
+WRITING COORDINATES TO RESTART FILE AT STEP 470000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 470000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 475000  CPU: 543.066, 0.00170856/step  Wall: 553.469, 0.00172058/step, 100.431 ns/days, 0.0119485 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 475000  averaging 148.435 ns/day, 0.00116415 sec/step with standard deviation 0.000371544
+ENERGY:  475000       417.3376      1120.6406      1134.3706        72.3507        -114306.3885      9766.2805         0.0000         0.0000     18420.1176         -83375.2909       299.4532   -101795.4085    -82948.4374       302.5815            -36.2596       -34.2736    300976.3293        11.5846        12.1227
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 475000
+WRITING COORDINATES TO RESTART FILE AT STEP 475000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 475000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 480000  CPU: 548.602, 0.0011071/step  Wall: 559.041, 0.00111447/step, 155.051 ns/days, 0.00619153 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 480000  averaging 148.501 ns/day, 0.00116363 sec/step with standard deviation 0.000369618
+ENERGY:  480000       397.1756      1142.5628      1119.6577        65.4220        -114384.0875      9989.7771         0.0000         0.0000     18413.8042         -83255.6882       299.3506   -101669.4924    -82960.0266       302.4974            152.1351       150.7201    301136.5872        14.0775        14.5880
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 480000
+WRITING COORDINATES TO RESTART FILE AT STEP 480000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 480000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 485000  CPU: 553.03, 0.000885622/step  Wall: 563.56, 0.000903827/step, 191.187 ns/days, 0.00376594 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 485000  averaging 148.843 ns/day, 0.00116095 sec/step with standard deviation 0.000368633
+ENERGY:  485000       447.2270      1152.9684      1113.2569        77.9058        -114166.4915      9807.0794         0.0000         0.0000     18554.0855         -83013.9685       301.6311   -101568.0540    -82958.9221       302.4573            -26.5822       -26.4151    301622.9103        -0.8502        -0.4656
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 485000
+WRITING COORDINATES TO RESTART FILE AT STEP 485000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 485000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 490000  CPU: 558.022, 0.000998485/step  Wall: 568.653, 0.00101861/step, 169.643 ns/days, 0.00282947 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 490000  averaging 149.03 ns/day, 0.0011595 sec/step with standard deviation 0.00036701
+ENERGY:  490000       418.4759      1087.2946      1131.6085        71.5518        -114157.8361      9706.5894         0.0000         0.0000     18555.8523         -83186.4636       301.6598   -101742.3159    -82973.5825       302.4903            -10.7259        -3.4046    300384.0411         9.6993        10.3912
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 490000
+WRITING COORDINATES TO RESTART FILE AT STEP 490000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 490000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 495000  CPU: 563.62, 0.00111952/step  Wall: 574.288, 0.00112699/step, 153.328 ns/days, 0.00156527 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 495000  averaging 149.072 ns/day, 0.00115917 sec/step with standard deviation 0.000365147
+ENERGY:  495000       418.9998      1115.8435      1099.3747        67.4651        -114126.8662      9673.1365         0.0000         0.0000     18855.0612         -82896.9854       306.5240   -101752.0466    -82983.5560       302.5675            -19.0271       -18.5209    299941.6184         4.0569         4.7469
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 495000
+WRITING COORDINATES TO RESTART FILE AT STEP 495000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 495000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 500000  CPU: 570.478, 0.00137174/step  Wall: 581.192, 0.00138068/step, 125.156 ns/days, 0 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 500000  averaging 148.787 ns/day, 0.00116139 sec/step with standard deviation 0.000363973
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  500000       434.0442      1162.8109      1122.5153        74.8773        -113934.3594      9603.6608         0.0000         0.0000     18632.3152         -82904.1359       302.9029   -101536.4510    -82988.1464       302.3825           -176.5047      -173.2875    300433.1638       -23.1934       -22.7114
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 500000
+WRITING COORDINATES TO RESTART FILE AT STEP 500000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 500000
+FINISHED WRITING RESTART VELOCITIES
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 500000
+WRITING COORDINATES TO OUTPUT FILE AT STEP 500000
+WRITING VELOCITIES TO OUTPUT FILE AT STEP 500000
+====================================================
+
+WallClock: 583.001709  CPUTime: 570.128296  Memory: 0.000000 MB
+[Partition 0][Node 0] End of program
