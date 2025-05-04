@@ -107,7 +107,7 @@ def main():
             "Date and Time Job submitted": job_log_data.get("Job Submitted", None),
             "Date and Time Job Ran": job_log_data.get("Job Started", None),
             "Cluster Name": job_log_data.get("Cluster Name", None),
-            "Requested Node Name": job_log_data.get("Node List", None),
+            "Requested Node Name": job_log_data.get("Node Name List", None),
             "Request Number of GPUs": job_log_data.get("Requested number of GPUs", None),
             "GPU type": job_log_data.get("Requested GPU Type", None),
             "GPU ID": job_log_data.get("GPU IDs", None),
