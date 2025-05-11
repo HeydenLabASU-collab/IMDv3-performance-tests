@@ -1,14 +1,25 @@
 # Ignore bin and output files
 bin/
-output/
 *.err
 *.out
+*.DS_Store
 
 # Don't ignore example files
 !**/example-*/
 !**/example-*/**
 
-# GROMACS
-**/imdv3-hcho96/
-!GROMACS/output/md.log
-GROMACS/output/*
+# GROMACS output files
+GROMACS/output/**
+!**/GROMACS/output/**/*.log
+!**/GROMACS/output/**/*.mdp
+!**/GROMACS/output/**/job_info.log
+
+# LAMMPS output files
+LAMMPS/output/
+LAMMPS/output/**
+**/LAMMPS/output/**
+
+# NAMD output files
+NAMD/output/
+NAMD/output/**
+**/NAMD/output/**
