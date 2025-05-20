@@ -35,29 +35,36 @@ Columns for the data frame are as follows
 2. Date and Time Job Ran
 3. Date and Time Job Ended
 4. Cluster Name
-5. Requested Node Name
-6. Request Number of GPUs
-7. GPU type
-8. GPU ID
-9. Requested Number of CPUs
-10. CPU ID list
-11. Type of Run - equil, prod
-12. Type of Prod - N/A, vanilla, imdv3, imdv3+filei/o, imdv3+streaming
-13. Purpose of Run - optimization, performance
-14. Number of GPUs used
-15. Number of CPUs used
-16. Frequency of *.out file I/O
-17. Frequency of File I/O
-    a. position freq
-    b. velocity freq
-    c. force freq
-    d. box dimensions freq
-18. Frequency of streaming I/O
-19. Time Step (ns)
-20. Number of Steps
-21. Total time of run
-22. Average performance (ns/day)
-23. Standard deviation of performance (if provided)
+5. Node Name list
+6. Number of GPUs requested
+7. GPU type requested
+8. Number of CPUs requested
+9. CPU ID list
+10. Type of Prod - N/A, vanilla, imdv3, imdv3+filei/o, imdv3+streaming
+11. Purpose of Run - optimization, performance
+12. Type of Run - equil, prod
+13. Number of GPUs used
+14. GPU type used
+15. GPU ID used
+16. Number of CPUs used
+17. CPU IDs used
+18. Frequency of *.out file I/O
+19. Frequency of File I/O box dimensions - N/A if not outputting
+20. Frequency of File I/O positions - N/A if not outputting
+21. Frequency of File I/O velocities - N/A if not outputting
+22. Frequency of File I/O forces - N/A if not outputting
+23. Frequency of streaming I/O time - N/A if not streaming
+24. Frequency of streaming I/O energies - N/A if not streaming
+25. Frequency of streaming I/O box dimensions - N/A if not streaming
+26. Frequency of streaming I/O positions - N/A if not streaming
+27. Frequency of streaming I/O velocities - N/A if not streaming
+28. Frequency of streaming I/O forces - N/A if not streaming
+29. Positions wrapped - (yes/no - 1/0) N/A if not outputting
+30. Integration Time Step (ps)
+31. Number of Steps
+32. Total time of run
+33. Average performance (ns/day)
+34. Standard deviation of performance (if provided)
 
 The data for this dataframe can be extracted from log files i.e. `*.out` files inside the output folders. The directory structure for these is as follows: 
 
