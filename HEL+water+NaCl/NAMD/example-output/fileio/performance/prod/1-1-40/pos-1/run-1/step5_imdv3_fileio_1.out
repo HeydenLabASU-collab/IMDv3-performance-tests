@@ -1,0 +1,2285 @@
+Charm++: standalone mode (not using charmrun)
+Charm++> Running in Multicore mode: 40 threads (PEs)
+Charm++> Using recursive bisection (scheme 3) for topology aware partitions
+Converse/Charm++ Commit ID: v80000
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 1 hosts (2 sockets x 24 cores x 1 PUs = 48-way SMP)
+Charm++> cpu topology info is gathered in 0.015 seconds.
+Info: Built with CUDA version 11080
+Pe 0 physical rank 0 will use CUDA device of pe 32
+Pe 12 physical rank 12 will use CUDA device of pe 32
+Pe 37 physical rank 37 will use CUDA device of pe 32
+Pe 24 physical rank 24 will use CUDA device of pe 32
+Pe 14 physical rank 14 will use CUDA device of pe 32
+Pe 15 physical rank 15 will use CUDA device of pe 32
+Pe 38 physical rank 38 will use CUDA device of pe 32
+Pe 34 physical rank 34 will use CUDA device of pe 32
+Pe 9 physical rank 9 will use CUDA device of pe 32
+Pe 27 physical rank 27 will use CUDA device of pe 32
+Pe 11 physical rank 11 will use CUDA device of pe 32
+Pe 33 physical rank 33 will use CUDA device of pe 32
+Pe 6 physical rank 6 will use CUDA device of pe 32
+Pe 28 physical rank 28 will use CUDA device of pe 32
+Pe 7 physical rank 7 will use CUDA device of pe 32
+Pe 20 physical rank 20 will use CUDA device of pe 32
+Pe 29 physical rank 29 will use CUDA device of pe 32
+Pe 1 physical rank 1 will use CUDA device of pe 32
+Pe 10 physical rank 10 will use CUDA device of pe 32
+Pe 3 physical rank 3 will use CUDA device of pe 32
+Pe 23 physical rank 23 will use CUDA device of pe 32
+Pe 2 physical rank 2 will use CUDA device of pe 32
+Pe 17 physical rank 17 will use CUDA device of pe 32
+Pe 21 physical rank 21 will use CUDA device of pe 32
+Pe 31 physical rank 31 will use CUDA device of pe 32
+Pe 13 physical rank 13 will use CUDA device of pe 32
+Pe 19 physical rank 19 will use CUDA device of pe 32
+Pe 22 physical rank 22 will use CUDA device of pe 32
+Pe 5 physical rank 5 will use CUDA device of pe 32
+Pe 32 physical rank 32 binding to CUDA device 0 on sg008: 'NVIDIA A100-SXM4-80GB'  Mem: 81155MB  Rev: 8.0  PCI: 0:1:0
+Pe 39 physical rank 39 will use CUDA device of pe 32
+Pe 8 physical rank 8 will use CUDA device of pe 32
+Pe 18 physical rank 18 will use CUDA device of pe 32
+Pe 35 physical rank 35 will use CUDA device of pe 32
+Pe 36 physical rank 36 will use CUDA device of pe 32
+Pe 4 physical rank 4 will use CUDA device of pe 32
+Pe 30 physical rank 30 will use CUDA device of pe 32
+Pe 26 physical rank 26 will use CUDA device of pe 32
+Pe 16 physical rank 16 will use CUDA device of pe 32
+Pe 25 physical rank 25 will use CUDA device of pe 32
+CharmLB> Load balancing instrumentation for communication is off.
+Info: NAMD 3.1alpha2 for Linux-x86_64-multicore-CUDA
+Info: 
+Info: Please visit http://www.ks.uiuc.edu/Research/namd/
+Info: for updates, documentation, and support information.
+Info: 
+Info: Please cite Phillips et al., J. Chem. Phys. 153:044130 (2020) doi:10.1063/5.0014475
+Info: in all publications reporting results obtained with NAMD.
+Info: 
+Info: Based on Charm++/Converse 80000 for multicore-linux-x86_64
+Info: Built Fri Dec 13 00:05:25 MST 2024 by athiru12 on sg031
+Info: 1 NAMD  3.1alpha2  Linux-x86_64-multicore-CUDA  40    sg008  athiru12
+Info: Running on 40 processors, 1 nodes, 1 physical nodes.
+Info: CPU topology information available.
+Info: Charm++/Converse parallel runtime startup completed at 1.13939 s
+CkLoopLib is used in SMP with simple dynamic scheduling (converse-level notification)
+Info: 0 MB of memory in use based on /proc/self/stat
+Info: Configuration file is input/step5_imdv3_fileio_run.inp
+Info: Changed directory to input
+TCL: Suspending until startup complete.
+Warning: Option "1-4scaling" has been deprecated. Instead use "oneFourScaling".
+Warning: Option "CUDASOAintegrate" has been deprecated. Instead use "GPUresident".
+Info: EXTENDED SYSTEM FILE   ../output/step4_equilibration.xsc
+Info: Tuning parameters to improve GPU-resident performance
+Info: Setting margin to 4
+Warning: The Langevin gamma parameters differ over the particles,
+Warning: requiring extra work per step to constrain rigid bonds.
+Info: Enabling PMEOffload because PMEInterpOrder > 4.
+Info: Running with GPU-resident mode
+Warning: Always using force tables for GPU nonbonded kernel due to unsupported config parameters.
+Info: SIMULATION PARAMETERS:
+Info: TIMESTEP               2
+Info: NUMBER OF STEPS        500000
+Info: STEPS PER CYCLE        20
+Info: PERIODIC CELL BASIS 1  69 0 0
+Info: PERIODIC CELL BASIS 2  0 69 0
+Info: PERIODIC CELL BASIS 3  0 0 69
+Info: PERIODIC CELL CENTER   0 0 0
+Info: WRAPPING WATERS AROUND PERIODIC BOUNDARIES ON OUTPUT.
+Info: WRAPPING ALL CLUSTERS AROUND PERIODIC BOUNDARIES ON OUTPUT.
+Info: LOAD BALANCER  Centralized
+Info: LOAD BALANCING STRATEGY  New Load Balancers -- DEFAULT
+Info: LDB PERIOD             4000 steps
+Info: FIRST LDB TIMESTEP     100
+Info: LAST LDB TIMESTEP     -1
+Info: LDB BACKGROUND SCALING 1
+Info: HOM BACKGROUND SCALING 1
+Info: PME BACKGROUND SCALING 1
+Info: MIN ATOMS PER PATCH    40
+Info: EMPTY PATCH LOAD       40 ATOMS
+Info: VELOCITY FILE          ../output/step4_equilibration.vel
+Info: CENTER OF MASS MOVING INITIALLY? NO
+Info: DIELECTRIC             1
+Info: EXCLUDE                SCALED ONE-FOUR
+Info: 1-4 ELECTROSTATICS SCALED BY 1
+Info: MODIFIED 1-4 VDW PARAMETERS WILL BE USED
+Info: DCD FILENAME           ../output/run-1/step5_imdv3_fileio_1.dcd
+Info: DCD FREQUENCY          500
+Info: DCD FIRST STEP         500
+Info: DCD FILE WILL CONTAIN UNIT CELL DATA
+Info: NO EXTENDED SYSTEM TRAJECTORY OUTPUT
+Info: NO VELOCITY DCD OUTPUT
+Info: NO FORCE DCD OUTPUT
+Info: OUTPUT FILENAME        ../output/run-1/step5_imdv3_fileio_1
+Info: BINARY OUTPUT FILES WILL BE USED
+Info: RESTART FILENAME       ../output/run-1/step5_imdv3_fileio_1.restart
+Info: RESTART FREQUENCY      5000
+Info: BINARY RESTART FILES WILL BE USED
+Info: SWITCHING ACTIVE
+Info: VDW FORCE SWITCHING ACTIVE
+Info: SWITCHING ON           10
+Info: SWITCHING OFF          12
+Info: PAIRLIST DISTANCE      16
+Info: PAIRLIST SHRINK RATE   0.01
+Info: PAIRLIST GROW RATE     0.01
+Info: PAIRLIST TRIGGER       0.3
+Info: PAIRLISTS PER CYCLE    2
+Info: PAIRLISTS ENABLED
+Info: MARGIN                 4
+Info: HYDROGEN GROUP CUTOFF  2.5
+Info: PATCH DIMENSION        22.5
+Info: ENERGY OUTPUT STEPS    5000
+Info: ENERGY EVALUATION STEPS    5000
+Info: OUTPUT ENERGY PRECISION 4
+Info: CROSSTERM ENERGY INCLUDED IN DIHEDRAL
+Info: TIMING OUTPUT STEPS    5000
+Info: LANGEVIN DYNAMICS ACTIVE
+Info: LANGEVIN TEMPERATURE   303.15
+Info: LANGEVIN USING BBK INTEGRATOR
+Info: LANGEVIN DAMPING COEFFICIENT IS 1 INVERSE PS
+Info: LANGEVIN DYNAMICS NOT APPLIED TO HYDROGENS
+Info: LANGEVIN PISTON PRESSURE CONTROL ACTIVE
+Info:        TARGET PRESSURE IS 1.01325 BAR
+Info:     OSCILLATION PERIOD IS 50 FS
+Info:             DECAY TIME IS 25 FS
+Info:     PISTON TEMPERATURE IS 303.15 K
+Info:       PRESSURE CONTROL IS GROUP-BASED
+Info:    INITIAL STRAIN RATE IS 0 0 0
+Info:       CELL FLUCTUATION IS ISOTROPIC
+Info: PARTICLE MESH EWALD (PME) ACTIVE
+Info: PME TOLERANCE               1e-06
+Info: PME EWALD COEFFICIENT       0.257952
+Info: PME INTERPOLATION ORDER     6
+Info: PME GRID DIMENSIONS         72 72 72
+Info: PME MAXIMUM GRID SPACING    1
+Info: PME RECIPROCAL SUM OFFLOADED TO GPU
+Info: PME CALCULATION WILL BE PERFORMED ON GPU
+Info: FULL ELECTROSTATIC EVALUATION FREQUENCY      1
+Info: USING VERLET I (r-RESPA) MTS SCHEME.
+Info: C1 SPLITTING OF LONG RANGE ELECTROSTATICS
+Info: PLACING ATOMS IN PATCHES BY HYDROGEN GROUPS
+Info: RIGID BONDS TO HYDROGEN : ALL
+Info:         ERROR TOLERANCE : 1e-08
+Info:          MAX ITERATIONS : 100
+Info: RIGID WATER USING SETTLE ALGORITHM
+Info: RANDOM NUMBER SEED     1742484121
+Info: USE HYDROGEN BONDS?    NO
+Info: COORDINATE PDB         step3_input.pdb
+Info: STRUCTURE FILE         step3_input.psf
+Info: PARAMETER file: CHARMM format! 
+Info: PARAMETERS             toppar/par_all36m_prot.prm
+Info: PARAMETERS             toppar/par_all36_na.prm
+Info: PARAMETERS             toppar/par_all36_carb.prm
+Info: PARAMETERS             toppar/par_all36_lipid.prm
+Info: PARAMETERS             toppar/par_all36_cgenff.prm
+Info: PARAMETERS             toppar/par_interface.prm
+Info: PARAMETERS             toppar/toppar_all36_moreions.str
+Info: PARAMETERS             toppar/toppar_all36_nano_lig.str
+Info: PARAMETERS             toppar/toppar_all36_nano_lig_patch.str
+Info: PARAMETERS             toppar/toppar_all36_synthetic_polymer.str
+Info: PARAMETERS             toppar/toppar_all36_synthetic_polymer_patch.str
+Info: PARAMETERS             toppar/toppar_all36_polymer_solvent.str
+Info: PARAMETERS             toppar/toppar_water_ions.str
+Info: PARAMETERS             toppar/toppar_dum_noble_gases.str
+Info: PARAMETERS             toppar/toppar_ions_won.str
+Info: PARAMETERS             toppar/cam.str
+Info: PARAMETERS             toppar/toppar_all36_prot_arg0.str
+Info: PARAMETERS             toppar/toppar_all36_prot_c36m_d_aminoacids.str
+Info: PARAMETERS             toppar/toppar_all36_prot_fluoro_alkanes.str
+Info: PARAMETERS             toppar/toppar_all36_prot_heme.str
+Info: PARAMETERS             toppar/toppar_all36_prot_na_combined.str
+Info: PARAMETERS             toppar/toppar_all36_prot_retinol.str
+Info: PARAMETERS             toppar/toppar_all36_prot_model.str
+Info: PARAMETERS             toppar/toppar_all36_prot_modify_res.str
+Info: PARAMETERS             toppar/toppar_all36_na_nad_ppi.str
+Info: PARAMETERS             toppar/toppar_all36_na_rna_modified.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_sphingo.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_archaeal.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_bacterial.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_cardiolipin.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_cholesterol.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_dag.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_inositol.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_lnp.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_lps.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_mycobacterial.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_miscellaneous.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_model.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_prot.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_tag.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_yeast.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_hmmm.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_detergent.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_ether.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_oxidized.str
+Info: PARAMETERS             toppar/toppar_all36_carb_glycolipid.str
+Info: PARAMETERS             toppar/toppar_all36_carb_glycopeptide.str
+Info: PARAMETERS             toppar/toppar_all36_carb_imlab.str
+Info: PARAMETERS             toppar/toppar_all36_label_spin.str
+Info: PARAMETERS             toppar/toppar_all36_label_fluorophore.str
+Info: USING ARITHMETIC MEAN TO COMBINE L-J SIGMA PARAMETERS
+Info: BINARY COORDINATES     ../output/step4_equilibration.coor
+Warning: SKIPPING PART OF PARAMETER FILE AFTER RETURN STATEMENT
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR HAL1-CTO1-C-NHL
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=0  n=1  delta=0
+INCREASING MULTIPLICITY TO: 2
+  k=0  n=3  delta=0
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR HAL1-CTO1-C-O
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=0  n=1  delta=0
+INCREASING MULTIPLICITY TO: 2
+  k=0  n=2  delta=3.14159
+Warning: SKIPPING PART OF PARAMETER FILE AFTER RETURN STATEMENT
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR CTL2-CG2O5-CTL1-CTL3
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=0.75  n=1  delta=0
+  k=0.18  n=2  delta=3.14159
+INCREASING MULTIPLICITY TO: 3
+  k=0.065  n=3  delta=0
+
+Warning: DUPLICATE BOND ENTRY FOR CEL1-CL
+PREVIOUS VALUES  k=440  x0=1.489
+   USING VALUES  k=300  x0=1.48
+Info: SUMMARY OF PARAMETERS:
+Info: 1988 BONDS
+Info: 6776 ANGLES
+Info: 19939 DIHEDRAL
+Info: 430 IMPROPER
+Info: 28 CROSSTERM
+Info: 751 VDW
+Info: 122 VDW_PAIRS
+Info: 0 NBTHOLE_PAIRS
+Warning: Ignored 9467 bonds with zero force constants.
+Warning: Will get H-H distance in rigid H2O from H-O-H angle.
+Info: TIME FOR READING PSF FILE: 0.0748358
+Info: Reading pdb file step3_input.pdb
+Info: TIME FOR READING PDB FILE: 0.0376246
+Info: 
+Info: ****************************
+Info: STRUCTURE SUMMARY:
+Info: 30423 ATOMS
+Info: 20918 BONDS
+Info: 13014 ANGLES
+Info: 5187 DIHEDRALS
+Info: 373 IMPROPERS
+Info: 127 CROSSTERMS
+Info: 0 EXCLUSIONS
+Info: 29360 RIGID BONDS
+Info: 61909 DEGREES OF FREEDOM
+Info: 10530 HYDROGEN GROUPS
+Info: 4 ATOMS IN LARGEST HYDROGEN GROUP
+Info: 10530 MIGRATION GROUPS
+Info: 4 ATOMS IN LARGEST MIGRATION GROUP
+Info: TOTAL MASS = 186727 amu
+Info: TOTAL CHARGE = 1.31875e-06 e
+Info: MASS DENSITY = 0.943883 g/cm^3
+Info: ATOM DENSITY = 0.0926093 atoms/A^3
+Info: *****************************
+Info: Reading from binary file ../output/step4_equilibration.coor
+Info: 
+Info: Entering startup at 1.85459 s, 0 MB of memory in use
+Info: Startup phase 0 took 0.000368232 s, 0 MB of memory in use
+Info: ADDED 39038 IMPLICIT EXCLUSIONS
+Info: Startup phase 1 took 0.00630792 s, 0 MB of memory in use
+Info: NONBONDED TABLE R-SQUARED SPACING: 0.0625
+Info: NONBONDED TABLE SIZE: 769 POINTS
+Info: INCONSISTENCY IN FAST TABLE ENERGY VS FORCE: 0.000325096 AT 11.9556
+Info: INCONSISTENCY IN SCOR TABLE ENERGY VS FORCE: 0.000324844 AT 11.9556
+Info: INCONSISTENCY IN VDWA TABLE ENERGY VS FORCE: 0.0040507 AT 0.251946
+Info: INCONSISTENCY IN VDWB TABLE ENERGY VS FORCE: 0.00150189 AT 0.251946
+Info: Startup phase 2 took 0.0119131 s, 0 MB of memory in use
+Info: Startup phase 3 took 0.000344098 s, 0 MB of memory in use
+Info: Startup phase 4 took 0.0014115 s, 0 MB of memory in use
+Info: Startup phase 5 took 0.000311436 s, 0 MB of memory in use
+Info: PATCH GRID IS 6 (PERIODIC) BY 3 (PERIODIC) BY 3 (PERIODIC)
+Info: PATCH GRID IS 2-AWAY BY 1-AWAY BY 1-AWAY
+Info: Reading from binary file ../output/step4_equilibration.vel
+Info: REMOVING COM VELOCITY 0.0543542 0.0172814 -0.0364197
+Info: LARGEST PATCH (27) HAS 687 ATOMS
+Info: TORUS A SIZE 1 USING 0
+Info: TORUS B SIZE 1 USING 0
+Info: TORUS C SIZE 1 USING 0
+Info: TORUS MINIMAL MESH SIZE IS 1 BY 1 BY 1
+Info: Placed 100% of base nodes on same physical node as patch
+Info: Startup phase 6 took 0.0340537 s, 0 MB of memory in use
+Info: Use 3D box decompostion in PME FFT.
+Info: PME using 1 x 1 x 1 pencil grid for FFT and reciprocal sum.
+Info: Startup phase 7 took 0.000801347 s, 0 MB of memory in use
+Info: Updated CUDA force table with 4096 elements.
+Info: Updated CUDA LJ table with 751 x 751 elements.
+Info: Startup phase 8 took 0.0115549 s, 0 MB of memory in use
+Info: Startup phase 9 took 0.0002712 s, 0 MB of memory in use
+Info: Startup phase 10 took 0.000241915 s, 0 MB of memory in use
+Info: Startup phase 11 took 0.00962758 s, 0 MB of memory in use
+LDB: Central LB being created...
+Info: Startup phase 12 took 0.00274069 s, 0 MB of memory in use
+Info: CREATING 1940 COMPUTE OBJECTS
+Info: Found 268 unique exclusion lists needing 4316 bytes
+Info: useSync: 0 useProxySync: 0
+Info: Startup phase 13 took 0.0646909 s, 0 MB of memory in use
+Info: Startup phase 14 took 0.000262453 s, 0 MB of memory in use
+Info: Startup phase 15 took 4.7219e-05 s, 0 MB of memory in use
+Info: Finished startup at 1.99954 s, 0 MB of memory in use
+
+TCL: Original numsteps 500000 will be ignored.
+TCL: Running for 500000 steps
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:       0       426.8294      1128.0107      1123.2545        67.1486        -111741.6312      9345.8415         0.0000         0.0000     18672.7672         -80977.7792       303.5605    -99650.5464    -80977.7792       303.5605          -1076.2704     -1073.1308    328509.0000     -1076.2704     -1073.1308
+
+Info: Initial time: 40 CPUs 0.00095505 s/step 180.933 ns/day 0 MB memory
+Info: Initial time: 40 CPUs 0.000923613 s/step 187.091 ns/day 0 MB memory
+Info: Initial time: 40 CPUs 0.000937285 s/step 184.362 ns/day 0 MB memory
+Info: Benchmark time: 40 CPUs 0.000855146 s/step 202.071 ns/day 0 MB memory
+Info: Benchmark time: 40 CPUs 0.000855421 s/step 202.006 ns/day 0 MB memory
+OPENING COORDINATE DCD FILE
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 500
+The last position output (seq=500) takes 0.004 seconds, 0.000 MB of memory in use
+Info: Benchmark time: 40 CPUs 0.000911952 s/step 189.484 ns/day 0 MB memory
+Info: Benchmark time: 40 CPUs 0.000852598 s/step 202.675 ns/day 0 MB memory
+Info: Benchmark time: 40 CPUs 0.000842455 s/step 205.115 ns/day 0 MB memory
+Info: Benchmark time: 40 CPUs 0.000851888 s/step 202.844 ns/day 0 MB memory
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 1000
+The last position output (seq=1000) takes 0.001 seconds, 0.000 MB of memory in use
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 1500
+The last position output (seq=1500) takes 0.001 seconds, 0.000 MB of memory in use
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 2000
+The last position output (seq=2000) takes 0.001 seconds, 0.000 MB of memory in use
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 2500
+The last position output (seq=2500) takes 0.001 seconds, 0.000 MB of memory in use
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 3000
+The last position output (seq=3000) takes 0.001 seconds, 0.000 MB of memory in use
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 3500
+The last position output (seq=3500) takes 0.001 seconds, 0.000 MB of memory in use
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 4000
+The last position output (seq=4000) takes 0.001 seconds, 0.000 MB of memory in use
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 4500
+The last position output (seq=4500) takes 0.001 seconds, 0.000 MB of memory in use
+TIMING: 5000  CPU: 4.87932, 0.000855266/step  Wall: 4.41067, 0.000861138/step, 200.665 ns/days, 0.118406 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 5000  averaging 200.665 ns/day, 0.000861138 sec/step with standard deviation 0
+ENERGY:    5000       423.8363      1148.3546      1122.6817        68.8591        -114047.9211      9816.2187         0.0000         0.0000     18570.8211         -82897.1495       301.9032   -101467.9706    -81937.4643       302.7319             -0.5402         1.7943    300384.8068      -538.4053      -535.6682
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 5000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 5000
+WRITING COORDINATES TO RESTART FILE AT STEP 5000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=5000) takes 0.009 seconds, 0.000 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 5000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=5000) takes 0.009 seconds, 0.000 MB of memory in use
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 5500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 6000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 6500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 7000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 7500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 8000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 8500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 9000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 9500
+TIMING: 10000  CPU: 9.14896, 0.000853927/step  Wall: 8.72354, 0.000862573/step, 200.331 ns/days, 0.117406 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 10000  averaging 200.498 ns/day, 0.000861855 sec/step with standard deviation 1.01458e-06
+ENERGY:   10000       430.9460      1115.3284      1116.0888        61.3431        -114377.7949     10018.0558         0.0000         0.0000     18675.9293         -82960.1036       303.6119   -101636.0329    -82278.3441       303.0252            113.8728       115.4704    300718.9515      -320.9793      -318.6220
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 10000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 10000
+WRITING COORDINATES TO RESTART FILE AT STEP 10000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 10000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=10000) takes 0.007 seconds, 0.000 MB of memory in use
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 10500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 11000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 11500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 12000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 12500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 13000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 13500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 14000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 14500
+TIMING: 15000  CPU: 14.2492, 0.00102005/step  Wall: 13.8904, 0.00103337/step, 167.22 ns/days, 0.139218 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 15000  averaging 188.025 ns/day, 0.000919026 sec/step with standard deviation 9.90262e-05
+ENERGY:   15000       452.8088      1129.5429      1120.7978        65.2597        -114314.4009      9772.3475         0.0000         0.0000     18582.1403         -83191.5039       302.0872   -101773.6442    -82506.6340       302.7907           -183.1728      -181.9071    301349.1055      -286.5277      -284.4433
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 15000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 15000
+WRITING COORDINATES TO RESTART FILE AT STEP 15000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 15000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=15000) takes 0.007 seconds, 0.000 MB of memory in use
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 15500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 16000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 16500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 17000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 17500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 18000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 18500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 19000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 19500
+TIMING: 20000  CPU: 19.0546, 0.00096107/step  Wall: 18.7297, 0.000967868/step, 178.537 ns/days, 0.129049 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 20000  averaging 185.56 ns/day, 0.000931237 sec/step with standard deviation 8.4462e-05
+ENERGY:   20000       410.0122      1093.6556      1130.9049        71.5228        -113773.2877      9654.2446         0.0000         0.0000     18595.1730         -82817.7745       302.2991   -101412.9475    -82568.8621       302.6924             79.4527        77.2947    300337.8772      -213.3316      -212.0957
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 20000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 20000
+WRITING COORDINATES TO RESTART FILE AT STEP 20000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 20000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=20000) takes 0.008 seconds, 0.000 MB of memory in use
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 20500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 21000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 21500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 22000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 22500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 23000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 23500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 24000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 24500
+TIMING: 25000  CPU: 23.319, 0.000852892/step  Wall: 23.0256, 0.000859183/step, 201.121 ns/days, 0.113364 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 25000  averaging 188.476 ns/day, 0.000916826 sec/step with standard deviation 7.99294e-05
+ENERGY:   25000       427.6573      1118.2993      1140.0113        64.8117        -114119.9752      9785.7748         0.0000         0.0000     18796.2561         -82787.1647       305.5681   -101583.4207    -82605.2459       303.1717           -122.6110      -122.4092    300750.7671      -198.2115      -197.1479
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 25000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 25000
+WRITING COORDINATES TO RESTART FILE AT STEP 25000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 25000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=25000) takes 0.007 seconds, 0.000 MB of memory in use
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 25500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 26000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 26500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 27000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 27500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 28000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 28500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 29000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 29500
+TIMING: 30000  CPU: 28.6194, 0.00106007/step  Wall: 28.3621, 0.0010673/step, 161.904 ns/days, 0.139342 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 30000  averaging 183.458 ns/day, 0.000941905 sec/step with standard deviation 9.42584e-05
+ENERGY:   30000       423.0387      1105.6086      1117.3718        81.1534        -113939.3259      9663.3231         0.0000         0.0000     18638.9172         -82909.9131       303.0102   -101548.8303    -82648.7698       303.1486            -62.3204       -66.8276    301509.2662      -178.7985      -178.5307
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 30000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 30000
+WRITING COORDINATES TO RESTART FILE AT STEP 30000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 30000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 30500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 31000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 31500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 32000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 32500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 33000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 33500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 34000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 34500
+TIMING: 35000  CPU: 34.2532, 0.00112677/step  Wall: 34.0343, 0.00113444/step, 152.323 ns/days, 0.146531 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 35000  averaging 178.253 ns/day, 0.000969409 sec/step with standard deviation 0.000112691
+ENERGY:   35000       459.8197      1166.1461      1127.4181        76.9862        -113868.5844      9662.2224         0.0000         0.0000     18398.0359         -82977.9559       299.0942   -101375.9919    -82689.9180       302.6418           -119.7343      -116.1455    301335.1742      -171.4155      -170.7326
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 35000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 35000
+WRITING COORDINATES TO RESTART FILE AT STEP 35000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 35000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 35500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 36000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 36500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 37000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 37500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 38000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 38500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 39000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 39500
+TIMING: 40000  CPU: 41.8017, 0.00150969/step  Wall: 41.74, 0.00154114/step, 112.125 ns/days, 0.196923 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 40000  averaging 166.014 ns/day, 0.00104088 sec/step with standard deviation 0.000227474
+ENERGY:   40000       444.2118      1116.5213      1114.5968        71.2923        -113981.0886      9719.5896         0.0000         0.0000     18726.0244         -82788.8525       304.4263   -101514.8768    -82700.9107       302.8401            -19.2945       -15.7441    300262.8613      -154.5131      -153.5116
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 40000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 40000
+WRITING COORDINATES TO RESTART FILE AT STEP 40000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 40000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 40500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 41000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 41500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 42000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 42500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 43000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 43500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 44000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 44500
+TIMING: 45000  CPU: 46.0655, 0.000852774/step  Wall: 46.0349, 0.000858979/step, 201.169 ns/days, 0.108565 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 45000  averaging 169.301 ns/day, 0.00102066 sec/step with standard deviation 0.000221252
+ENERGY:   45000       446.9160      1110.8424      1103.7659        72.4286        -114155.8455      9799.7937         0.0000         0.0000     18713.5224         -82908.5766       304.2231   -101622.0990    -82721.6773       302.9784            -84.0002       -89.4456    302128.1399      -147.4618      -147.1050
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 45000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 45000
+WRITING COORDINATES TO RESTART FILE AT STEP 45000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 45000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 45500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 46000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 46500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 47000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 47500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 48000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 48500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 49000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 49500
+TIMING: 50000  CPU: 50.3345, 0.000853803/step  Wall: 50.3374, 0.000860508/step, 200.812 ns/days, 0.107564 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 50000  averaging 172 ns/day, 0.00100465 sec/step with standard deviation 0.000214659
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:   50000       418.3562      1111.0734      1148.5912        75.4801        -113312.9705      9297.1450         0.0000         0.0000     18326.5272         -82935.7973       297.9317   -101262.3245    -82741.1428       302.5196           -475.1212      -476.9426    302091.3666      -177.2491      -177.0903
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 50000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 50000
+WRITING COORDINATES TO RESTART FILE AT STEP 50000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 50000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 50500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 51000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 51500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 52000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 52500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 53000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 53500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 54000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 54500
+TIMING: 55000  CPU: 55.2235, 0.000977787/step  Wall: 55.2609, 0.0009847/step, 175.485 ns/days, 0.12172 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 55000  averaging 172.311 ns/day, 0.00100284 sec/step with standard deviation 0.000203732
+ENERGY:   55000       419.4665      1103.9573      1149.0952        84.6071        -113849.3945      9880.9216         0.0000         0.0000     18727.3259         -82484.0209       304.4475   -101211.3468    -82719.7160       302.6802             56.7634        58.2865    300861.8274      -157.7480      -157.4755
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 55000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 55000
+WRITING COORDINATES TO RESTART FILE AT STEP 55000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 55000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 55500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 56000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 56500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 57000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 57500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 58000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 58500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 59000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 59500
+TIMING: 60000  CPU: 59.4906, 0.000853428/step  Wall: 59.5616, 0.000860128/step, 200.9 ns/days, 0.105127 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 60000  averaging 174.379 ns/day, 0.000990943 sec/step with standard deviation 0.000198571
+ENERGY:   60000       427.2211      1109.9758      1114.4541        73.4161        -114111.0613      9948.9506         0.0000         0.0000     18557.6400         -82879.4034       301.6889   -101437.0434    -82731.9996       302.6040             63.9508        59.8669    302379.2827      -140.6943      -140.7569
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 60000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 60000
+WRITING COORDINATES TO RESTART FILE AT STEP 60000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 60000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 60500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 61000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 61500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 62000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 62500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 63000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 63500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 64000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 64500
+TIMING: 65000  CPU: 67.6883, 0.00163954/step  Wall: 67.8139, 0.00165046/step, 104.698 ns/days, 0.199431 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 65000  averaging 165.887 ns/day, 0.00104168 sec/step with standard deviation 0.000263825
+ENERGY:   65000       423.1244      1171.4647      1121.2572        73.0852        -114114.3767      9868.8703         0.0000         0.0000     18624.6644         -82831.9106       302.7785   -101456.5750    -82739.1361       302.6165             92.3173       101.9437    299689.5354      -124.0506      -123.4211
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 65000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 65000
+WRITING COORDINATES TO RESTART FILE AT STEP 65000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 65000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 65500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 66000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 66500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 67000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 67500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 68000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 68500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 69000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 69500
+TIMING: 70000  CPU: 76.8654, 0.00183542/step  Wall: 77.0521, 0.00184764/step, 93.5246 ns/days, 0.220691 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 70000  averaging 157.199 ns/day, 0.00109924 sec/step with standard deviation 0.000332638
+ENERGY:   70000       431.8084      1080.4671      1108.7490        65.2367        -114153.6566      9717.8742         0.0000         0.0000     18739.8874         -83009.6338       304.6517   -101749.5212    -82757.1693       302.7521           -100.0398      -101.7458    300446.2010      -122.4499      -121.9761
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 70000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 70000
+WRITING COORDINATES TO RESTART FILE AT STEP 70000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 70000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 70500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 71000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 71500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 72000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 72500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 73000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 73500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 74000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 74500
+TIMING: 75000  CPU: 84.7653, 0.00157997/step  Wall: 85.0023, 0.00159004/step, 108.677 ns/days, 0.187713 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 75000  averaging 152.655 ns/day, 0.00113196 sec/step with standard deviation 0.000344678
+ENERGY:   75000       436.0881      1145.8368      1131.6488        70.6798        -114238.8590      9899.2154         0.0000         0.0000     18498.7998         -83056.5903       300.7324   -101555.3902    -82775.8831       302.6259             47.5853        46.3884    300655.8568      -111.8227      -111.4533
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 75000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 75000
+WRITING COORDINATES TO RESTART FILE AT STEP 75000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 75000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 75500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 76000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 76500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 77000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 77500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 78000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 78500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 79000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 79500
+TIMING: 80000  CPU: 89.2279, 0.000892529/step  Wall: 89.4962, 0.000898783/step, 192.26 ns/days, 0.104858 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 80000  averaging 154.646 ns/day, 0.00111739 sec/step with standard deviation 0.000338055
+ENERGY:   80000       415.8948      1108.6924      1120.6293        67.2669        -114219.6359      9902.1250         0.0000         0.0000     18393.7809         -83211.2467       299.0251   -101605.0276    -82801.4927       302.4141            168.8166       171.3637    300770.8978       -95.3145       -94.8170
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 80000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 80000
+WRITING COORDINATES TO RESTART FILE AT STEP 80000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 80000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 80500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 81000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 81500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 82000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 82500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 83000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 83500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 84000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 84500
+TIMING: 85000  CPU: 93.7533, 0.00090507/step  Wall: 94.0538, 0.000911522/step, 189.573 ns/days, 0.105078 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 85000  averaging 156.34 ns/day, 0.00110528 sec/step with standard deviation 0.000331107
+ENERGY:   85000       444.2311      1112.9061      1123.3006        72.0521        -113816.1534      9665.6498         0.0000         0.0000     18677.0692         -82720.9446       303.6304   -101398.0138    -82797.0178       302.4817            -31.1075       -28.4909    300068.4375       -91.7474       -91.1322
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 85000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 85000
+WRITING COORDINATES TO RESTART FILE AT STEP 85000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 85000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 85500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 86000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 86500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 87000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 87500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 88000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 88500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 89000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 89500
+TIMING: 90000  CPU: 98.0283, 0.000855003/step  Wall: 98.3587, 0.00086098/step, 200.701 ns/days, 0.0980561 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 90000  averaging 158.284 ns/day, 0.00109171 sec/step with standard deviation 0.000326341
+ENERGY:   90000       426.7117      1121.0323      1122.2326        68.8963        -113676.0357      9789.0066         0.0000         0.0000     18596.2844         -82551.8719       302.3171   -101148.1562    -82784.1154       302.4730            100.2158       101.5098    301439.8499       -81.6441       -80.9932
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 90000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 90000
+WRITING COORDINATES TO RESTART FILE AT STEP 90000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 90000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 90500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 91000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 91500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 92000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 92500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 93000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 93500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 94000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 94500
+TIMING: 95000  CPU: 105.039, 0.00140216/step  Wall: 105.611, 0.00145055/step, 119.127 ns/days, 0.163187 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 95000  averaging 155.592 ns/day, 0.00111059 sec/step with standard deviation 0.000327657
+ENERGY:   95000       434.2384      1136.7340      1144.1151        79.6979        -114390.6404      9854.0573         0.0000         0.0000     18378.9597         -83362.8379       298.7841   -101741.7976    -82813.0515       302.2886            105.1687       105.4645    298598.3516       -72.3035       -71.6703
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 95000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 95000
+WRITING COORDINATES TO RESTART FILE AT STEP 95000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 95000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 95500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 96000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 96500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 97000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 97500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 98000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 98500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 99000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 99500
+TIMING: 100000  CPU: 109.5, 0.000892121/step  Wall: 110.116, 0.000900861/step, 191.816 ns/days, 0.100096 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 100000  averaging 157.076 ns/day, 0.00110011 sec/step with standard deviation 0.000322348
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  100000       427.7603      1107.5927      1113.3638        58.3840        -114145.9612      9854.4093         0.0000         0.0000     18598.1856         -82986.2654       302.3481   -101584.4511    -82913.4759       302.2279             34.2627        41.0329    301510.9222       -16.7768       -15.9621
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 100000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 100000
+WRITING COORDINATES TO RESTART FILE AT STEP 100000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 100000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 100500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 101000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 101500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 102000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 102500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 103000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 103500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 104000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 104500
+TIMING: 105000  CPU: 116.239, 0.00134779/step  Wall: 117.902, 0.0015573/step, 110.961 ns/days, 0.170871 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 105000  averaging 154.027 ns/day, 0.00112188 sec/step with standard deviation 0.000329646
+ENERGY:  105000       409.3672      1086.6246      1119.6844        80.0637        -114016.3177      9877.6731         0.0000         0.0000     18596.5577         -82846.3470       302.3216   -101442.9047    -82910.9357       302.2489             59.9710        61.9125    300753.9668       -13.7512       -12.9562
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 105000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 105000
+WRITING COORDINATES TO RESTART FILE AT STEP 105000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 105000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 105500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 106000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 106500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 107000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 107500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 108000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 108500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 109000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 109500
+TIMING: 110000  CPU: 120.879, 0.000928022/step  Wall: 122.577, 0.000934915/step, 184.83 ns/days, 0.101282 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 110000  averaging 155.203 ns/day, 0.00111338 sec/step with standard deviation 0.000324161
+ENERGY:  110000       427.8383      1187.2286      1109.1388        67.0929        -114029.7455      9800.7583         0.0000         0.0000     18695.5138         -82742.1749       303.9303   -101437.6887    -82900.0393       302.2648            258.0930       258.8158    299962.4076        -6.5402        -5.7889
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 110000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 110000
+WRITING COORDINATES TO RESTART FILE AT STEP 110000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 110000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 110500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 111000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 111500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 112000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 112500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 113000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 113500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 114000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 114500
+TIMING: 115000  CPU: 125.617, 0.000947638/step  Wall: 127.35, 0.00095455/step, 181.028 ns/days, 0.102084 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 115000  averaging 156.172 ns/day, 0.00110647 sec/step with standard deviation 0.000318435
+ENERGY:  115000       429.7268      1095.5383      1115.6068        63.4095        -114220.4218      9788.5178         0.0000         0.0000     18460.1504         -83267.4722       300.1040   -101727.6225    -82903.8377       302.1656             -9.4065        -6.0594    299728.1786         2.1481         3.0034
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 115000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 115000
+WRITING COORDINATES TO RESTART FILE AT STEP 115000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 115000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 115500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 116000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 116500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 117000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 117500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 118000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 118500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 119000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 119500
+TIMING: 120000  CPU: 131.79, 0.00123461/step  Wall: 134.249, 0.00137982/step, 125.234 ns/days, 0.145647 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 120000  averaging 154.581 ns/day, 0.00111786 sec/step with standard deviation 0.000316394
+ENERGY:  120000       412.9274      1128.1059      1136.2904        79.9201        -114258.9986     10036.8684         0.0000         0.0000     18583.6578         -82881.2287       302.1119   -101464.8865    -82907.0104       302.1563            229.4794       228.2043    300196.0649         9.6494        10.5489
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 120000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 120000
+WRITING COORDINATES TO RESTART FILE AT STEP 120000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 120000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 120500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 121000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 121500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 122000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 122500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 123000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 123500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 124000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 124500
+TIMING: 125000  CPU: 136.088, 0.0008596/step  Wall: 138.58, 0.000866177/step, 199.497 ns/days, 0.0902268 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 125000  averaging 155.985 ns/day, 0.0011078 sec/step with standard deviation 0.000313796
+ENERGY:  125000       435.5859      1134.7010      1095.4172        71.8643        -114098.4064      9854.9234         0.0000         0.0000     18602.7986         -82903.1160       302.4230   -101505.9146    -82912.8080       301.9990            -30.6612       -30.7359    300297.6601        14.2469        15.1326
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 125000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 125000
+WRITING COORDINATES TO RESTART FILE AT STEP 125000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 125000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 125500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 126000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 126500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 127000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 127500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 128000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 128500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 129000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 129500
+TIMING: 130000  CPU: 140.379, 0.000858214/step  Wall: 142.902, 0.000864392/step, 199.909 ns/days, 0.0888403 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 130000  averaging 157.315 ns/day, 0.00109843 sec/step with standard deviation 0.00031114
+ENERGY:  130000       446.8707      1151.3632      1146.5479        73.9767        -113615.4311      9489.9583         0.0000         0.0000     18591.5501         -82715.1642       302.2402   -101306.7143    -82903.0705       301.9605           -234.2302      -229.2782    301423.8155         5.6514         7.0101
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 130000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 130000
+WRITING COORDINATES TO RESTART FILE AT STEP 130000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 130000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 130500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 131000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 131500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 132000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 132500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 133000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 133500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 134000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 134500
+TIMING: 135000  CPU: 148.045, 0.00153316/step  Wall: 153.217, 0.0020631/step, 83.7574 ns/days, 0.209176 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 135000  averaging 152.359 ns/day, 0.00113416 sec/step with standard deviation 0.000357143
+ENERGY:  135000       438.4736      1112.0173      1100.2675        65.2762        -114099.8471      9742.0023         0.0000         0.0000     18644.6964         -82997.1137       303.1042   -101641.8101    -82904.0284       302.1610           -191.2326      -192.7371    301880.6545         2.0765         3.1805
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 135000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 135000
+WRITING COORDINATES TO RESTART FILE AT STEP 135000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 135000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 135500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 136000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 136500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 137000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 137500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 138000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 138500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 139000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 139500
+TIMING: 140000  CPU: 156.591, 0.00170921/step  Wall: 161.941, 0.00174483/step, 99.0353 ns/days, 0.174483 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 140000  averaging 149.484 ns/day, 0.00115597 sec/step with standard deviation 0.000368978
+ENERGY:  140000       417.3408      1172.6260      1101.7949        68.0187        -114477.3399      9949.8493         0.0000         0.0000     18677.8195         -83089.8907       303.6426   -101767.7102    -82919.0803       302.1218            144.3653       143.6697    299422.6921        10.2595        11.1512
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 140000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 140000
+WRITING COORDINATES TO RESTART FILE AT STEP 140000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 140000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 140500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 141000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 141500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 142000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 142500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 143000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 143500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 144000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 144500
+TIMING: 145000  CPU: 161.838, 0.00104936/step  Wall: 167.233, 0.00105829/step, 163.282 ns/days, 0.104359 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 145000  averaging 149.921 ns/day, 0.0011526 sec/step with standard deviation 0.000362783
+ENERGY:  145000       400.0064      1114.2229      1120.5128        63.1858        -113970.4489      9567.3846         0.0000         0.0000     18697.0789         -83008.0574       303.9557   -101705.1363    -82924.0544       302.1085            -20.2292       -20.8546    299997.2959        13.4481        14.5807
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 145000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 145000
+WRITING COORDINATES TO RESTART FILE AT STEP 145000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 145000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 145500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 146000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 146500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 147000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 147500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 148000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 148500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 149000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 149500
+TIMING: 150000  CPU: 166.335, 0.000899372/step  Wall: 171.773, 0.000907983/step, 190.312 ns/days, 0.0882761 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 150000  averaging 150.99 ns/day, 0.00114445 sec/step with standard deviation 0.000359261
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  150000       412.3331      1129.8504      1103.8013        76.2987        -113530.1732      9544.5530         0.0000         0.0000     18613.3186         -82650.0180       302.5941   -101263.3366    -82909.7654       302.3416           -212.2760      -212.7878    300993.1779        26.5903        27.7885
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 150000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 150000
+WRITING COORDINATES TO RESTART FILE AT STEP 150000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 150000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 150500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 151000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 151500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 152000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 152500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 153000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 153500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 154000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 154500
+TIMING: 155000  CPU: 172.672, 0.00126747/step  Wall: 178.152, 0.00127588/step, 135.436 ns/days, 0.122272 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 155000  averaging 150.432 ns/day, 0.00114869 sec/step with standard deviation 0.00035401
+ENERGY:  155000       454.5677      1144.2915      1102.6177        74.2604        -114096.4569      9617.6749         0.0000         0.0000     18518.3259         -83184.7189       301.0498   -101703.0448    -82944.8003       302.1717           -198.7110      -201.0604    301155.8617        13.8166        14.8211
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 155000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 155000
+WRITING COORDINATES TO RESTART FILE AT STEP 155000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 155000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 155500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 156000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 156500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 157000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 157500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 158000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 158500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 159000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 159500
+TIMING: 160000  CPU: 176.988, 0.000863154/step  Wall: 182.501, 0.000869753/step, 198.677 ns/days, 0.0821434 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 160000  averaging 151.583 ns/day, 0.00113997 sec/step with standard deviation 0.000351727
+ENERGY:  160000       438.1508      1129.4794      1108.3509        76.1157        -114175.9542      9675.5244         0.0000         0.0000     18617.4466         -83130.8864       302.6612   -101748.3330    -82957.3745       302.2203           -157.2756      -159.3772    300582.7432         2.7553         3.8589
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 160000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 160000
+WRITING COORDINATES TO RESTART FILE AT STEP 160000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 160000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 160500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 161000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 161500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 162000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 162500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 163000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 163500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 164000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 164500
+TIMING: 165000  CPU: 182.754, 0.00115329/step  Wall: 188.305, 0.00116086/step, 148.855 ns/days, 0.108025 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 165000  averaging 151.498 ns/day, 0.00114061 sec/step with standard deviation 0.000346207
+ENERGY:  165000       449.2953      1110.3011      1095.1763        59.2466        -114354.5781      9950.9699         0.0000         0.0000     18381.5790         -83308.0099       298.8267   -101689.5888    -82981.1794       302.0227            139.9630       136.5427    299696.8341         5.1376         5.5889
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 165000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 165000
+WRITING COORDINATES TO RESTART FILE AT STEP 165000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 165000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 165500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 166000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 166500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 167000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 167500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 168000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 168500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 169000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 169500
+TIMING: 170000  CPU: 187.587, 0.000966588/step  Wall: 193.173, 0.000973593/step, 177.487 ns/days, 0.089246 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 170000  averaging 152.154 ns/day, 0.00113569 sec/step with standard deviation 0.000342122
+ENERGY:  170000       399.7408      1172.1672      1124.8546        66.0250        -113945.2751      9716.7422         0.0000         0.0000     18699.5423         -82766.2030       303.9958   -101465.7453    -82969.0079       301.9899            134.7465       136.0253    299396.5950        16.8769        17.4774
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 170000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 170000
+WRITING COORDINATES TO RESTART FILE AT STEP 170000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 170000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 170500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 171000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 171500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 172000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 172500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 173000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 173500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 174000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 174500
+TIMING: 175000  CPU: 193.301, 0.00114288/step  Wall: 199.066, 0.00117868/step, 146.604 ns/days, 0.106409 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 175000  averaging 151.989 ns/day, 0.00113692 sec/step with standard deviation 0.000337131
+ENERGY:  175000       441.0988      1166.6431      1098.8641        77.0148        -114056.0511      9745.9942         0.0000         0.0000     18587.2391         -82939.1970       302.1701   -101526.4361    -82963.1382       302.0618            -75.7134       -74.9121    300438.6124        10.7119        11.4124
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 175000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 175000
+WRITING COORDINATES TO RESTART FILE AT STEP 175000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 175000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 175500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 176000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 176500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 177000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 177500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 178000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 178500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 179000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 179500
+TIMING: 180000  CPU: 199.2, 0.00117975/step  Wall: 205.004, 0.0011875/step, 145.516 ns/days, 0.105556 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 180000  averaging 151.802 ns/day, 0.00113833 sec/step with standard deviation 0.000332387
+ENERGY:  180000       420.7682      1098.4066      1124.4918        73.9807        -113766.6657      9749.9945         0.0000         0.0000     18602.0176         -82697.0063       302.4103   -101299.0239    -82937.4262       302.2311            -18.7741       -16.1203    301931.4309         1.3324         2.0382
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 180000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 180000
+WRITING COORDINATES TO RESTART FILE AT STEP 180000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 180000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 180500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 181000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 181500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 182000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 182500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 183000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 183500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 184000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 184500
+TIMING: 185000  CPU: 203.588, 0.000877619/step  Wall: 209.423, 0.000883888/step, 195.5 ns/days, 0.0773402 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 185000  averaging 152.724 ns/day, 0.00113145 sec/step with standard deviation 0.000330397
+ENERGY:  185000       459.4537      1143.8821      1103.9278        68.6107        -114023.1200      9748.6902         0.0000         0.0000     18622.0358         -82876.5196       302.7358   -101498.5554    -82945.2049       302.1863             50.1622        45.7312    301690.3326         5.3959         5.7493
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 185000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 185000
+WRITING COORDINATES TO RESTART FILE AT STEP 185000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 185000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 185500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 186000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 186500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 187000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 187500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 188000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 188500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 189000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 189500
+TIMING: 190000  CPU: 207.921, 0.00086647/step  Wall: 213.785, 0.000872377/step, 198.08 ns/days, 0.0751213 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 190000  averaging 153.65 ns/day, 0.00112463 sec/step with standard deviation 0.0003286
+ENERGY:  190000       451.1165      1102.8852      1127.7470        69.1240        -114445.9310      9937.8286         0.0000         0.0000     18469.6055         -83287.6242       300.2577   -101757.2297    -82981.9926       302.0834            121.5338       122.6236    300397.2717         6.4618         6.8050
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 190000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 190000
+WRITING COORDINATES TO RESTART FILE AT STEP 190000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 190000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 190500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 191000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 191500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 192000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 192500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 193000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 193500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 194000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 194500
+TIMING: 195000  CPU: 212.974, 0.00101069/step  Wall: 218.874, 0.00101784/step, 169.771 ns/days, 0.0862337 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 195000  averaging 154.025 ns/day, 0.00112189 sec/step with standard deviation 0.000324698
+ENERGY:  195000       425.9337      1106.6012      1094.3630        63.2951        -114349.2807     10021.4955         0.0000         0.0000     18666.1853         -82971.4068       303.4535   -101637.5921    -82962.4210       302.3168            195.6741       197.0636    300141.9675        10.9871        11.3849
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 195000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 195000
+WRITING COORDINATES TO RESTART FILE AT STEP 195000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 195000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 195500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 196000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 196500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 197000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 197500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 198000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 198500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 199000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 199500
+TIMING: 200000  CPU: 217.881, 0.000981448/step  Wall: 223.816, 0.00098822/step, 174.86 ns/days, 0.0823516 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 200000  averaging 154.485 ns/day, 0.00111855 sec/step with standard deviation 0.000321205
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  200000       437.4939      1142.1207      1124.1469        64.1858        -114092.7743      9630.8935         0.0000         0.0000     18501.7768         -83192.1567       300.7807   -101693.9335    -82972.7156       302.2385              3.8043         5.1595    299383.3322         9.4641         9.5913
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 200000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 200000
+WRITING COORDINATES TO RESTART FILE AT STEP 200000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 200000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 200500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 201000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 201500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 202000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 202500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 203000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 203500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 204000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 204500
+TIMING: 205000  CPU: 222.163, 0.000856328/step  Wall: 228.128, 0.000862395/step, 200.372 ns/days, 0.0706685 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 205000  averaging 155.353 ns/day, 0.0011123 sec/step with standard deviation 0.000319677
+ENERGY:  205000       441.1433      1152.6324      1119.1964        72.6225        -114254.7035      9847.2365         0.0000         0.0000     18629.4984         -82992.3739       302.8571   -101621.8723    -82980.0169       302.2652           -101.3654       -99.7905    300293.0121         1.3973         1.5061
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 205000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 205000
+WRITING COORDINATES TO RESTART FILE AT STEP 205000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 205000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 205500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 206000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 206500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 207000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 207500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 208000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 208500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 209000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 209500
+TIMING: 210000  CPU: 226.536, 0.000874612/step  Wall: 232.532, 0.000880982/step, 196.145 ns/days, 0.070968 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 210000  averaging 156.126 ns/day, 0.0011068 sec/step with standard deviation 0.000317766
+ENERGY:  210000       429.7081      1162.1027      1104.4129        75.8181        -114169.6031      9730.4336         0.0000         0.0000     18534.3035         -83132.8242       301.3095   -101667.1277    -82999.5494       302.1342            -31.9360       -33.3186    299595.4438       -13.1041       -13.1006
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 210000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 210000
+WRITING COORDINATES TO RESTART FILE AT STEP 210000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 210000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 210500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 211000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 211500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 212000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 212500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 213000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 213500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 214000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 214500
+TIMING: 215000  CPU: 233.15, 0.00132284/step  Wall: 239.194, 0.00133231/step, 129.7 ns/days, 0.105474 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 215000  averaging 155.39 ns/day, 0.00111204 sec/step with standard deviation 0.000315838
+ENERGY:  215000       409.8240      1137.5090      1097.6859        74.9328        -113779.9276      9542.5225         0.0000         0.0000     18545.3424         -82972.1110       301.4890   -101517.4534    -82984.7813       302.2035             12.2553        15.7592    300191.0607       -12.0210       -12.0097
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 215000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 215000
+WRITING COORDINATES TO RESTART FILE AT STEP 215000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 215000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 215500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 216000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 216500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 217000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 217500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 218000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 218500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 219000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 219500
+TIMING: 220000  CPU: 239.088, 0.00118756/step  Wall: 245.168, 0.0011948/step, 144.626 ns/days, 0.0929292 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 220000  averaging 155.127 ns/day, 0.00111392 sec/step with standard deviation 0.000312393
+ENERGY:  220000       447.4486      1136.1341      1134.9553        72.5081        -113920.7364      9738.3925         0.0000         0.0000     18535.8953         -82855.4025       301.3354   -101391.2978    -82983.4900       302.1646            -59.0647       -65.2271    300831.2506       -26.4482       -26.6813
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 220000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 220000
+WRITING COORDINATES TO RESTART FILE AT STEP 220000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 220000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 220500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 221000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 221500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 222000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 222500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 223000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 223500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 224000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 224500
+TIMING: 225000  CPU: 245.515, 0.00128534/step  Wall: 251.637, 0.00129378/step, 133.562 ns/days, 0.0988306 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 225000  averaging 154.573 ns/day, 0.00111792 sec/step with standard deviation 0.000309984
+ENERGY:  225000       424.3165      1132.8156      1111.7496        80.0716        -113792.9757      9763.0551         0.0000         0.0000     18544.6478         -82736.3194       301.4777   -101280.9673    -82975.1502       302.1174            106.5925       104.6726    299508.1430       -19.5856       -19.9108
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 225000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 225000
+WRITING COORDINATES TO RESTART FILE AT STEP 225000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 225000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 225500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 226000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 226500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 227000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 227500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 228000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 228500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 229000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 229500
+TIMING: 230000  CPU: 251.351, 0.00116721/step  Wall: 257.517, 0.00117594/step, 146.946 ns/days, 0.0881956 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 230000  averaging 154.399 ns/day, 0.00111918 sec/step with standard deviation 0.00030664
+ENERGY:  230000       442.0933      1112.6016      1130.1154        75.2397        -114328.3017      9898.2890         0.0000         0.0000     18632.1184         -83037.8445       302.8997   -101669.9628    -82991.2842       302.1503             56.7292        63.2741    300386.4656        -5.0376        -5.2832
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 230000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 230000
+WRITING COORDINATES TO RESTART FILE AT STEP 230000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 230000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 230500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 231000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 231500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 232000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 232500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 233000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 233500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 234000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 234500
+TIMING: 235000  CPU: 256.169, 0.000963645/step  Wall: 262.426, 0.000981933/step, 175.979 ns/days, 0.0722812 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 235000  averaging 154.803 ns/day, 0.00111626 sec/step with standard deviation 0.000303949
+ENERGY:  235000       452.9137      1085.1483      1099.9689        78.5909        -114050.4613      9700.4152         0.0000         0.0000     18797.7117         -82835.7126       305.5917   -101633.4243    -82983.2141       302.2747           -183.8575      -187.9188    301054.8918        -4.6688        -5.0423
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 235000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 235000
+WRITING COORDINATES TO RESTART FILE AT STEP 235000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 235000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 235500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 236000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 236500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 237000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 237500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 238000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 238500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 239000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 239500
+TIMING: 240000  CPU: 261.792, 0.00112459/step  Wall: 268.088, 0.00113241/step, 152.595 ns/days, 0.081785 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 240000  averaging 154.756 ns/day, 0.0011166 sec/step with standard deviation 0.000300707
+ENERGY:  240000       428.4409      1072.1060      1115.0385        66.6735        -113522.9933      9421.5854         0.0000         0.0000     18758.2530         -82660.8960       304.9502   -101419.1490    -82961.7644       302.3401           -414.2304      -415.7194    301060.0239       -32.5986       -33.0118
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 240000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 240000
+WRITING COORDINATES TO RESTART FILE AT STEP 240000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 240000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 240500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 241000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 241500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 242000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 242500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 243000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 243500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 244000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 244500
+TIMING: 245000  CPU: 266.641, 0.000969726/step  Wall: 272.971, 0.000976467/step, 176.964 ns/days, 0.0691664 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 245000  averaging 155.153 ns/day, 0.00111374 sec/step with standard deviation 0.000298231
+ENERGY:  245000       403.9257      1148.5207      1119.4625        69.4804        -114265.3509     10026.6082         0.0000         0.0000     18755.9488         -82741.4047       304.9128   -101497.3534    -82948.4318       302.3879            275.4555       276.1000    299423.6590       -17.8144       -18.1640
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 245000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 245000
+WRITING COORDINATES TO RESTART FILE AT STEP 245000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 245000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 245500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 246000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 246500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 247000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 247500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 248000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 248500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 249000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 249500
+TIMING: 250000  CPU: 271.026, 0.00087709/step  Wall: 277.386, 0.000883105/step, 195.673 ns/days, 0.0613268 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 250000  averaging 155.799 ns/day, 0.00110912 sec/step with standard deviation 0.000296968
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  250000       420.9177      1155.2526      1124.9680        75.2664        -114138.7710      9824.2620         0.0000         0.0000     18549.9885         -82988.1159       301.5645   -101538.1044    -82965.3367       302.3365             14.1785        11.3732    300924.8036        -6.4917        -6.9560
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 250000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 250000
+WRITING COORDINATES TO RESTART FILE AT STEP 250000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 250000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 250500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 251000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 251500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 252000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 252500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 253000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 253500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 254000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 254500
+TIMING: 255000  CPU: 276.711, 0.00113697/step  Wall: 283.107, 0.00114422/step, 151.019 ns/days, 0.0778708 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 255000  averaging 155.702 ns/day, 0.00110981 sec/step with standard deviation 0.000294025
+ENERGY:  255000       434.1448      1044.6206      1115.8313        72.9883        -114116.7548      9673.0396         0.0000         0.0000     18579.0180         -83197.1121       302.0364   -101776.1302    -82965.9563       302.3858            -33.8574       -31.8881    300161.1070         1.7510         1.5026
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 255000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 255000
+WRITING COORDINATES TO RESTART FILE AT STEP 255000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 255000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 255500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 256000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 256500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 257000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 257500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 258000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 258500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 259000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 259500
+TIMING: 260000  CPU: 280.974, 0.000852594/step  Wall: 287.401, 0.000858702/step, 201.234 ns/days, 0.0572468 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 260000  averaging 156.382 ns/day, 0.00110498 sec/step with standard deviation 0.000293203
+ENERGY:  260000       423.7616      1142.9815      1115.8567        70.2334        -114165.4830      9854.1896         0.0000         0.0000     18688.5446         -82869.9155       303.8170   -101558.4601    -82952.9078       302.4436             56.4960        54.9020    301369.5687        12.4396        12.2166
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 260000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 260000
+WRITING COORDINATES TO RESTART FILE AT STEP 260000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 260000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 260500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 261000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 261500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 262000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 262500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 263000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 263500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 264000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 264500
+TIMING: 265000  CPU: 285.249, 0.000854943/step  Wall: 291.704, 0.000860622/step, 200.785 ns/days, 0.0561795 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 265000  averaging 157.038 ns/day, 0.00110037 sec/step with standard deviation 0.000292304
+ENERGY:  265000       421.3246      1095.7399      1134.2492        69.5737        -113691.4484      9635.5828         0.0000         0.0000     18594.9387         -82740.0395       302.2953   -101334.9782    -82924.5093       302.6170            -59.0798       -58.6718    300302.9118         2.4875         2.4559
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 265000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 265000
+WRITING COORDINATES TO RESTART FILE AT STEP 265000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 265000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 265500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 266000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 266500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 267000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 267500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 268000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 268500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 269000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 269500
+TIMING: 270000  CPU: 289.514, 0.000853117/step  Wall: 296.002, 0.000859526/step, 201.041 ns/days, 0.0549142 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 270000  averaging 157.677 ns/day, 0.00109591 sec/step with standard deviation 0.000291382
+ENERGY:  270000       450.7445      1149.3786      1120.9344        75.4471        -114170.4696      9807.5252         0.0000         0.0000     18603.6153         -82962.8245       302.4363   -101566.4398    -82934.3403       302.5390           -121.3660      -121.8655    301022.1748       -10.3182       -10.4387
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 270000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 270000
+WRITING COORDINATES TO RESTART FILE AT STEP 270000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 270000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 270500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 271000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 271500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 272000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 272500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 273000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 273500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 274000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 274500
+TIMING: 275000  CPU: 294.639, 0.00102498/step  Wall: 301.161, 0.00103195/step, 167.45 ns/days, 0.064497 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 275000  averaging 157.844 ns/day, 0.00109475 sec/step with standard deviation 0.0002888
+ENERGY:  275000       446.3674      1108.8751      1110.9383        80.5585        -114047.4008      9637.8358         0.0000         0.0000     18585.6314         -83077.1944       302.1440   -101662.8258    -82941.2402       302.5377           -114.8233      -114.0722    300783.4494       -12.2737       -12.3967
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 275000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 275000
+WRITING COORDINATES TO RESTART FILE AT STEP 275000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 275000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 275500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 276000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 276500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 277000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 277500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 278000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 278500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 279000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 279500
+TIMING: 280000  CPU: 299.468, 0.000965818/step  Wall: 306.023, 0.000972384/step, 177.708 ns/days, 0.0594235 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 280000  averaging 158.16 ns/day, 0.00109257 sec/step with standard deviation 0.00028663
+ENERGY:  280000       435.0029      1117.3192      1102.1820        65.9716        -114243.1015      9920.5691         0.0000         0.0000     18693.2386         -82908.8181       303.8933   -101602.0567    -82951.8308       302.6119            190.9801       190.4359    300112.0906        -1.7860        -2.0689
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 280000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 280000
+WRITING COORDINATES TO RESTART FILE AT STEP 280000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 280000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 280500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 281000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 281500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 282000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 282500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 283000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 283500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 284000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 284500
+TIMING: 285000  CPU: 307.317, 0.00156979/step  Wall: 313.989, 0.00159312/step, 108.466 ns/days, 0.0951446 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 285000  averaging 156.899 ns/day, 0.00110135 sec/step with standard deviation 0.000291694
+ENERGY:  285000       397.5100      1108.4312      1093.4433        71.1678        -114302.3051      9904.4447         0.0000         0.0000     18538.7244         -83188.5838       301.3814   -101727.3081    -82967.4340       302.5442             85.5911        92.3946    301056.3616        -0.0145         0.2643
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 285000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 285000
+WRITING COORDINATES TO RESTART FILE AT STEP 285000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 285000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 285500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 286000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 286500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 287000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 287500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 288000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 288500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 289000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 289500
+TIMING: 290000  CPU: 313.497, 0.00123597/step  Wall: 320.492, 0.00130066/step, 132.856 ns/days, 0.0758716 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 290000  averaging 156.411 ns/day, 0.00110478 sec/step with standard deviation 0.000290306
+ENERGY:  290000       443.4470      1092.4967      1125.1479        76.7427        -114250.6207      9807.0196         0.0000         0.0000     18664.0981         -83041.6687       303.4196   -101705.7667    -82955.1362       302.7023            -50.6659       -53.1169    300727.7151        -8.6245        -8.5227
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 290000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 290000
+WRITING COORDINATES TO RESTART FILE AT STEP 290000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 290000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 290500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 291000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 291500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 292000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 292500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 293000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 293500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 294000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 294500
+TIMING: 295000  CPU: 319.459, 0.0011925/step  Wall: 326.49, 0.00119948/step, 144.063 ns/days, 0.0683036 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 295000  averaging 156.184 ns/day, 0.00110639 sec/step with standard deviation 0.000288056
+ENERGY:  295000       425.9167      1132.4500      1112.8673        84.3837        -113776.8688      9610.9904         0.0000         0.0000     18617.8804         -82792.3804       302.6682   -101410.2608    -82946.1849       302.6630             35.4558        38.7676    300253.4265       -16.6354       -16.4375
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 295000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 295000
+WRITING COORDINATES TO RESTART FILE AT STEP 295000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 295000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 295500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 296000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 296500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 297000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 297500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 298000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 298500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 299000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 299500
+TIMING: 300000  CPU: 326.134, 0.00133489/step  Wall: 333.205, 0.00134313/step, 128.655 ns/days, 0.0746182 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 300000  averaging 155.629 ns/day, 0.00111033 sec/step with standard deviation 0.000287235
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  300000       424.0575      1075.8306      1120.5188        71.1348        -114044.8968      9809.7232         0.0000         0.0000     18287.7092         -83255.9226       297.3007   -101543.6319    -82949.3732       302.4890             87.4619        89.1595    300152.0309       -12.4525       -12.2375
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 300000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 300000
+WRITING COORDINATES TO RESTART FILE AT STEP 300000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 300000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 300500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 301000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 301500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 302000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 302500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 303000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 303500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 304000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 304500
+TIMING: 305000  CPU: 330.406, 0.000854364/step  Wall: 337.504, 0.000859722/step, 200.995 ns/days, 0.0465683 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 305000  averaging 156.207 ns/day, 0.00110623 sec/step with standard deviation 0.000286633
+ENERGY:  305000       457.8639      1117.9017      1111.7189        66.7366        -114451.0541      9932.2232         0.0000         0.0000     18666.1839         -83098.4259       303.4535   -101764.6098    -82954.6758       302.5188            -65.9892       -67.7322    300635.9954       -10.6837       -10.6346
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 305000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 305000
+WRITING COORDINATES TO RESTART FILE AT STEP 305000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 305000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 305500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 306000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 306500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 307000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 307500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 308000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 308500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 309000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 309500
+TIMING: 310000  CPU: 339.625, 0.00184388/step  Wall: 346.779, 0.001855/step, 93.1535 ns/days, 0.0979029 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 310000  averaging 154.52 ns/day, 0.0011183 sec/step with standard deviation 0.000299758
+ENERGY:  310000       409.4114      1125.8121      1108.9016        65.6356        -114198.3510      9980.3302         0.0000         0.0000     18507.2853         -83000.9748       300.8703   -101508.2601    -82948.0833       302.4969            396.4087       402.7481    298949.5409        10.7335        11.1687
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 310000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 310000
+WRITING COORDINATES TO RESTART FILE AT STEP 310000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 310000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 310500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 311000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 311500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 312000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 312500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 313000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 313500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 314000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 314500
+TIMING: 315000  CPU: 345.201, 0.00111515/step  Wall: 352.392, 0.00112262/step, 153.926 ns/days, 0.0576901 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 315000  averaging 154.51 ns/day, 0.00111837 sec/step with standard deviation 0.000297331
+ENERGY:  315000       420.7426      1121.3784      1101.8547        74.6777        -113793.6406      9769.4219         0.0000         0.0000     18630.8976         -82674.6679       302.8798   -101305.5654    -82933.2112       302.5664             -1.7528         2.3815    302498.1473        10.0331        10.4999
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 315000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 315000
+WRITING COORDINATES TO RESTART FILE AT STEP 315000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 315000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 315500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 316000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 316500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 317000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 317500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 318000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 318500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 319000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 319500
+TIMING: 320000  CPU: 349.481, 0.000855929/step  Wall: 356.703, 0.000862243/step, 200.407 ns/days, 0.0431122 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 320000  averaging 155.065 ns/day, 0.00111437 sec/step with standard deviation 0.000296694
+ENERGY:  320000       419.2576      1138.2894      1113.6896        75.2731        -114439.7387      9866.4461         0.0000         0.0000     18738.1967         -83088.5862       304.6242   -101826.7829    -82944.8704       302.7308             42.5875        41.9327    300824.7359        15.1157        15.8579
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 320000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 320000
+WRITING COORDINATES TO RESTART FILE AT STEP 320000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 320000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 320500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 321000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 321500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 322000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 322500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 323000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 323500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 324000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 324500
+TIMING: 325000  CPU: 358.28, 0.00175992/step  Wall: 365.803, 0.00181994/step, 94.948 ns/days, 0.0884695 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 325000  averaging 153.569 ns/day, 0.00112522 sec/step with standard deviation 0.000307101
+ENERGY:  325000       391.8311      1103.1566      1110.6194        70.0553        -113810.5714      9701.1984         0.0000         0.0000     18447.5163         -82986.1942       299.8986   -101433.7104    -82957.3641       302.6519             23.1210        22.8408    301590.3161        10.9421        11.7663
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 325000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 325000
+WRITING COORDINATES TO RESTART FILE AT STEP 325000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 325000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 325500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 326000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 326500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 327000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 327500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 328000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 328500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 329000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 329500
+TIMING: 330000  CPU: 363.157, 0.000975296/step  Wall: 370.719, 0.000983339/step, 175.728 ns/days, 0.0464355 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 330000  averaging 153.863 ns/day, 0.00112307 sec/step with standard deviation 0.00030523
+ENERGY:  330000       410.1579      1106.1942      1096.0548        73.3448        -113731.9032      9528.5456         0.0000         0.0000     18471.1590         -83046.4469       300.2830   -101517.6059    -82957.7942       302.5210           -334.0024      -333.6752    301842.4160        -8.5944        -8.0812
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 330000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 330000
+WRITING COORDINATES TO RESTART FILE AT STEP 330000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 330000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 330500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 331000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 331500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 332000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 332500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 333000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 333500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 334000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 334500
+TIMING: 335000  CPU: 367.439, 0.000856457/step  Wall: 375.032, 0.000862588/step, 200.327 ns/days, 0.0395353 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 335000  averaging 154.398 ns/day, 0.00111919 sec/step with standard deviation 0.000304576
+ENERGY:  335000       444.3009      1105.9327      1124.1518        79.5357        -113858.2091      9615.8157         0.0000         0.0000     18726.0123         -82762.4602       304.4261   -101488.4724    -82954.1316       302.4628           -158.0837      -156.1917    299999.6472        -7.3057        -6.4948
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 335000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 335000
+WRITING COORDINATES TO RESTART FILE AT STEP 335000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 335000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 335500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 336000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 336500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 337000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 337500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 338000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 338500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 339000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 339500
+TIMING: 340000  CPU: 371.705, 0.000853274/step  Wall: 379.326, 0.000858686/step, 201.238 ns/days, 0.0381638 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 340000  averaging 154.928 ns/day, 0.00111536 sec/step with standard deviation 0.00030394
+ENERGY:  340000       420.0670      1120.4962      1099.1240        69.9884        -113889.2606      9633.7693         0.0000         0.0000     18642.3943         -82903.4213       303.0667   -101545.8157    -82966.2579       302.3686           -131.5633      -130.5690    300780.7093         6.8276         7.7627
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 340000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 340000
+WRITING COORDINATES TO RESTART FILE AT STEP 340000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 340000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 340500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 341000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 341500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 342000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 342500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 343000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 343500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 344000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 344500
+TIMING: 345000  CPU: 376.14, 0.000886864/step  Wall: 383.792, 0.000893172/step, 193.468 ns/days, 0.038456 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 345000  averaging 155.377 ns/day, 0.00111214 sec/step with standard deviation 0.000302881
+ENERGY:  345000       413.3146      1139.9351      1140.1674        69.6553        -113697.8490      9568.8079         0.0000         0.0000     18657.0901         -82708.8786       303.3057   -101365.9687    -82964.6316       302.2882           -262.9085      -266.7553    302011.3342       -20.0906       -19.3801
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 345000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 345000
+WRITING COORDINATES TO RESTART FILE AT STEP 345000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 345000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 345500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 346000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 346500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 347000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 347500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 348000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 348500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 349000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 349500
+TIMING: 350000  CPU: 382.376, 0.00124734/step  Wall: 390.07, 0.0012556/step, 137.623 ns/days, 0.0523167 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 350000  averaging 155.091 ns/day, 0.00111418 sec/step with standard deviation 0.000301166
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  350000       425.9636      1132.8574      1115.9592        70.2036        -114047.0560      9764.7881         0.0000         0.0000     18460.5312         -83076.7530       300.1102   -101537.2841    -82969.0634       302.2155            -58.2451       -63.1893    300757.4797       -23.7118       -23.1082
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 350000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 350000
+WRITING COORDINATES TO RESTART FILE AT STEP 350000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 350000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 350500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 351000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 351500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 352000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 352500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 353000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 353500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 354000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 354500
+TIMING: 355000  CPU: 386.646, 0.000853884/step  Wall: 394.369, 0.000859813/step, 200.974 ns/days, 0.0346314 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 355000  averaging 155.591 ns/day, 0.0011106 sec/step with standard deviation 0.000300527
+ENERGY:  355000       383.6287      1125.8563      1133.2475        78.0620        -114108.6149      9923.1930         0.0000         0.0000     18541.3395         -82923.2880       301.4239   -101464.6274    -82955.3722       302.1849            131.2550       130.8274    300701.8330       -15.4561       -14.9724
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 355000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 355000
+WRITING COORDINATES TO RESTART FILE AT STEP 355000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 355000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 355500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 356000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 356500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 357000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 357500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 358000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 358500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 359000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 359500
+TIMING: 360000  CPU: 390.919, 0.0008547/step  Wall: 398.67, 0.000860319/step, 200.856 ns/days, 0.0334569 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 360000  averaging 156.08 ns/day, 0.00110713 sec/step with standard deviation 0.000299858
+ENERGY:  360000       439.3731      1122.9790      1131.6927        77.5194        -114476.7797     10038.1234         0.0000         0.0000     18629.9869         -83037.1052       302.8650   -101667.0920    -82963.7317       302.1373            229.9345       230.1397    300158.5790        -6.7842        -6.2106
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 360000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 360000
+WRITING COORDINATES TO RESTART FILE AT STEP 360000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 360000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 360500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 361000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 361500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 362000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 362500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 363000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 363500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 364000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 364500
+TIMING: 365000  CPU: 395.523, 0.000920729/step  Wall: 403.305, 0.000926908/step, 186.426 ns/days, 0.0347591 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 365000  averaging 156.429 ns/day, 0.00110466 sec/step with standard deviation 0.000298514
+ENERGY:  365000       421.7597      1147.4556      1114.8233        68.3462        -114226.5236      9761.4919         0.0000         0.0000     18637.8863         -83074.7606       302.9935   -101712.6469    -82980.4678       302.1722             28.8428        32.0075    299664.2635        -2.3881        -1.6766
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 365000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 365000
+WRITING COORDINATES TO RESTART FILE AT STEP 365000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 365000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 365500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 366000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 366500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 367000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 367500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 368000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 368500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 369000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 369500
+TIMING: 370000  CPU: 400.191, 0.000933529/step  Wall: 408.005, 0.000940027/step, 183.824 ns/days, 0.0339454 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 370000  averaging 156.744 ns/day, 0.00110243 sec/step with standard deviation 0.00029708
+ENERGY:  370000       411.2878      1157.2283      1136.8888        71.9760        -113709.6943      9553.5353         0.0000         0.0000     18598.6746         -82780.1034       302.3560   -101378.7780    -82971.3317       302.1682           -189.4869      -189.7940    301673.9999        -5.7941        -5.0730
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 370000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 370000
+WRITING COORDINATES TO RESTART FILE AT STEP 370000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 370000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 370500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 371000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 371500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 372000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 372500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 373000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 373500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 374000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 374500
+TIMING: 375000  CPU: 404.444, 0.000850635/step  Wall: 412.286, 0.000856159/step, 201.832 ns/days, 0.0297277 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 375000  averaging 157.213 ns/day, 0.00109915 sec/step with standard deviation 0.000296433
+ENERGY:  375000       402.7460      1138.1551      1113.9723        72.1353        -113900.5703      9608.7337         0.0000         0.0000     18409.2649         -83155.5631       299.2768   -101564.8280    -82975.2501       302.0248           -298.9428      -295.8069    301226.3418       -15.0001       -14.1598
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 375000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 375000
+WRITING COORDINATES TO RESTART FILE AT STEP 375000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 375000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 375500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 376000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 376500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 377000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 377500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 378000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 378500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 379000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 379500
+TIMING: 380000  CPU: 411.278, 0.00136684/step  Wall: 419.382, 0.00141931/step, 121.749 ns/days, 0.0473104 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 380000  averaging 156.612 ns/day, 0.00110336 sec/step with standard deviation 0.000296731
+ENERGY:  380000       435.4158      1139.5104      1117.1534        79.1578        -114564.3058     10121.2370         0.0000         0.0000     18723.6008         -82948.2306       304.3869   -101671.8314    -82977.2208       302.0495            392.8801       394.9598    299796.4332        -4.9051        -3.9336
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 380000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 380000
+WRITING COORDINATES TO RESTART FILE AT STEP 380000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 380000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 380500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 381000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 381500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 382000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 382500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 383000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 383500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 384000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 384500
+TIMING: 385000  CPU: 415.564, 0.000857149/step  Wall: 423.698, 0.00086309/step, 200.211 ns/days, 0.0275709 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 385000  averaging 157.056 ns/day, 0.00110024 sec/step with standard deviation 0.000296042
+ENERGY:  385000       444.9527      1170.8042      1079.1519        66.7760        -114470.3617      9943.9967         0.0000         0.0000     18898.4614         -82866.2189       307.2296   -101764.6803    -82961.1025       302.3419             66.7953        65.1420    300334.5498        -5.8449        -5.2962
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 385000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 385000
+WRITING COORDINATES TO RESTART FILE AT STEP 385000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 385000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 385500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 386000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 386500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 387000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 387500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 388000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 388500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 389000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 389500
+TIMING: 390000  CPU: 419.833, 0.000853829/step  Wall: 427.997, 0.000859805/step, 200.976 ns/days, 0.0262718 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 390000  averaging 157.498 ns/day, 0.00109716 sec/step with standard deviation 0.00029537
+ENERGY:  390000       448.0444      1170.0423      1117.5651        67.4612        -114067.8791      9884.0813         0.0000         0.0000     18514.2303         -82866.4545       300.9832   -101380.6848    -82952.3418       302.2201            -12.6044       -11.1665    301655.2438        -3.9418        -3.1987
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 390000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 390000
+WRITING COORDINATES TO RESTART FILE AT STEP 390000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 390000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 390500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 391000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 391500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 392000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 392500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 393000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 393500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 394000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 394500
+TIMING: 395000  CPU: 426.138, 0.00126097/step  Wall: 434.344, 0.00126941/step, 136.126 ns/days, 0.0370245 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 395000  averaging 157.185 ns/day, 0.00109934 sec/step with standard deviation 0.00029411
+ENERGY:  395000       428.2898      1118.4873      1125.7731        64.9015        -113735.3181      9490.6491         0.0000         0.0000     18658.5646         -82848.6527       303.3296   -101507.2172    -82955.1554       302.2532           -244.0696      -246.0104    299501.5554       -17.9181       -17.4376
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 395000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 395000
+WRITING COORDINATES TO RESTART FILE AT STEP 395000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 395000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 395500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 396000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 396500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 397000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 397500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 398000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 398500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 399000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 399500
+TIMING: 400000  CPU: 430.421, 0.000856593/step  Wall: 438.655, 0.000862304/step, 200.393 ns/days, 0.0239529 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 400000  averaging 157.61 ns/day, 0.00109638 sec/step with standard deviation 0.000293442
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  400000       441.6170      1179.9879      1103.1343        69.8190        -113736.2255      9640.5110         0.0000         0.0000     18566.6952         -82734.4611       301.8361   -101301.1563    -82929.0823       302.4799             42.8727        42.8743    300012.3368       -20.1476       -19.7518
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 400000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 400000
+WRITING COORDINATES TO RESTART FILE AT STEP 400000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 400000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 400500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 401000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 401500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 402000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 402500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 403000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 403500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 404000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 404500
+TIMING: 405000  CPU: 434.753, 0.000866402/step  Wall: 443.015, 0.00087194/step, 198.179 ns/days, 0.0230095 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 405000  averaging 158.009 ns/day, 0.00109361 sec/step with standard deviation 0.000292666
+ENERGY:  405000       440.3736      1094.5740      1091.4800        70.5188        -114001.6560      9657.3582         0.0000         0.0000     18548.3753         -83098.9760       301.5383   -101647.3513    -82929.1099       302.3842           -116.7709      -119.7692    300162.6124       -22.6866       -22.3537
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 405000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 405000
+WRITING COORDINATES TO RESTART FILE AT STEP 405000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 405000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 405500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 406000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 406500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 407000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 407500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 408000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 408500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 409000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 409500
+TIMING: 410000  CPU: 439.822, 0.00101398/step  Wall: 448.117, 0.00102036/step, 169.352 ns/days, 0.0255091 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 410000  averaging 158.139 ns/day, 0.00109271 sec/step with standard deviation 0.000290967
+ENERGY:  410000       418.8157      1118.9511      1123.0622        67.8534        -114303.1856      9911.1248         0.0000         0.0000     18576.9902         -83086.3881       302.0035   -101663.3783    -82933.3805       302.4408            105.3813       102.7582    300038.3825       -37.2380       -37.3532
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 410000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 410000
+WRITING COORDINATES TO RESTART FILE AT STEP 410000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 410000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 410500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 411000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 411500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 412000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 412500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 413000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 413500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 414000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 414500
+TIMING: 415000  CPU: 444.091, 0.000853736/step  Wall: 452.415, 0.000859576/step, 201.029 ns/days, 0.0202955 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 415000  averaging 158.546 ns/day, 0.0010899 sec/step with standard deviation 0.000290317
+ENERGY:  415000       434.4128      1126.6465      1115.2719        74.8637        -114418.4469      9778.2244         0.0000         0.0000     18514.7111         -83374.3166       300.9910   -101889.0277    -82968.3630       302.3464            -83.6752       -82.7765    300570.0044       -41.3341       -41.6111
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 415000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 415000
+WRITING COORDINATES TO RESTART FILE AT STEP 415000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 415000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 415500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 416000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 416500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 417000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 417500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 418000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 418500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 419000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 419500
+TIMING: 420000  CPU: 448.355, 0.000852669/step  Wall: 456.706, 0.000858256/step, 201.339 ns/days, 0.0190723 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 420000  averaging 158.948 ns/day, 0.00108715 sec/step with standard deviation 0.000289668
+ENERGY:  420000       419.9154      1105.1777      1102.2157        77.0624        -114304.4017      9941.2755         0.0000         0.0000     18738.2321         -82920.5228       304.6248   -101658.7550    -82959.9598       302.3464            217.6917       218.1457    300288.3875       -32.5789       -32.8004
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 420000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 420000
+WRITING COORDINATES TO RESTART FILE AT STEP 420000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 420000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 420500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 421000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 421500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 422000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 422500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 423000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 423500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 424000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 424500
+TIMING: 425000  CPU: 453.79, 0.0010871/step  Wall: 462.175, 0.00109384/step, 157.976 ns/days, 0.0227883 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 425000  averaging 158.937 ns/day, 0.00108722 sec/step with standard deviation 0.000287939
+ENERGY:  425000       435.5967      1154.9558      1101.7830        80.2493        -113724.8439      9784.8877         0.0000         0.0000     18710.1475         -82457.2239       304.1682   -101167.3715    -82933.5113       302.5599            138.1090       133.8639    301915.2901       -26.8295       -27.2493
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 425000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 425000
+WRITING COORDINATES TO RESTART FILE AT STEP 425000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 425000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 425500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 426000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 426500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 427000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 427500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 428000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 428500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 429000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 429500
+TIMING: 430000  CPU: 460.693, 0.00138068/step  Wall: 469.118, 0.00138862/step, 124.44 ns/days, 0.027001 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 430000  averaging 158.426 ns/day, 0.00109073 sec/step with standard deviation 0.00028808
+ENERGY:  430000       440.3925      1116.0626      1097.2477        85.4138        -113861.6371      9711.7853         0.0000         0.0000     18500.1703         -82910.5650       300.7546   -101410.7353    -82926.7172       302.5835           -145.7147      -140.0202    301424.3135       -17.4151       -17.5665
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 430000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 430000
+WRITING COORDINATES TO RESTART FILE AT STEP 430000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 430000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 430500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 431000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 431500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 432000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 432500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 433000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 433500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 434000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 434500
+TIMING: 435000  CPU: 466.708, 0.00120301/step  Wall: 475.169, 0.0012101/step, 142.798 ns/days, 0.0218491 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 435000  averaging 158.227 ns/day, 0.0010921 sec/step with standard deviation 0.000286686
+ENERGY:  435000       439.5764      1104.2295      1116.7381        68.8488        -113790.0722      9732.3049         0.0000         0.0000     18434.6905         -82893.6840       299.6901   -101328.3746    -82933.2784       302.3467             72.4209        76.3745    300231.3757        -5.8899        -5.9382
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 435000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 435000
+WRITING COORDINATES TO RESTART FILE AT STEP 435000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 435000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 435500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 436000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 436500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 437000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 437500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 438000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 438500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 439000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 439500
+TIMING: 440000  CPU: 470.986, 0.000855512/step  Wall: 479.475, 0.000861226/step, 200.644 ns/days, 0.0143538 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 440000  averaging 158.608 ns/day, 0.00108948 sec/step with standard deviation 0.000286094
+ENERGY:  440000       431.6867      1161.0466      1109.2282        77.1932        -114116.1102      9843.7149         0.0000         0.0000     18510.9074         -82982.3332       300.9292   -101493.2407    -82937.2240       302.2398              1.0325         1.1359    301224.0951         0.7399         0.6470
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 440000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 440000
+WRITING COORDINATES TO RESTART FILE AT STEP 440000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 440000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 440500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 441000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 441500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 442000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 442500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 443000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 443500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 444000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 444500
+TIMING: 445000  CPU: 475.585, 0.000919871/step  Wall: 484.106, 0.000926267/step, 186.555 ns/days, 0.0141513 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 445000  averaging 158.876 ns/day, 0.00108764 sec/step with standard deviation 0.000284989
+ENERGY:  445000       423.1728      1108.7134      1111.0419        81.1560        -114305.7425      9733.1024         0.0000         0.0000     18654.7794         -83193.7767       303.2681   -101848.5561    -82961.4689       302.2379           -131.5735      -125.3640    300030.2698         7.3066         7.7166
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 445000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 445000
+WRITING COORDINATES TO RESTART FILE AT STEP 445000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 445000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 445500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 446000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 446500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 447000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 447500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 448000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 448500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 449000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 449500
+TIMING: 450000  CPU: 480.374, 0.000957813/step  Wall: 488.928, 0.000964283/step, 179.2 ns/days, 0.0133928 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 450000  averaging 159.076 ns/day, 0.00108627 sec/step with standard deviation 0.000283682
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  450000       428.3925      1115.0964      1106.9113        69.9599        -114066.1945      9810.9476         0.0000         0.0000     18577.3472         -82957.5396       302.0093   -101534.8868    -82955.5082       302.3329             95.1466        93.3633    299769.2708        14.9762        15.5442
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 450000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 450000
+WRITING COORDINATES TO RESTART FILE AT STEP 450000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 450000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 450500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 451000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 451500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 452000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 452500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 453000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 453500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 454000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 454500
+TIMING: 455000  CPU: 484.656, 0.000856408/step  Wall: 493.25, 0.00086443/step, 199.901 ns/days, 0.0108054 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 455000  averaging 159.434 ns/day, 0.00108384 sec/step with standard deviation 0.000283058
+ENERGY:  455000       406.2076      1155.2110      1112.6931        70.3525        -114246.8785      9837.6198         0.0000         0.0000     18422.5095         -83242.2851       299.4921   -101664.7946    -82971.4581       302.2363            101.2850       101.4226    300789.1989        13.4777        14.0740
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 455000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 455000
+WRITING COORDINATES TO RESTART FILE AT STEP 455000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 455000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 455500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 456000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 456500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 457000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 457500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 458000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 458500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 459000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 459500
+TIMING: 460000  CPU: 491.747, 0.00141815/step  Wall: 500.381, 0.00142623/step, 121.159 ns/days, 0.015847 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 460000  averaging 158.888 ns/day, 0.00108756 sec/step with standard deviation 0.000283753
+ENERGY:  460000       439.0871      1138.6183      1108.1234        60.8945        -113790.4111      9675.6663         0.0000         0.0000     18624.9181         -82743.1035       302.7826   -101368.0215    -82956.7580       302.2322            -34.8266       -32.7909    299608.6080         0.2397         0.9275
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 460000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 460000
+WRITING COORDINATES TO RESTART FILE AT STEP 460000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 460000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 460500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 461000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 461500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 462000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 462500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 463000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 463500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 464000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 464500
+TIMING: 465000  CPU: 498.842, 0.00141886/step  Wall: 507.517, 0.00142725/step, 121.072 ns/days, 0.0138761 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 465000  averaging 158.356 ns/day, 0.00109121 sec/step with standard deviation 0.000284397
+ENERGY:  465000       484.5120      1093.8147      1093.8141        60.7309        -114184.3077      9735.3750         0.0000         0.0000     18504.2161         -83211.8448       300.8204   -101716.0610    -82963.6122       302.1235           -249.9340      -250.5056    300862.2918       -13.6992       -13.1982
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 465000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 465000
+WRITING COORDINATES TO RESTART FILE AT STEP 465000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 465000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 465500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 466000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 466500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 467000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 467500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 468000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 468500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 469000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 469500
+TIMING: 470000  CPU: 504.656, 0.00116283/step  Wall: 513.368, 0.00117016/step, 147.672 ns/days, 0.00975135 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 470000  averaging 158.235 ns/day, 0.00109205 sec/step with standard deviation 0.000282981
+ENERGY:  470000       397.0646      1107.6562      1109.6121        64.0553        -113917.7085      9726.6879         0.0000         0.0000     18699.6247         -82813.0077       303.9971   -101512.6325    -82965.2574       302.2056            133.3742       137.6395    301039.2904         2.4439         3.1735
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 470000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 470000
+WRITING COORDINATES TO RESTART FILE AT STEP 470000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 470000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 470500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 471000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 471500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 472000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 472500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 473000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 473500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 474000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 474500
+TIMING: 475000  CPU: 508.925, 0.000853943/step  Wall: 517.666, 0.000859571/step, 201.031 ns/days, 0.00596924 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 475000  averaging 158.59 ns/day, 0.0010896 sec/step with standard deviation 0.00028248
+ENERGY:  475000       431.5784      1130.8184      1079.8313        75.0045        -113944.8910      9672.9447         0.0000         0.0000     18538.4532         -83016.2605       301.3770   -101554.7137    -82958.2923       302.3106           -240.1496      -239.1725    300162.3466         5.3835         6.0052
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 475000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 475000
+WRITING COORDINATES TO RESTART FILE AT STEP 475000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 475000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 475500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 476000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 476500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 477000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 477500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 478000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 478500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 479000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 479500
+TIMING: 480000  CPU: 515.667, 0.00134828/step  Wall: 524.451, 0.00135694/step, 127.345 ns/days, 0.00753856 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 480000  averaging 158.186 ns/day, 0.00109239 sec/step with standard deviation 0.000282311
+ENERGY:  480000       394.5217      1139.6434      1113.2005        65.1220        -113706.3141      9591.6749         0.0000         0.0000     18525.3208         -82876.8307       301.1635   -101402.1515    -82954.7223       302.1494             40.3769        38.2839    300682.6774       -12.2416       -11.8286
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 480000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 480000
+WRITING COORDINATES TO RESTART FILE AT STEP 480000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 480000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 480500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 481000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 481500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 482000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 482500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 483000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 483500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 484000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 484500
+TIMING: 485000  CPU: 520.063, 0.000879273/step  Wall: 528.877, 0.000885247/step, 195.2 ns/days, 0.00368853 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 485000  averaging 158.496 ns/day, 0.00109025 sec/step with standard deviation 0.000281623
+ENERGY:  485000       420.9839      1153.7403      1091.1619        73.3878        -113748.1257      9494.2138         0.0000         0.0000     18786.2066         -82728.4314       305.4047   -101514.6380    -82947.8329       302.0582           -260.0437      -260.1540    300882.1072       -28.5836       -28.0934
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 485000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 485000
+WRITING COORDINATES TO RESTART FILE AT STEP 485000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 485000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 485500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 486000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 486500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 487000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 487500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 488000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 488500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 489000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 489500
+TIMING: 490000  CPU: 524.382, 0.000863823/step  Wall: 533.224, 0.000869326/step, 198.775 ns/days, 0.0024148 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 490000  averaging 158.824 ns/day, 0.001088 sec/step with standard deviation 0.000281055
+ENERGY:  490000       465.0684      1091.8001      1100.4342        74.2448        -113647.4797      9472.7749         0.0000         0.0000     18603.6020         -82839.5554       302.4361   -101443.1574    -82946.4879       302.1308           -261.0707      -259.2083    300563.7919       -41.0069       -40.4955
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 490000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 490000
+WRITING COORDINATES TO RESTART FILE AT STEP 490000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 490000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 490500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 491000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 491500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 492000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 492500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 493000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 493500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 494000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 494500
+TIMING: 495000  CPU: 528.758, 0.000875163/step  Wall: 537.627, 0.000880737/step, 196.199 ns/days, 0.00122325 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 495000  averaging 159.13 ns/day, 0.0010859 sec/step with standard deviation 0.000280393
+ENERGY:  495000       427.0663      1172.2240      1099.7263        72.6795        -114166.7694      9821.2405         0.0000         0.0000     18477.8470         -83095.9858       300.3917   -101573.8328    -82958.8546       301.9839           -108.6459      -115.3131    300893.8664       -34.2357       -33.9606
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 495000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 495000
+WRITING COORDINATES TO RESTART FILE AT STEP 495000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 495000
+FINISHED WRITING RESTART VELOCITIES
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 495500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 496000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 496500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 497000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 497500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 498000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 498500
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 499000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 499500
+TIMING: 500000  CPU: 534.127, 0.00107374/step  Wall: 543.18, 0.00111047/step, 155.609 ns/days, 0 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 500000  averaging 159.094 ns/day, 0.00108615 sec/step with standard deviation 0.000278984
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  500000       433.8179      1090.4744      1115.6785        83.5395        -114319.1396      9801.4183         0.0000         0.0000     18732.2726         -83061.9384       304.5279   -101794.2110    -82975.2285       302.1185            -44.7899       -47.1223    299149.2787       -38.6188       -38.4605
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 500000
+WRITING COORDINATES TO DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd AT STEP 500000
+WRITING COORDINATES TO RESTART FILE AT STEP 500000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 500000
+FINISHED WRITING RESTART VELOCITIES
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 500000
+WRITING COORDINATES TO OUTPUT FILE AT STEP 500000
+CLOSING COORDINATE DCD FILE ../output/run-1/step5_imdv3_fileio_1.dcd
+WRITING VELOCITIES TO OUTPUT FILE AT STEP 500000
+====================================================
+
+WallClock: 545.285950  CPUTime: 537.471375  Memory: 0.000000 MB
+[Partition 0][Node 0] End of program
