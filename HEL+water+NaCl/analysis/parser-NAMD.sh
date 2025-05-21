@@ -1,6 +1,8 @@
 #!/bin/bash
 
 awk=parser-NAMD.awk
+MDengine=NAMD
+outputDir=output
 
 # if this is the first (parent) execution
 # save pwd and script name
@@ -9,6 +11,11 @@ awk=parser-NAMD.awk
 if [ -z $1 ]; then
 startDir=$(pwd)
 script=$0
+# cd into the MDengine/output sub-directory
+cd ${startDir}/${MDengine}/${outputDir} || {
+    echo "Error: ${MDengine}/${outputDir} not found"
+    exit 1
+}
 else
 startDir=$1
 script=$2
