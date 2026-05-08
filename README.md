@@ -1,0 +1,7 @@
+# IMDv3 Performance Tests
+
+This repository contains the analysis scripts (code) and benchmarking data related to the IMDv3 implementation discussed in the manuscript titled "Streaming Molecular Dynamics Simulation Data for On-the-fly Processing and Analysis" (update with actual title and doi). The manuscript is currently under review and the data and scripts are provided here for transparency and reproducibility.
+
+The repository is organized into sub-folders for each MD engine used in the manuscript - [GROMACS](GROMACS/), [LAMMPS](LAMMPS/) and [NAMD](NAMD/). Each of these folders contains the `run-scripts` to run the respective MD engine to optimize (`opt_sumbit.sh`) simulation perfromance over a fixed set of resources (CPU/GPU) and bencmark/compare the performance (`prod_submit.sh`) of `streaming` and `fileio` over a range of output frequencies. The `analysis-scripts` in each folder contains parser scripts (`parser-MD-engine.sh`) to extract the performance data from the respective `*.log`/`*.out` files and generate a master `*.csv` file containing relevant data used for the eventual performance comparison and plotting.
+
+The analysis/plotting is done in the [benchmarking notebook](benchmarking-analysis.ipynb) which uses the `*.csv` files to generate the performance comparison [plots](output/graphs/) in the manuscript. The notebook also undertakes a detailed model fitting of the performance data for each simulation engine.

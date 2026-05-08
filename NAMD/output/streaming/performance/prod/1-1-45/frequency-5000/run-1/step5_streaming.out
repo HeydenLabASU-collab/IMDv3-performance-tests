@@ -1,0 +1,797 @@
+Charm++> Running on MPI library: Open MPI v4.1.5a1, package: Open MPI software@d001.sol.rc.asu.edu Distribution, ident: 4.1.5a1, repo rev: v4.1.4-32-g5abd86cc8c, Unreleased developer copy (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 45 worker threads (PEs) + 1 comm threads per process, 45 PEs total
+Charm++> The comm. thread both sends and receives messages
+Charm++> Using recursive bisection (scheme 3) for topology aware partitions
+Converse/Charm++ Commit ID: v8.0.1-devel-35-gf310838d5
+Charm++ communication thread will sleep due to single-process run.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 24 cores x 1 PUs = 48-way SMP)
+Charm++> cpu topology info is gathered in 0.022 seconds.
+Info: Built with CUDA version 12090
+Pe 4 physical rank 4 will use CUDA device of pe 32
+Pe 5 physical rank 5 will use CUDA device of pe 32
+Pe 3 physical rank 3 will use CUDA device of pe 32
+Pe 17 physical rank 17 will use CUDA device of pe 32
+Pe 15 physical rank 15 will use CUDA device of pe 32
+Pe 13 physical rank 13 will use CUDA device of pe 32
+Pe 16 physical rank 16 will use CUDA device of pe 32
+Pe 14 physical rank 14 will use CUDA device of pe 32
+Pe 23 physical rank 23 will use CUDA device of pe 32
+Pe 25 physical rank 25 will use CUDA device of pe 32
+Pe 27 physical rank 27 will use CUDA device of pe 32
+Pe 22 physical rank 22 will use CUDA device of pe 32
+Pe 21 physical rank 21 will use CUDA device of pe 32
+Pe 20 physical rank 20 will use CUDA device of pe 32
+Pe 19 physical rank 19 will use CUDA device of pe 32
+Pe 18 physical rank 18 will use CUDA device of pe 32
+Pe 1 physical rank 1 will use CUDA device of pe 32
+Pe 2 physical rank 2 will use CUDA device of pe 32
+Pe 6 physical rank 6 will use CUDA device of pe 32
+Pe 8 physical rank 8 will use CUDA device of pe 32
+Pe 11 physical rank 11 will use CUDA device of pe 32
+Pe 29 physical rank 29 will use CUDA device of pe 32
+Pe 10 physical rank 10 will use CUDA device of pe 32
+Pe 12 physical rank 12 will use CUDA device of pe 32
+Pe 9 physical rank 9 will use CUDA device of pe 32
+Pe 7 physical rank 7 will use CUDA device of pe 32
+Pe 24 physical rank 24 will use CUDA device of pe 32
+Pe 26 physical rank 26 will use CUDA device of pe 32
+Pe 28 physical rank 28 will use CUDA device of pe 32
+Pe 44 physical rank 44 will use CUDA device of pe 32
+Pe 43 physical rank 43 will use CUDA device of pe 32
+Pe 0 physical rank 0 will use CUDA device of pe 32
+Pe 41 physical rank 41 will use CUDA device of pe 32
+Pe 42 physical rank 42 will use CUDA device of pe 32
+Pe 35 physical rank 35 will use CUDA device of pe 32
+Pe 37 physical rank 37 will use CUDA device of pe 32
+Pe 38 physical rank 38 will use CUDA device of pe 32
+Pe 40 physical rank 40 will use CUDA device of pe 32
+Pe 36 physical rank 36 will use CUDA device of pe 32
+Pe 39 physical rank 39 will use CUDA device of pe 32
+Pe 30 physical rank 30 will use CUDA device of pe 32
+Pe 34 physical rank 34 will use CUDA device of pe 32
+Pe 31 physical rank 31 will use CUDA device of pe 32
+Pe 33 physical rank 33 will use CUDA device of pe 32
+Pe 32 physical rank 32 binding to CUDA device 0 on sg044: 'NVIDIA A100-SXM4-80GB'  Mem: 81152MB  Rev: 8.0  PCI: 0:1:0
+CharmLB> Load balancing instrumentation for communication is off.
+Info: NAMD 3.1alpha4pre for Linux-x86_64-MPI-smp-CUDA
+Info: 
+Info: Please visit http://www.ks.uiuc.edu/Research/namd/
+Info: for updates, documentation, and support information.
+Info: 
+Info: Please cite Phillips et al., J. Chem. Phys. 153:044130 (2020) doi:10.1063/5.0014475
+Info: in all publications reporting results obtained with NAMD.
+Info: 
+Info: Based on Charm++/Converse 80001 for mpi-linux-x86_64
+Info: Built Fri Apr 17 06:27:28 MST 2026 by athiru12 on sg013
+Info: Source code at Git commit ID 0de8a9017a5e517ce3382a552ac4a3debb0beccb
+Info: 1 NAMD  3.1alpha4pre  Linux-x86_64-MPI-smp-CUDA  45    sg044  athiru12
+Info: Running on 45 processors, 1 nodes, 1 physical nodes.
+Info: CPU topology information available.
+Info: Charm++/Converse parallel runtime startup completed at 3.68591 s
+CkLoopLib is used in SMP with simple dynamic scheduling (converse-level notification)
+Info: 0 MB of memory in use based on /proc/self/stat
+Info: Configuration file is input/step5_streaming_streaming_run_1.inp
+Info: Changed directory to input
+TCL: Suspending until startup complete.
+Warning: Option "1-4scaling" has been deprecated. Instead use "oneFourScaling".
+Info: EXTENDED SYSTEM FILE   ../output/vanilla/performance/equil/1-0-40/run-1/step4_equilibration.xsc
+Info: Tuning parameters to improve GPU-resident performance
+Info: Setting margin to 4
+Warning: The Langevin gamma parameters differ over the particles,
+Warning: requiring extra work per step to constrain rigid bonds.
+Info: Enabling PMEOffload because PMEInterpOrder > 4.
+Info: Running with GPU-resident mode
+Warning: Always using force tables for GPU nonbonded kernel due to unsupported config parameters.
+Info: SIMULATION PARAMETERS:
+Info: TIMESTEP               2
+Info: NUMBER OF STEPS        500000
+Info: STEPS PER CYCLE        20
+Info: PERIODIC CELL BASIS 1  69 0 0
+Info: PERIODIC CELL BASIS 2  0 69 0
+Info: PERIODIC CELL BASIS 3  0 0 69
+Info: PERIODIC CELL CENTER   0 0 0
+Info: WRAPPING WATERS AROUND PERIODIC BOUNDARIES ON OUTPUT.
+Info: WRAPPING ALL CLUSTERS AROUND PERIODIC BOUNDARIES ON OUTPUT.
+Info: LOAD BALANCER  Centralized
+Info: LOAD BALANCING STRATEGY  New Load Balancers -- DEFAULT
+Info: LDB PERIOD             4000 steps
+Info: FIRST LDB TIMESTEP     100
+Info: LAST LDB TIMESTEP     -1
+Info: LDB BACKGROUND SCALING 1
+Info: HOM BACKGROUND SCALING 1
+Info: PME BACKGROUND SCALING 1
+Warning: OVERRIDING NOPATCH SETTING. Not supported with GPUresident on
+Info: MIN ATOMS PER PATCH    40
+Info: EMPTY PATCH LOAD       40 ATOMS
+Info: VELOCITY FILE          ../output/vanilla/performance/equil/1-0-40/run-1/step4_equilibration.vel
+Info: CENTER OF MASS MOVING INITIALLY? NO
+Info: DIELECTRIC             1
+Info: EXCLUDE                SCALED ONE-FOUR
+Info: 1-4 ELECTROSTATICS SCALED BY 1
+Info: MODIFIED 1-4 VDW PARAMETERS WILL BE USED
+Info: NO DCD TRAJECTORY OUTPUT
+Info: NO EXTENDED SYSTEM TRAJECTORY OUTPUT
+Info: NO VELOCITY DCD OUTPUT
+Info: NO FORCE DCD OUTPUT
+Info: OUTPUT FILENAME        ../output/streaming/performance/prod/1-1-45/frequency-5000/run-1/step5_streaming
+Info: BINARY OUTPUT FILES WILL BE USED
+Info: NO RESTART FILE
+Info: NAMD will save positions and velocities to ../output/streaming/performance/prod/1-1-45/frequency-5000/run-1/step5_streaming.crash.csv when  atoms are moving too fast.
+Info: SWITCHING ACTIVE
+Info: VDW FORCE SWITCHING ACTIVE
+Info: SWITCHING ON           10
+Info: SWITCHING OFF          12
+Info: PAIRLIST DISTANCE      16
+Info: PAIRLIST SHRINK RATE   0.01
+Info: PAIRLIST GROW RATE     0.01
+Info: PAIRLIST TRIGGER       0.3
+Info: PAIRLISTS PER CYCLE    2
+Info: PAIRLISTS ENABLED
+Info: MARGIN                 4
+Info: HYDROGEN GROUP CUTOFF  2.5
+Info: PATCH DIMENSION        22.5
+Info: ENERGY OUTPUT STEPS    5000
+Info: ENERGY EVALUATION STEPS    5000
+Info: OUTPUT ENERGY PRECISION 4
+Info: CROSSTERM ENERGY INCLUDED IN DIHEDRAL
+Info: TIMING OUTPUT STEPS    5000
+Info: INTERACTIVE MD ACTIVE
+Info: INTERACTIVE MD VERSION    3
+Info: INTERACTIVE MD PORT    8889
+Info: INTERACTIVE MD FREQ    5000
+Info: WILL AWAIT INTERACTIVE MD CONNECTION
+Info: INTERACTIVE MD WILL SEND THE FOLLOWING:
+Info: WRAPPED COORDINATES
+Info: LANGEVIN DYNAMICS ACTIVE
+Info: LANGEVIN TEMPERATURE   303.15
+Info: LANGEVIN USING BBK INTEGRATOR
+Info: LANGEVIN DAMPING COEFFICIENT IS 1 INVERSE PS
+Info: LANGEVIN DYNAMICS NOT APPLIED TO HYDROGENS
+Info: LANGEVIN PISTON PRESSURE CONTROL ACTIVE
+Info:        TARGET PRESSURE IS 1.01325 BAR
+Info:     OSCILLATION PERIOD IS 50 FS
+Info:             DECAY TIME IS 25 FS
+Info:     PISTON TEMPERATURE IS 303.15 K
+Info:       PRESSURE CONTROL IS GROUP-BASED
+Info:    INITIAL STRAIN RATE IS 0 0 0
+Info:       CELL FLUCTUATION IS ISOTROPIC
+Info: PARTICLE MESH EWALD (PME) ACTIVE
+Info: PME TOLERANCE               1e-06
+Info: PME EWALD COEFFICIENT       0.257952
+Info: PME INTERPOLATION ORDER     6
+Info: PME GRID DIMENSIONS         72 72 72
+Info: PME MAXIMUM GRID SPACING    1
+Info: PME RECIPROCAL SUM OFFLOADED TO GPU
+Info: PME CALCULATION WILL BE PERFORMED ON GPU
+Info: FULL ELECTROSTATIC EVALUATION FREQUENCY      1
+Info: USING VERLET I (r-RESPA) MTS SCHEME.
+Info: C1 SPLITTING OF LONG RANGE ELECTROSTATICS
+Info: PLACING ATOMS IN PATCHES BY HYDROGEN GROUPS
+Info: RIGID BONDS TO HYDROGEN : ALL
+Info:         ERROR TOLERANCE : 1e-08
+Info:          MAX ITERATIONS : 100
+Info: RIGID WATER USING SETTLE ALGORITHM
+Info: RANDOM NUMBER SEED     1776749727
+Info: USE HYDROGEN BONDS?    NO
+Info: COORDINATE PDB         step3_input.pdb
+Info: STRUCTURE FILE         step3_input.psf
+Info: PARAMETER file: CHARMM format! 
+Info: PARAMETERS             toppar/par_all36m_prot.prm
+Info: PARAMETERS             toppar/par_all36_na.prm
+Info: PARAMETERS             toppar/par_all36_carb.prm
+Info: PARAMETERS             toppar/par_all36_lipid.prm
+Info: PARAMETERS             toppar/par_all36_cgenff.prm
+Info: PARAMETERS             toppar/par_interface.prm
+Info: PARAMETERS             toppar/toppar_all36_moreions.str
+Info: PARAMETERS             toppar/toppar_all36_nano_lig.str
+Info: PARAMETERS             toppar/toppar_all36_nano_lig_patch.str
+Info: PARAMETERS             toppar/toppar_all36_synthetic_polymer.str
+Info: PARAMETERS             toppar/toppar_all36_synthetic_polymer_patch.str
+Info: PARAMETERS             toppar/toppar_all36_polymer_solvent.str
+Info: PARAMETERS             toppar/toppar_water_ions.str
+Info: PARAMETERS             toppar/toppar_dum_noble_gases.str
+Info: PARAMETERS             toppar/toppar_ions_won.str
+Info: PARAMETERS             toppar/cam.str
+Info: PARAMETERS             toppar/toppar_all36_prot_arg0.str
+Info: PARAMETERS             toppar/toppar_all36_prot_c36m_d_aminoacids.str
+Info: PARAMETERS             toppar/toppar_all36_prot_fluoro_alkanes.str
+Info: PARAMETERS             toppar/toppar_all36_prot_heme.str
+Info: PARAMETERS             toppar/toppar_all36_prot_na_combined.str
+Info: PARAMETERS             toppar/toppar_all36_prot_retinol.str
+Info: PARAMETERS             toppar/toppar_all36_prot_model.str
+Info: PARAMETERS             toppar/toppar_all36_prot_modify_res.str
+Info: PARAMETERS             toppar/toppar_all36_na_nad_ppi.str
+Info: PARAMETERS             toppar/toppar_all36_na_rna_modified.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_sphingo.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_archaeal.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_bacterial.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_cardiolipin.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_cholesterol.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_dag.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_inositol.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_lnp.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_lps.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_mycobacterial.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_miscellaneous.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_model.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_prot.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_tag.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_yeast.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_hmmm.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_detergent.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_ether.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_oxidized.str
+Info: PARAMETERS             toppar/toppar_all36_carb_glycolipid.str
+Info: PARAMETERS             toppar/toppar_all36_carb_glycopeptide.str
+Info: PARAMETERS             toppar/toppar_all36_carb_imlab.str
+Info: PARAMETERS             toppar/toppar_all36_label_spin.str
+Info: PARAMETERS             toppar/toppar_all36_label_fluorophore.str
+Info: USING ARITHMETIC MEAN TO COMBINE L-J SIGMA PARAMETERS
+Info: BINARY COORDINATES     ../output/vanilla/performance/equil/1-0-40/run-1/step4_equilibration.coor
+Warning: SKIPPING PART OF PARAMETER FILE AFTER RETURN STATEMENT
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR HAL1-CTO1-C-NHL
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=0  n=1  delta=0INCREASING MULTIPLICITY TO: 2
+  k=0  n=3  delta=0
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR HAL1-CTO1-C-O
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=0  n=1  delta=0INCREASING MULTIPLICITY TO: 2
+  k=0  n=2  delta=3.14159
+Warning: SKIPPING PART OF PARAMETER FILE AFTER RETURN STATEMENT
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR CTL2-CG2O5-CTL1-CTL3
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=0.75  n=1  delta=0  k=0.18  n=2  delta=3.14159INCREASING MULTIPLICITY TO: 3
+  k=0.065  n=3  delta=0
+
+Warning: DUPLICATE BOND ENTRY FOR CEL1-CL
+PREVIOUS VALUES  k=440  x0=1.489
+   USING VALUES  k=300  x0=1.48
+Info: SUMMARY OF PARAMETERS:
+Info: 1988 BONDS
+Info: 6776 ANGLES
+Info: 19939 DIHEDRAL
+Info: 430 IMPROPER
+Info: 28 CROSSTERM
+Info: 751 VDW
+Info: 122 VDW_PAIRS
+Info: 0 NBTHOLE_PAIRS
+Warning: Ignored 9467 bonds with zero force constants.
+Warning: Will get H-H distance in rigid H2O from H-O-H angle.
+Info: No lone pairs detected in waters
+Info: TIME FOR READING PSF FILE: 0.269107
+Info: Reading pdb file step3_input.pdb
+Info: TIME FOR READING PDB FILE: 0.201941
+Info: 
+Info: ****************************
+Info: STRUCTURE SUMMARY:
+Info: 30423 ATOMS
+Info: 20918 BONDS
+Info: 13014 ANGLES
+Info: 5187 DIHEDRALS
+Info: 373 IMPROPERS
+Info: 127 CROSSTERMS
+Info: 0 EXCLUSIONS
+Info: 29360 RIGID BONDS
+Info: 61909 DEGREES OF FREEDOM
+Info: 10530 HYDROGEN GROUPS
+Info: 4 ATOMS IN LARGEST HYDROGEN GROUP
+Info: 10530 MIGRATION GROUPS
+Info: 4 ATOMS IN LARGEST MIGRATION GROUP
+Info: TOTAL MASS = 186727 amu
+Info: TOTAL CHARGE = 1.31875e-06 e
+Info: MASS DENSITY = 0.943883 g/cm^3
+Info: ATOM DENSITY = 0.0926093 atoms/A^3
+Info: *****************************
+Info: Reading from binary file ../output/vanilla/performance/equil/1-0-40/run-1/step4_equilibration.coor
+Info: 
+Info: Entering startup at 6.141 s, 0 MB of memory in use
+Info: Startup phase 0 took 0.000845917 s, 0 MB of memory in use
+Info: ADDED 39038 IMPLICIT EXCLUSIONS
+Info: Startup phase 1 took 0.00636168 s, 0 MB of memory in use
+Info: NONBONDED TABLE R-SQUARED SPACING: 0.0625
+Info: NONBONDED TABLE SIZE: 769 POINTS
+Info: INCONSISTENCY IN FAST TABLE ENERGY VS FORCE: 0.000325096 AT 11.9556
+Info: INCONSISTENCY IN SCOR TABLE ENERGY VS FORCE: 0.000324844 AT 11.9556
+Info: INCONSISTENCY IN VDWA TABLE ENERGY VS FORCE: 0.0040507 AT 0.251946
+Info: INCONSISTENCY IN VDWB TABLE ENERGY VS FORCE: 0.00150189 AT 0.251946
+Info: Startup phase 2 took 0.0141357 s, 0 MB of memory in use
+Info: Startup phase 3 took 0.000173267 s, 0 MB of memory in use
+Info: Startup phase 4 took 0.0016466 s, 0 MB of memory in use
+Info: Startup phase 5 took 0.000172465 s, 0 MB of memory in use
+Info: REDUCING NUMBER OF PATCHES TO IMPROVE LOAD BALANCE
+Info: PATCH GRID IS 5 (PERIODIC) BY 3 (PERIODIC) BY 3 (PERIODIC)
+Info: PATCH GRID IS 2-AWAY BY 1-AWAY BY 1-AWAY
+Info: Reading from binary file ../output/vanilla/performance/equil/1-0-40/run-1/step4_equilibration.vel
+Info: REMOVING COM VELOCITY -0.0158458 -0.019888 0.00968242
+Info: LARGEST PATCH (22) HAS 800 ATOMS
+Info: TORUS A SIZE 1 USING 0
+Info: TORUS B SIZE 1 USING 0
+Info: TORUS C SIZE 1 USING 0
+Info: TORUS MINIMAL MESH SIZE IS 1 BY 1 BY 1
+Info: Placed 100% of base nodes on same physical node as patch
+Info: Startup phase 6 took 0.137073 s, 0 MB of memory in use
+Info: Use 3D box decompostion in PME FFT.
+Info: PME using 1 x 1 x 1 pencil grid for FFT and reciprocal sum.
+Info: Startup phase 7 took 0.00135528 s, 0 MB of memory in use
+Info: Updated CUDA force table with 4096 elements.
+Info: Updated CUDA LJ table with 751 x 751 elements.
+Info: Startup phase 8 took 0.0059478 s, 0 MB of memory in use
+Info: Startup phase 9 took 0.000172146 s, 0 MB of memory in use
+Info: Startup phase 10 took 0.000149662 s, 0 MB of memory in use
+Info: Startup phase 11 took 0.0141021 s, 0 MB of memory in use
+LDB: Central LB being created...
+Info: Startup phase 12 took 0.541676 s, 0 MB of memory in use
+Info: Startup phase 13 took 0.000208694 s, 0 MB of memory in use
+Info: Startup phase 14 took 0.00277677 s, 0 MB of memory in use
+Info: Startup phase 15 took 0.000395467 s, 0 MB of memory in use
+Info: CREATING 1755 COMPUTE OBJECTS
+Info: Interactive MD listening on port 8889.
+Info: Found 268 unique exclusion lists needing 4316 bytes
+Info: Startup phase 16 took 0.163433 s, 0 MB of memory in use
+Info: useSync: 0 useProxySync: 0
+Info: Startup phase 17 took 0.000202573 s, 0 MB of memory in use
+Info: Startup phase 18 took 5.5775e-05 s, 0 MB of memory in use
+Info: Finished startup at 7.03188 s, 0 MB of memory in use
+
+TCL: Original numsteps 500000 will be ignored.
+TCL: Running for 500000 steps
+Info: INTERACTIVE MD AWAITING CONNECTION
+Warning: IMD protocol version 3 detected
+Info: IMD connection opened
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:       0       390.0165      1067.9379      1155.8548        69.8147        -111518.5693      9145.1384         0.0000         0.0000     18338.1923         -81351.6148       298.1214    -99689.8070    -81351.6148       298.1214          -1454.3547     -1453.0520    328509.0000     -1454.3547     -1453.0520
+
+Info: Initial time: 45 CPUs 0.00562821 s/step 30.7025 ns/day 0 MB memory
+Info: Initial time: 45 CPUs 0.00113924 s/step 151.68 ns/day 0 MB memory
+Info: Initial time: 45 CPUs 0.00200064 s/step 86.3725 ns/day 0 MB memory
+Info: Benchmark time: 45 CPUs 0.00101286 s/step 170.605 ns/day 0 MB memory
+Info: Benchmark time: 45 CPUs 0.00104236 s/step 165.778 ns/day 0 MB memory
+Info: Benchmark time: 45 CPUs 0.00101356 s/step 170.488 ns/day 0 MB memory
+Info: Benchmark time: 45 CPUs 0.00103365 s/step 167.174 ns/day 0 MB memory
+Info: Benchmark time: 45 CPUs 0.0011874 s/step 145.528 ns/day 0 MB memory
+Info: Benchmark time: 45 CPUs 0.00102302 s/step 168.911 ns/day 0 MB memory
+TIMING: 5000  CPU: 13.9697, 0.00101395/step  Wall: 11.7019, 0.00112013/step, 154.268 ns/days, 0.154018 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 5000  averaging 154.268 ns/day, 0.00112013 sec/step with standard deviation 0
+ENERGY:    5000       420.1521      1136.4597      1145.3236        68.4079        -113951.9865      9747.8861         0.0000         0.0000     18726.4068         -82707.3503       304.4325   -101433.7571    -82029.4826       301.2769            168.7322       173.7692    300988.8397      -642.8113      -639.6414
+
+The last position output (seq=5000) takes 0.001 seconds, 0.000 MB of memory in use
+TIMING: 10000  CPU: 18.9525, 0.000996567/step  Wall: 16.7609, 0.0010118/step, 170.786 ns/days, 0.137717 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 10000  averaging 162.107 ns/day, 0.00106596 sec/step with standard deviation 7.66026e-05
+ENERGY:   10000       424.0880      1102.1897      1132.0839        79.0468        -114190.4845      9892.2340         0.0000         0.0000     18566.2623         -82994.5798       301.8291   -101560.8421    -82351.1816       301.4610            -24.5921       -26.8259    302176.9834      -436.7382      -435.3696
+
+The last position output (seq=10000) takes 0.001 seconds, 0.000 MB of memory in use
+TIMING: 15000  CPU: 24.1862, 0.00104672/step  Wall: 22.0709, 0.00106201/step, 162.71 ns/days, 0.143076 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 15000  averaging 162.308 ns/day, 0.00106464 sec/step with standard deviation 5.42142e-05
+ENERGY:   15000       418.2908      1115.6712      1108.9100        68.8808        -114153.1855      9827.6309         0.0000         0.0000     18614.7036         -82999.0982       302.6166   -101613.8018    -82513.1608       301.7499             57.3255        55.5415    299288.9417      -313.2223      -312.6418
+
+The last position output (seq=15000) takes 0.001 seconds, 0.000 MB of memory in use
+TIMING: 20000  CPU: 29.1007, 0.000982901/step  Wall: 27.059, 0.000997611/step, 173.214 ns/days, 0.133015 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 20000  averaging 164.903 ns/day, 0.00104789 sec/step with standard deviation 5.55232e-05
+ENERGY:   20000       445.8921      1118.4815      1138.1478        70.3222        -113962.3995      9674.3760         0.0000         0.0000     18563.0637         -82952.1161       301.7771   -101515.1798    -82600.9519       301.7553           -120.4712      -121.3311    300677.4044      -274.6721      -274.3797
+
+The last position output (seq=20000) takes 0.001 seconds, 0.000 MB of memory in use
+TIMING: 25000  CPU: 34.0635, 0.000992569/step  Wall: 32.0967, 0.00100754/step, 171.507 ns/days, 0.132939 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 25000  averaging 166.183 ns/day, 0.00103982 sec/step with standard deviation 5.13585e-05
+ENERGY:   25000       418.5665      1115.3351      1125.8074        76.5962        -114272.8349      9890.1333         0.0000         0.0000     18678.1718         -82968.2245       303.6484   -101646.3963    -82662.1640       302.0708            145.5657       145.6505    300116.9786      -204.6325      -204.3746
+
+The last position output (seq=25000) takes 0.001 seconds, 0.000 MB of memory in use
+TIMING: 30000  CPU: 39.3061, 0.00104853/step  Wall: 37.4129, 0.00106325/step, 162.521 ns/days, 0.138813 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 30000  averaging 165.561 ns/day, 0.00104372 sec/step with standard deviation 4.6922e-05
+ENERGY:   30000       433.2543      1104.3859      1107.3160        77.5928        -114344.9676      9852.3139         0.0000         0.0000     18701.5347         -83068.5700       304.0282   -101770.1047    -82720.2220       302.3505            -96.7774       -94.7264    301263.4334      -189.2246      -188.7106
+
+The last position output (seq=30000) takes 0.001 seconds, 0.000 MB of memory in use
+TIMING: 35000  CPU: 44.2823, 0.000995239/step  Wall: 42.4626, 0.00100995/step, 171.098 ns/days, 0.130451 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 35000  averaging 166.33 ns/day, 0.0010389 sec/step with standard deviation 4.46957e-05
+ENERGY:   35000       405.2219      1125.3387      1122.5823        65.0785        -114387.7678      9894.6031         0.0000         0.0000     18379.7590         -83395.1844       298.7971   -101774.9434    -82804.5923       301.9063            153.7362       151.5551    299350.4908      -146.3545      -146.1774
+
+The last position output (seq=35000) takes 0.001 seconds, 0.000 MB of memory in use
+TIMING: 40000  CPU: 49.2457, 0.00099267/step  Wall: 47.4989, 0.00100725/step, 171.556 ns/days, 0.128704 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 40000  averaging 166.966 ns/day, 0.00103494 sec/step with standard deviation 4.28661e-05
+ENERGY:   40000       409.4477      1104.6147      1103.2534        71.5240        -114098.8641      9734.1495         0.0000         0.0000     18659.4811         -83016.3936       303.3445   -101675.8747    -82828.1258       302.0661             69.4769        71.2102    300171.6606      -122.3732      -122.0232
+
+The last position output (seq=40000) takes 0.001 seconds, 0.000 MB of memory in use
+TIMING: 45000  CPU: 54.4462, 0.0010401/step  Wall: 52.7756, 0.00105535/step, 163.737 ns/days, 0.133384 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 45000  averaging 166.601 ns/day, 0.00103721 sec/step with standard deviation 4.06706e-05
+ENERGY:   45000       425.1225      1124.6082      1121.1851        67.5907        -114032.0400      9655.2709         0.0000         0.0000     18555.4900         -83082.7726       301.6540   -101638.2626    -82853.5904       302.0249            -26.4336       -25.7786    300320.8395      -112.7793      -112.3987
+
+The last position output (seq=45000) takes 0.001 seconds, 0.000 MB of memory in use
+TIMING: 50000  CPU: 59.3582, 0.000982415/step  Wall: 57.7597, 0.000996821/step, 173.351 ns/days, 0.124603 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 50000  averaging 167.252 ns/day, 0.00103317 sec/step with standard deviation 4.04156e-05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:   50000       446.5288      1111.9162      1146.8602        62.4701        -114701.4180     10046.0719         0.0000         0.0000     18503.2763         -83384.2945       300.8051   -101887.5708    -82901.8363       301.9140            388.4032       385.4648    299286.6842       -67.2172       -67.1384
+
+The last position output (seq=50000) takes 0.001 seconds, 0.000 MB of memory in use
+TIMING: 55000  CPU: 64.3018, 0.000988717/step  Wall: 62.7782, 0.0010037/step, 172.163 ns/days, 0.124068 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 55000  averaging 167.687 ns/day, 0.00103049 sec/step with standard deviation 3.93579e-05
+ENERGY:   55000       435.4817      1132.1646      1106.3227        62.6227        -113869.7545      9759.5991         0.0000         0.0000     18719.9092         -82653.6544       304.3269   -101373.5636    -82881.1544       302.1151           -124.6000      -122.7552    302829.5811       -71.9991       -71.7732
+
+TIMING: 60000  CPU: 69.4489, 0.00102941/step  Wall: 67.9999, 0.00104434/step, 165.464 ns/days, 0.127641 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 60000  averaging 167.5 ns/day, 0.00103164 sec/step with standard deviation 3.77386e-05
+ENERGY:   60000       445.4745      1158.8621      1104.5148        77.0413        -114008.4219      9752.5606         0.0000         0.0000     18743.0207         -82726.9479       304.7026   -101469.9686    -82869.2924       302.3141           -219.2771      -218.9683    302362.4922       -83.3282       -83.0959
+
+TIMING: 65000  CPU: 74.3562, 0.000981472/step  Wall: 72.9825, 0.000996515/step, 173.404 ns/days, 0.120412 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 65000  averaging 167.939 ns/day, 0.00102894 sec/step with standard deviation 3.74225e-05
+ENERGY:   65000       409.8627      1146.4668      1114.9596        78.3641        -113918.6530      9652.0206         0.0000         0.0000     18782.4040         -82734.5752       305.3429   -101516.9792    -82859.6697       302.5304            -10.2765       -13.1710    301025.2129       -78.1102       -78.1012
+
+TIMING: 70000  CPU: 79.2988, 0.000988514/step  Wall: 77.999, 0.00100329/step, 172.233 ns/days, 0.119838 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 70000  averaging 168.239 ns/day, 0.00102711 sec/step with standard deviation 3.66021e-05
+ENERGY:   70000       444.4554      1145.7954      1114.2694        81.5658        -114355.5132      9848.7908         0.0000         0.0000     18850.2509         -82870.3855       306.4458   -101720.6364    -82860.3841       302.7915            -29.8643       -31.6041    299835.1346       -74.8938       -75.0014
+
+TIMING: 75000  CPU: 84.4337, 0.00102698/step  Wall: 83.2077, 0.00104174/step, 165.876 ns/days, 0.122983 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 75000  averaging 168.079 ns/day, 0.00102809 sec/step with standard deviation 3.54724e-05
+ENERGY:   75000       415.9698      1135.4274      1121.7286        82.0036        -114137.3199      9931.0226         0.0000         0.0000     18441.0826         -83010.0853       299.7940   -101451.1678    -82869.7404       302.6041            102.5156       103.9481    300638.2562       -63.8057       -63.8171
+
+TIMING: 80000  CPU: 89.3049, 0.000974247/step  Wall: 88.1518, 0.000988829/step, 174.752 ns/days, 0.115363 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 80000  averaging 168.481 ns/day, 0.00102563 sec/step with standard deviation 3.56472e-05
+ENERGY:   80000       436.9105      1139.8503      1104.5007        62.0449        -113824.6664      9595.6515         0.0000         0.0000     18572.3768         -82913.3318       301.9285   -101485.7086    -82872.3046       302.5644           -118.2350      -116.7162    300595.1779       -67.0075       -66.9288
+
+TIMING: 85000  CPU: 94.2583, 0.000990666/step  Wall: 93.179, 0.00100545/step, 171.864 ns/days, 0.115906 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 85000  averaging 168.677 ns/day, 0.00102444 sec/step with standard deviation 3.48607e-05
+ENERGY:   85000       411.4077      1154.5641      1105.0218        75.8828        -114641.4000     10038.7840         0.0000         0.0000     18623.8925         -83231.8471       302.7660   -101855.7396    -82892.2792       302.5756            281.7578       274.1919    299817.0472       -47.6316       -47.9776
+
+TIMING: 90000  CPU: 99.4228, 0.00103291/step  Wall: 98.4189, 0.00104797/step, 164.891 ns/days, 0.119352 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 90000  averaging 168.462 ns/day, 0.00102575 sec/step with standard deviation 3.42713e-05
+ENERGY:   90000       432.2552      1111.1430      1144.1677        66.0783        -113762.0817      9623.1927         0.0000         0.0000     18722.9548         -82662.2900       304.3764   -101385.2448    -82880.1745       302.6704           -113.4939      -117.9686    301827.4380       -51.0980       -51.6614
+
+TIMING: 95000  CPU: 104.365, 0.000988479/step  Wall: 103.437, 0.00100368/step, 172.166 ns/days, 0.112914 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 95000  averaging 168.653 ns/day, 0.00102459 sec/step with standard deviation 3.36884e-05
+ENERGY:   95000       427.3025      1116.2468      1126.8163        76.0236        -113605.6780      9581.0430         0.0000         0.0000     18469.7359         -82808.5099       300.2599   -101278.2458    -82876.5913       302.5498           -217.3263      -213.4414    301732.7917       -59.4095       -59.7504
+
+TIMING: 100000  CPU: 109.291, 0.000985106/step  Wall: 108.438, 0.00100012/step, 172.779 ns/days, 0.111124 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 100000  averaging 168.855 ns/day, 0.00102337 sec/step with standard deviation 3.32432e-05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  100000       435.0383      1133.7443      1123.0905        75.1019        -113806.2458      9761.1270         0.0000         0.0000     18549.1568         -82728.9870       301.5510   -101278.1438    -82945.4599       302.7213            170.9722       170.6712    300219.1135        21.8569        21.4358
+
+TIMING: 105000  CPU: 114.46, 0.00103383/step  Wall: 113.681, 0.00104872/step, 164.773 ns/days, 0.115067 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 105000  averaging 168.656 ns/day, 0.00102457 sec/step with standard deviation 3.28703e-05
+ENERGY:  105000       402.4366      1096.1776      1120.4967        59.9078        -113717.4935      9822.6348         0.0000         0.0000     18621.2387         -82594.6014       302.7228   -101215.8401    -82939.8225       302.6358            130.2057       134.6806    301731.9552        19.9306        19.4814
+
+TIMING: 110000  CPU: 119.364, 0.00098079/step  Wall: 118.657, 0.000995184/step, 173.636 ns/days, 0.107812 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 110000  averaging 168.876 ns/day, 0.00102324 sec/step with standard deviation 3.26844e-05
+ENERGY:  110000       443.1123      1164.6341      1127.6916        71.6508        -113967.9940      9753.0976         0.0000         0.0000     18546.0304         -82861.7771       301.5002   -101407.8075    -82933.1823       302.6194            -25.6144       -21.5911    300492.3585        19.8795        19.7431
+
+TIMING: 115000  CPU: 124.313, 0.000989877/step  Wall: 123.679, 0.0010044/step, 172.043 ns/days, 0.107415 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 115000  averaging 169.011 ns/day, 0.00102242 sec/step with standard deviation 3.21735e-05
+ENERGY:  115000       415.9233      1168.9430      1111.7548        75.2183        -114267.4117      9961.4217         0.0000         0.0000     18780.4723         -82753.6782       305.3115   -101534.1505    -82920.9113       302.7541            110.3886       107.9062    301459.3977        22.5326        22.3613
+
+TIMING: 120000  CPU: 129.64, 0.00106545/step  Wall: 129.083, 0.00108065/step, 159.904 ns/days, 0.114069 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 120000  averaging 168.611 ns/day, 0.00102484 sec/step with standard deviation 3.36365e-05
+ENERGY:  120000       434.1245      1120.7219      1103.0346        76.8784        -113766.1450      9584.1975         0.0000         0.0000     18446.3787         -83000.8096       299.8801   -101447.1883    -82923.3460       302.6593            -91.6484       -91.9515    301082.5767        23.9737        23.8303
+
+TIMING: 125000  CPU: 134.553, 0.000982491/step  Wall: 134.065, 0.000996418/step, 173.421 ns/days, 0.103794 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 125000  averaging 168.798 ns/day, 0.00102371 sec/step with standard deviation 3.34155e-05
+ENERGY:  125000       417.0384      1097.2992      1141.4944        65.1471        -113668.2010      9497.1963         0.0000         0.0000     18556.5270         -82893.4986       301.6708   -101450.0256    -82919.6097       302.5604           -309.8284      -307.4686    302256.5344         1.2040         1.1744
+
+TIMING: 130000  CPU: 139.448, 0.000978961/step  Wall: 139.033, 0.000993606/step, 173.912 ns/days, 0.102121 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 130000  averaging 168.989 ns/day, 0.00102255 sec/step with standard deviation 3.32683e-05
+ENERGY:  130000       422.0368      1124.4028      1125.6464        79.5687        -113857.9424      9801.7606         0.0000         0.0000     18526.0387         -82778.4883       301.1752   -101304.5271    -82905.1056       302.4178             32.5417        29.7691    300991.5328         7.6700         7.3991
+
+TIMING: 135000  CPU: 144.688, 0.00104807/step  Wall: 144.348, 0.0010631/step, 162.544 ns/days, 0.107786 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 135000  averaging 168.741 ns/day, 0.00102405 sec/step with standard deviation 3.35425e-05
+ENERGY:  135000       447.6772      1137.8990      1128.4703        82.0105        -114203.6429      9802.6356         0.0000         0.0000     18804.2238         -82800.7266       305.6976   -101604.9504    -82875.3827       302.7628           -132.9740      -131.9407    301007.9107        -6.6655        -6.7757
+
+TIMING: 140000  CPU: 149.573, 0.000977053/step  Wall: 149.307, 0.00099174/step, 174.239 ns/days, 0.099174 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 140000  averaging 168.932 ns/day, 0.0010229 sec/step with standard deviation 3.34771e-05
+ENERGY:  140000       448.3174      1109.8159      1112.0789        76.3690        -113722.3039      9669.6685         0.0000         0.0000     18479.9612         -82826.0931       300.4261   -101306.0543    -82865.8677       302.6169            -51.3645       -54.8744    300359.8626       -12.7076       -13.0799
+
+TIMING: 145000  CPU: 154.495, 0.000984261/step  Wall: 154.3, 0.000998567/step, 173.048 ns/days, 0.0984698 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 145000  averaging 169.071 ns/day, 0.00102206 sec/step with standard deviation 3.31829e-05
+ENERGY:  145000       411.1604      1124.6210      1105.1998        68.2749        -113810.6871      9563.2077         0.0000         0.0000     18367.4138         -83170.8095       298.5964   -101538.2233    -82870.2695       302.4640            -82.0502       -80.6658    300234.2248       -15.4884       -15.8242
+
+TIMING: 150000  CPU: 159.684, 0.00103781/step  Wall: 159.565, 0.00105297/step, 164.107 ns/days, 0.102372 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 150000  averaging 168.9 ns/day, 0.00102309 sec/step with standard deviation 3.30906e-05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  150000       421.6492      1074.0846      1134.2417        74.7782        -114341.7648     10073.3035         0.0000         0.0000     18630.9147         -82932.7928       302.8801   -101563.7075    -82847.6945       302.5677            235.8595       234.3375    299496.9742       -23.1156       -23.3806
+
+TIMING: 155000  CPU: 164.601, 0.000983497/step  Wall: 164.556, 0.000998181/step, 173.115 ns/days, 0.095659 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 155000  averaging 169.033 ns/day, 0.00102229 sec/step with standard deviation 3.28405e-05
+ENERGY:  155000       427.4286      1130.1171      1134.0862        72.4976        -114402.9086     10024.6617         0.0000         0.0000     18517.0680         -83097.0494       301.0293   -101614.1174    -82869.8642       302.4029            159.3027       157.5535    301076.7636        -8.9205        -9.3652
+
+TIMING: 160000  CPU: 169.544, 0.00098867/step  Wall: 169.571, 0.00100307/step, 172.272 ns/days, 0.0947341 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 160000  averaging 169.132 ns/day, 0.00102168 sec/step with standard deviation 3.24847e-05
+ENERGY:  160000       430.4293      1129.6426      1116.6650        84.3016        -114108.6585      9977.7273         0.0000         0.0000     18765.1177         -82604.7749       305.0618   -101369.8926    -82863.7556       302.4208            228.9189       232.0326    299908.5464        13.4893        13.1849
+
+TIMING: 165000  CPU: 174.669, 0.00102487/step  Wall: 174.771, 0.00104009/step, 166.139 ns/days, 0.0967866 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 165000  averaging 169.04 ns/day, 0.00102224 sec/step with standard deviation 3.21333e-05
+ENERGY:  165000       421.5898      1093.5828      1125.8392        76.9550        -113933.4323      9871.4653         0.0000         0.0000     18623.1423         -82720.8577       302.7538   -101344.0001    -82863.0697       302.2914             66.3744        69.0981    300578.3952        17.3219        17.2983
+
+TIMING: 170000  CPU: 179.565, 0.000979241/step  Wall: 179.741, 0.000993837/step, 173.872 ns/days, 0.0911017 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 170000  averaging 169.178 ns/day, 0.00102141 sec/step with standard deviation 3.20155e-05
+ENERGY:  170000       434.6477      1157.4171      1132.8140        65.9813        -113926.6667      9674.5813         0.0000         0.0000     18529.3331         -82931.8922       301.2287   -101461.2253    -82866.1450       302.0305           -183.2926      -186.3024    300843.1113         9.6505         9.5634
+
+TIMING: 175000  CPU: 184.475, 0.000981983/step  Wall: 184.723, 0.000996433/step, 173.419 ns/days, 0.0899558 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 175000  averaging 169.297 ns/day, 0.00102069 sec/step with standard deviation 3.18224e-05
+ENERGY:  175000       431.0294      1082.9771      1129.7384        69.0188        -113921.5242      9689.6176         0.0000         0.0000     18523.6036         -82995.5394       301.1356   -101519.1430    -82865.4177       302.0976           -205.5840      -209.0886    300914.4958        -5.7545        -6.0884
+
+TIMING: 180000  CPU: 189.668, 0.00103867/step  Wall: 189.99, 0.00105354/step, 164.018 ns/days, 0.0936481 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 180000  averaging 169.145 ns/day, 0.00102161 sec/step with standard deviation 3.18387e-05
+ENERGY:  180000       412.1876      1158.1820      1115.5846        68.3121        -113710.1928      9454.3030         0.0000         0.0000     18507.0721         -82994.5513       300.8668   -101501.6234    -82869.4787       302.0445           -269.9239      -270.4597    301079.1171       -13.3390       -13.7756
+
+TIMING: 185000  CPU: 195.068, 0.0010799/step  Wall: 195.465, 0.00109493/step, 157.819 ns/days, 0.095806 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 185000  averaging 168.818 ns/day, 0.00102359 sec/step with standard deviation 3.36279e-05
+ENERGY:  185000       410.0009      1160.3756      1121.1355        72.7229        -113879.1188      9671.1867         0.0000         0.0000     18815.3347         -82628.3625       305.8782   -101443.6972    -82839.3045       302.2001             18.5116        18.5371    301349.8746       -26.5013       -26.5583
+
+TIMING: 190000  CPU: 201.101, 0.00120658/step  Wall: 201.574, 0.00122172/step, 141.44 ns/days, 0.105204 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 190000  averaging 167.962 ns/day, 0.0010288 sec/step with standard deviation 4.61882e-05
+ENERGY:  190000       430.1868      1129.1496      1138.0478        73.7528        -114112.5576      9699.3655         0.0000         0.0000     18704.7157         -82937.3394       304.0799   -101642.0551    -82853.0569       302.1853           -257.3296      -255.7161    300690.9270       -33.6931       -33.4457
+
+TIMING: 195000  CPU: 206.115, 0.00100287/step  Wall: 206.655, 0.00101627/step, 170.034 ns/days, 0.0861006 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 195000  averaging 168.015 ns/day, 0.00102848 sec/step with standard deviation 4.56205e-05
+ENERGY:  195000       420.4902      1125.8010      1109.0854        73.9964        -114130.7087      9901.9451         0.0000         0.0000     18713.0169         -82786.3737       304.2148   -101499.3907    -82851.9501       302.3830            128.2152       129.8166    300672.2991       -16.4160       -16.2828
+
+TIMING: 200000  CPU: 211.03, 0.000982976/step  Wall: 211.641, 0.000997161/step, 173.292 ns/days, 0.0830967 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 200000  averaging 168.143 ns/day, 0.0010277 sec/step with standard deviation 4.53033e-05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  200000       439.9105      1086.7582      1147.6555        70.7043        -113797.4236      9505.0472         0.0000         0.0000     18772.4154         -82774.9326       305.1805   -101547.3480    -82854.2474       302.5645           -266.3672      -267.7140    299992.2341       -38.2829       -38.2021
+
+TIMING: 205000  CPU: 216.083, 0.0010106/step  Wall: 216.764, 0.00102463/step, 168.647 ns/days, 0.0839624 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 205000  averaging 168.155 ns/day, 0.00102762 sec/step with standard deviation 4.4736e-05
+ENERGY:  205000       400.7223      1125.9823      1143.1467        73.3005        -114417.4460      9966.2608         0.0000         0.0000     18606.2511         -83101.7822       302.4792   -101708.0333    -82879.6065       302.5523            204.0087       205.4959    299840.5111       -34.5928       -34.6613
+
+TIMING: 210000  CPU: 221.146, 0.0010126/step  Wall: 221.898, 0.00102684/step, 168.284 ns/days, 0.0827175 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 210000  averaging 168.158 ns/day, 0.0010276 sec/step with standard deviation 4.41872e-05
+ENERGY:  210000       420.4590      1141.1741      1142.9500        65.1902        -113785.9864      9579.4441         0.0000         0.0000     18439.9090         -82996.8599       299.7750   -101436.7689    -82886.3606       302.4661           -240.3077      -245.5638    301514.2028       -45.3275       -45.8599
+
+TIMING: 215000  CPU: 226.053, 0.000981403/step  Wall: 226.874, 0.000995145/step, 173.643 ns/days, 0.0787823 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 215000  averaging 168.282 ns/day, 0.00102685 sec/step with standard deviation 4.39378e-05
+ENERGY:  215000       440.2993      1102.0283      1115.0060        73.0030        -114357.1976      9992.9166         0.0000         0.0000     18392.9971         -83240.9474       299.0123   -101633.9445    -82910.7241       302.1511             40.7853        37.6053    301801.1183       -48.8076       -49.3750
+
+TIMING: 220000  CPU: 231.256, 0.00104051/step  Wall: 232.15, 0.00105527/step, 163.75 ns/days, 0.0820762 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 220000  averaging 168.176 ns/day, 0.00102749 sec/step with standard deviation 4.36347e-05
+ENERGY:  220000       436.9514      1097.9051      1123.7892        76.5171        -114218.0396      9868.8349         0.0000         0.0000     18549.5833         -83064.4585       301.5579   -101614.0419    -82913.9065       302.2350            150.5533       152.1639    299223.2054       -36.6975       -37.1692
+
+TIMING: 225000  CPU: 236.153, 0.00097953/step  Wall: 237.118, 0.00099361/step, 173.911 ns/days, 0.0759007 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 225000  averaging 168.299 ns/day, 0.00102674 sec/step with standard deviation 4.34307e-05
+ENERGY:  225000       432.9854      1135.2173      1124.9875        60.8553        -114337.5205      9967.2958         0.0000         0.0000     18548.0343         -83068.1449       301.5327   -101616.1792    -82922.6388       302.2281            229.6558       228.8906    299932.1052        -9.7233       -10.3513
+
+TIMING: 230000  CPU: 241.122, 0.000993793/step  Wall: 242.157, 0.00100779/step, 171.464 ns/days, 0.0755843 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 230000  averaging 168.367 ns/day, 0.00102633 sec/step with standard deviation 4.30362e-05
+ENERGY:  230000       411.2318      1112.1703      1138.7074        66.2582        -114142.4210      9902.6816         0.0000         0.0000     18526.3191         -82985.0527       301.1797   -101511.3718    -82932.9670       302.2283            199.3197       201.5335    299807.8762        -1.3844        -1.7630
+
+TIMING: 235000  CPU: 246.287, 0.00103302/step  Wall: 247.394, 0.0010473/step, 164.996 ns/days, 0.0770926 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 235000  averaging 168.294 ns/day, 0.00102678 sec/step with standard deviation 4.26756e-05
+ENERGY:  235000       430.3879      1131.3762      1114.9905        75.7823        -114283.5931      9828.2941         0.0000         0.0000     18640.5980         -83062.1642       303.0375   -101702.7622    -82946.0389       302.0953            105.9028       100.2321    301404.5395        10.5594         9.8456
+
+TIMING: 240000  CPU: 251.195, 0.00098165/step  Wall: 252.371, 0.000995486/step, 173.584 ns/days, 0.0718962 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 240000  averaging 168.401 ns/day, 0.00102612 sec/step with standard deviation 4.246e-05
+ENERGY:  240000       479.8428      1153.9074      1106.2701        71.2237        -113910.8531      9591.6165         0.0000         0.0000     18483.1335         -83024.8591       300.4777   -101507.9927    -82955.9772       302.0979           -277.4301      -281.4451    300076.6125        -0.7439        -1.4829
+
+TIMING: 245000  CPU: 256.09, 0.000978922/step  Wall: 257.335, 0.000992738/step, 174.064 ns/days, 0.0703189 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 245000  averaging 168.513 ns/day, 0.00102544 sec/step with standard deviation 4.22853e-05
+ENERGY:  245000       447.3649      1102.9087      1128.4782        74.6915        -114372.0111      9949.7082         0.0000         0.0000     18572.4698         -83096.3899       301.9300   -101668.8597    -82952.2562       302.2646            153.1292       151.8041    301059.5519        11.0151        10.1406
+
+TIMING: 250000  CPU: 261.226, 0.00102718/step  Wall: 262.54, 0.00104102/step, 165.992 ns/days, 0.0722928 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 250000  averaging 168.461 ns/day, 0.00102575 sec/step with standard deviation 4.19095e-05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  250000       418.5872      1141.4221      1124.9158        67.9002        -114149.1247      9786.6419         0.0000         0.0000     18582.0239         -83027.6337       302.0853   -101609.6576    -82956.9983       302.2248             46.6660        38.3980    301165.4287         1.5554         0.3436
+
+TIMING: 255000  CPU: 266.144, 0.00098361/step  Wall: 267.528, 0.000997595/step, 173.217 ns/days, 0.0678919 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 255000  averaging 168.552 ns/day, 0.0010252 sec/step with standard deviation 4.16752e-05
+ENERGY:  255000       402.3708      1137.8343      1127.3433        74.7075        -113860.2733      9703.8413         0.0000         0.0000     18802.7291         -82611.4471       305.6733   -101414.1761    -82932.7182       302.4570            -29.3733       -32.7451    301148.8347        -7.8784        -9.1713
+
+TIMING: 260000  CPU: 271.099, 0.000990985/step  Wall: 272.554, 0.00100525/step, 171.898 ns/days, 0.0670165 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 260000  averaging 168.615 ns/day, 0.00102482 sec/step with standard deviation 4.13573e-05
+ENERGY:  260000       420.3411      1098.1125      1140.1664        67.7640        -114128.1663      9867.9014         0.0000         0.0000     18637.9157         -82895.9651       302.9939   -101533.8809    -82947.2777       302.3536             83.8529        82.8103    299665.4628       -15.1317       -16.6325
+
+TIMING: 265000  CPU: 276.152, 0.00101061/step  Wall: 277.676, 0.00102436/step, 168.691 ns/days, 0.0668676 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 265000  averaging 168.617 ns/day, 0.00102481 sec/step with standard deviation 4.09577e-05
+ENERGY:  265000       408.4197      1196.1391      1117.6278        62.7417        -114257.5485      9999.9286         0.0000         0.0000     18344.9881         -83127.7034       298.2319   -101472.6915    -82967.6200       302.1276            136.2064       132.8111    300127.2641       -11.6401       -13.4468
+
+TIMING: 270000  CPU: 281.071, 0.000983865/step  Wall: 282.666, 0.000998014/step, 173.144 ns/days, 0.063762 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 270000  averaging 168.698 ns/day, 0.00102431 sec/step with standard deviation 4.0733e-05
+ENERGY:  270000       429.1203      1169.8014      1131.6581        72.3472        -114226.4284      9917.2137         0.0000         0.0000     18791.8207         -82714.4670       305.4959   -101506.2877    -82956.7487       302.3409            175.0191       173.7705    300013.1739         6.2755         4.5568
+
+TIMING: 275000  CPU: 285.945, 0.000974824/step  Wall: 287.609, 0.000988615/step, 174.79 ns/days, 0.0617884 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 275000  averaging 168.805 ns/day, 0.00102366 sec/step with standard deviation 4.06402e-05
+ENERGY:  275000       412.6145      1171.8705      1114.8785        86.7434        -114297.8412      9789.2380         0.0000         0.0000     18635.1976         -83087.2987       302.9497   -101722.4963    -82961.3367       302.4316              3.9672         5.4642    300905.6984        16.7531        15.2845
+
+TIMING: 280000  CPU: 291.11, 0.0010329/step  Wall: 292.845, 0.00104715/step, 165.019 ns/days, 0.0639925 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 280000  averaging 168.736 ns/day, 0.00102408 sec/step with standard deviation 4.03912e-05
+ENERGY:  280000       431.7394      1067.1624      1138.4571        72.1464        -114127.2098      9633.6696         0.0000         0.0000     18531.6723         -83252.3626       301.2668   -101784.0349    -82974.2272       302.4516           -211.9854      -211.9954    300272.1961        19.6500        18.2077
+
+TIMING: 285000  CPU: 295.999, 0.000977787/step  Wall: 297.805, 0.000992013/step, 174.191 ns/days, 0.0592452 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 285000  averaging 168.829 ns/day, 0.00102352 sec/step with standard deviation 4.02536e-05
+ENERGY:  285000       420.7208      1146.4522      1125.9524        77.7984        -113988.7949      9742.0342         0.0000         0.0000     18779.3774         -82696.4596       305.2937   -101475.8370    -82977.6321       302.4224            -12.1028       -11.7647    301448.6559        18.1193        16.6926
+
+TIMING: 290000  CPU: 300.895, 0.000979239/step  Wall: 302.774, 0.000993774/step, 173.883 ns/days, 0.0579702 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 290000  averaging 168.914 ns/day, 0.00102301 sec/step with standard deviation 4.00897e-05
+ENERGY:  290000       413.9606      1099.1794      1117.1328        57.7934        -114082.7872      9704.1781         0.0000         0.0000     18434.3500         -83256.1928       299.6846   -101690.5429    -82993.5748       302.2026           -104.6295      -102.5536    300603.0683        25.7543        24.3507
+
+TIMING: 295000  CPU: 306.069, 0.0010347/step  Wall: 308.019, 0.00104899/step, 164.73 ns/days, 0.0597342 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 295000  averaging 168.841 ns/day, 0.00102345 sec/step with standard deviation 3.98863e-05
+ENERGY:  295000       426.7014      1129.2365      1121.1075        69.7286        -113998.1903      9733.8814         0.0000         0.0000     18686.1860         -82831.3488       303.7787   -101517.5348    -82995.8235       302.1808             18.4783        20.5003    301074.6767        20.2674        18.8849
+
+TIMING: 300000  CPU: 310.948, 0.000975965/step  Wall: 312.966, 0.000989448/step, 174.643 ns/days, 0.0549693 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 300000  averaging 168.934 ns/day, 0.00102288 sec/step with standard deviation 3.97897e-05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  300000       424.7102      1073.3658      1131.1615        69.5214        -114042.3690      9727.0311         0.0000         0.0000     18599.4564         -83017.1226       302.3687   -101616.5790    -83007.9330       302.0402           -123.7301      -124.2987    300704.6172        27.3993        26.0557
+
+TIMING: 305000  CPU: 315.854, 0.000981186/step  Wall: 317.941, 0.000994968/step, 173.674 ns/days, 0.0538941 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 305000  averaging 169.01 ns/day, 0.00102242 sec/step with standard deviation 3.96183e-05
+ENERGY:  305000       447.0227      1116.0284      1137.3925        74.6126        -114264.2223     10162.4519         0.0000         0.0000     18635.5403         -82691.1739       302.9553   -101326.7142    -82987.4026       302.0640            244.4183       247.0611    301261.7024        29.4198        28.1339
+
+TIMING: 310000  CPU: 321.019, 0.00103301/step  Wall: 323.175, 0.00104693/step, 165.053 ns/days, 0.0552548 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 310000  averaging 168.945 ns/day, 0.00102282 sec/step with standard deviation 3.94153e-05
+ENERGY:  310000       437.2938      1122.9597      1108.0875        64.5213        -114080.9530      9805.1716         0.0000         0.0000     18691.4942         -82851.4248       303.8650   -101542.9190    -82980.1308       302.2685           -106.8869      -108.6954    301657.7743        36.0908        34.9774
+
+TIMING: 315000  CPU: 325.884, 0.000972839/step  Wall: 328.108, 0.000986507/step, 175.163 ns/days, 0.0506955 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 315000  averaging 169.04 ns/day, 0.00102224 sec/step with standard deviation 3.93629e-05
+ENERGY:  315000       395.6324      1147.8971      1126.5432        75.8155        -113902.7820      9683.8134         0.0000         0.0000     18636.6783         -82836.4020       302.9738   -101473.0803    -82959.9036       302.4666             16.7565        20.1158    299913.5570        34.8894        34.1029
+
+TIMING: 320000  CPU: 330.812, 0.000985694/step  Wall: 333.106, 0.000999623/step, 172.865 ns/days, 0.0499811 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 320000  averaging 169.098 ns/day, 0.00102189 sec/step with standard deviation 3.91515e-05
+ENERGY:  320000       424.6185      1095.4852      1120.7683        82.5599        -114487.1597     10026.2658         0.0000         0.0000     18651.2760         -83086.1860       303.2111   -101737.4620    -82960.9900       302.5493            195.6432       191.6316    299953.6073        37.1439        36.0763
+
+TIMING: 325000  CPU: 335.945, 0.00102666/step  Wall: 338.309, 0.00104055/step, 166.066 ns/days, 0.0505822 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 325000  averaging 169.051 ns/day, 0.00102218 sec/step with standard deviation 3.89133e-05
+ENERGY:  325000       427.8935      1138.7553      1112.6932        70.8533        -113908.1631      9767.9611         0.0000         0.0000     18526.0496         -82863.9571       301.1753   -101390.0067    -82950.7806       302.5314             69.7525        75.3813    300105.2770        29.1487        28.4008
+
+TIMING: 330000  CPU: 340.861, 0.000983082/step  Wall: 343.294, 0.000997048/step, 173.312 ns/days, 0.0470828 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 330000  averaging 169.114 ns/day, 0.0010218 sec/step with standard deviation 3.87365e-05
+ENERGY:  330000       449.4321      1123.6244      1120.0617        69.0320        -114439.3482      9878.5495         0.0000         0.0000     18702.7922         -83095.8563       304.0486   -101798.6485    -82956.3207       302.6748            132.8633       134.7947    300487.5015        25.8259        25.0639
+
+TIMING: 335000  CPU: 345.772, 0.000982328/step  Wall: 348.314, 0.00100391/step, 172.127 ns/days, 0.0460124 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 335000  averaging 169.158 ns/day, 0.00102153 sec/step with standard deviation 3.8504e-05
+ENERGY:  335000       431.7158      1135.1028      1153.5239        79.2228        -114579.8704      9984.2642         0.0000         0.0000     18672.1636         -83123.8773       303.5507   -101796.0409    -82959.4064       302.7005            136.4173       129.4408    299966.7837        27.3516        26.5243
+
+TIMING: 340000  CPU: 350.917, 0.00102892/step  Wall: 353.529, 0.00104307/step, 165.665 ns/days, 0.0463585 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 340000  averaging 169.106 ns/day, 0.00102185 sec/step with standard deviation 3.83047e-05
+ENERGY:  340000       431.2371      1124.0101      1105.5170        77.7073        -114015.0176      9678.0903         0.0000         0.0000     18625.7900         -82972.6658       302.7968   -101598.4558    -82956.7967       302.8165           -153.9279      -151.4521    301012.4456        33.5267        33.0239
+
+TIMING: 345000  CPU: 355.814, 0.000979443/step  Wall: 358.497, 0.000993665/step, 173.902 ns/days, 0.0427828 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 345000  averaging 169.173 ns/day, 0.00102144 sec/step with standard deviation 3.81731e-05
+ENERGY:  345000       427.7906      1129.4468      1122.8924        77.6073        -114197.7133      9955.3144         0.0000         0.0000     18526.5912         -82958.0706       301.1841   -101484.6617    -82949.8808       302.7792            127.0182       129.1802    301415.2926        32.2212        31.8927
+
+TIMING: 350000  CPU: 360.734, 0.00098389/step  Wall: 363.484, 0.000997389/step, 173.252 ns/days, 0.0415579 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 350000  averaging 169.23 ns/day, 0.00102109 sec/step with standard deviation 3.80043e-05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  350000       418.2369      1104.8253      1140.9960        63.2318        -113907.3173      9692.5194         0.0000         0.0000     18565.1287         -82922.3791       301.8106   -101487.5078    -82944.6180       302.7654            -31.6033       -32.9651    301164.6979        28.3077        28.3246
+
+TIMING: 355000  CPU: 365.867, 0.00102666/step  Wall: 368.689, 0.00104105/step, 165.986 ns/days, 0.0419313 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 355000  averaging 169.184 ns/day, 0.00102138 sec/step with standard deviation 3.78061e-05
+ENERGY:  355000       445.9490      1121.0309      1123.8197        67.9715        -114386.6401     10025.7120         0.0000         0.0000     18516.9025         -83085.2545       301.0266   -101602.1570    -82968.3084       302.5331            151.9494       153.4558    300203.0141        37.3738        37.6346
+
+TIMING: 360000  CPU: 370.758, 0.000978287/step  Wall: 373.65, 0.000992105/step, 174.175 ns/days, 0.0385819 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 360000  averaging 169.251 ns/day, 0.00102097 sec/step with standard deviation 3.76971e-05
+ENERGY:  360000       453.2071      1115.7216      1114.7709        80.0469        -114137.1316      9800.1281         0.0000         0.0000     18711.8755         -82861.3813       304.1963   -101573.2569    -82966.5792       302.5932             59.9052        59.8733    300420.5534        36.1764        36.4878
+
+TIMING: 365000  CPU: 375.685, 0.000985366/step  Wall: 378.646, 0.000999245/step, 172.931 ns/days, 0.0374717 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 365000  averaging 169.3 ns/day, 0.00102067 sec/step with standard deviation 3.75206e-05
+ENERGY:  365000       401.9303      1114.6151      1116.7675        73.8753        -114190.9524      9967.8463         0.0000         0.0000     18642.3075         -82873.6104       303.0653   -101515.9179    -82953.8746       302.8349            202.6508       203.5406    300361.6986        39.4987        40.0243
+
+TIMING: 370000  CPU: 380.794, 0.00102169/step  Wall: 383.825, 0.00103579/step, 166.828 ns/days, 0.0374037 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 370000  averaging 169.267 ns/day, 0.00102088 sec/step with standard deviation 3.73042e-05
+ENERGY:  370000       426.0923      1092.5199      1107.6801        79.0776        -114052.4865      9874.7349         0.0000         0.0000     18609.5172         -82862.8644       302.5323   -101472.3816    -82961.2944       302.6867            167.5677       159.7747    300749.0403        39.1261        39.3245
+
+TIMING: 375000  CPU: 385.68, 0.00097717/step  Wall: 388.779, 0.000990754/step, 174.413 ns/days, 0.0344012 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 375000  averaging 169.333 ns/day, 0.00102047 sec/step with standard deviation 3.72142e-05
+ENERGY:  375000       453.6670      1105.1819      1108.5269        67.2926        -113943.4207      9724.8659         0.0000         0.0000     18445.9577         -83037.9286       299.8733   -101483.8864    -82958.8259       302.5329           -130.0848      -129.5601    301641.6089        32.4235        32.5732
+
+TIMING: 380000  CPU: 390.634, 0.00099098/step  Wall: 393.809, 0.00100602/step, 171.766 ns/days, 0.033534 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 380000  averaging 169.365 ns/day, 0.00102028 sec/step with standard deviation 3.70024e-05
+ENERGY:  380000       424.7405      1161.1909      1104.5887        79.0267        -113636.8412      9332.1328         0.0000         0.0000     18608.9416         -82926.2199       302.5229   -101535.1615    -82942.5188       302.5957              3.7257        -0.5240    298151.5383        43.2090        43.1468
+
+TIMING: 385000  CPU: 395.808, 0.00103462/step  Wall: 399.061, 0.00105034/step, 164.518 ns/days, 0.0335526 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 385000  averaging 169.3 ns/day, 0.00102067 sec/step with standard deviation 3.69175e-05
+ENERGY:  385000       448.2560      1154.4595      1127.8866        79.9365        -114380.8710      9787.6677         0.0000         0.0000     18515.2078         -83267.4568       300.9991   -101782.6646    -82971.0687       302.3810           -165.9402      -163.7317    300601.9155        35.5172        35.5485
+
+TIMING: 390000  CPU: 400.74, 0.00098646/step  Wall: 404.068, 0.00100147/step, 172.546 ns/days, 0.0306005 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 390000  averaging 169.341 ns/day, 0.00102043 sec/step with standard deviation 3.67414e-05
+ENERGY:  390000       435.1782      1169.3362      1106.7686        77.6894        -114094.5381      9653.5558         0.0000         0.0000     18593.8384         -83058.1716       302.2774   -101652.0100    -82961.1676       302.5106            -78.4998       -80.5681    299802.2501        36.8237        36.6478
+
+TIMING: 395000  CPU: 405.698, 0.000991686/step  Wall: 409.105, 0.00100747/step, 171.519 ns/days, 0.0293844 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 395000  averaging 169.368 ns/day, 0.00102026 sec/step with standard deviation 3.65342e-05
+ENERGY:  395000       421.6276      1104.8782      1108.8396        68.3777        -113747.7388      9530.9745         0.0000         0.0000     18789.6166         -82723.4246       305.4601   -101513.0411    -82955.7714       302.5947           -199.1249      -193.6904    300253.4438        25.9435        25.9382
+
+TIMING: 400000  CPU: 410.89, 0.00103834/step  Wall: 414.374, 0.00105375/step, 163.985 ns/days, 0.0292709 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 400000  averaging 169.299 ns/day, 0.00102068 sec/step with standard deviation 3.64948e-05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  400000       451.6587      1127.3171      1100.5018        75.7269        -113911.1084      9654.3120         0.0000         0.0000     18867.5146         -82634.0773       306.7265   -101501.5919    -82936.6191       302.8126            -25.1281       -30.8096    299164.0368        30.8736        30.6127
+
+TIMING: 405000  CPU: 415.783, 0.000978531/step  Wall: 419.343, 0.000993841/step, 173.871 ns/days, 0.0262264 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 405000  averaging 169.354 ns/day, 0.00102035 sec/step with standard deviation 3.63884e-05
+ENERGY:  405000       414.3109      1133.7203      1129.1124        79.1745        -114017.5631      9570.2337         0.0000         0.0000     18720.5032         -82970.5081       304.3365   -101691.0113    -82950.5858       302.8816           -253.1421      -255.2522    301468.2682         5.9956         5.4970
+
+TIMING: 410000  CPU: 420.688, 0.00098113/step  Wall: 424.325, 0.000996337/step, 173.435 ns/days, 0.0249084 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 410000  averaging 169.402 ns/day, 0.00102006 sec/step with standard deviation 3.62602e-05
+ENERGY:  410000       398.5707      1145.0918      1114.1326        87.7223        -113897.5406      9614.1528         0.0000         0.0000     18496.1550         -83041.7153       300.6894   -101537.8703    -82960.1004       302.7228            -10.4526       -11.7338    300864.1532        10.8173        10.3451
+
+TIMING: 415000  CPU: 426.466, 0.00115545/step  Wall: 430.178, 0.00117057/step, 147.621 ns/days, 0.0276384 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 415000  averaging 169.102 ns/day, 0.00102187 sec/step with standard deviation 3.96446e-05
+ENERGY:  415000       457.4710      1142.9752      1109.0398        88.0451        -113876.6282      9695.7185         0.0000         0.0000     18628.7913         -82754.5873       302.8456   -101383.3786    -82956.0096       302.7164           -112.0973      -110.4110    299713.1444         4.3746         3.8187
+
+TIMING: 420000  CPU: 431.429, 0.000992774/step  Wall: 435.212, 0.00100687/step, 171.621 ns/days, 0.0223749 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 420000  averaging 169.131 ns/day, 0.00102169 sec/step with standard deviation 3.9439e-05
+ENERGY:  420000       435.1745      1097.7155      1109.8549        65.3029        -114100.7748      9705.6398         0.0000         0.0000     18526.7779         -83160.3092       301.1872   -101687.0871    -82959.7158       302.6152           -161.4904      -162.7184    300406.0863       -13.4821       -13.8988
+
+TIMING: 425000  CPU: 436.38, 0.000990084/step  Wall: 440.232, 0.00100391/step, 172.126 ns/days, 0.0209149 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 425000  averaging 169.166 ns/day, 0.00102148 sec/step with standard deviation 3.9251e-05
+ENERGY:  425000       416.0064      1138.8444      1106.8669        61.4115        -114176.5982      9751.2569         0.0000         0.0000     18714.1807         -82988.0314       304.2338   -101702.2121    -82965.9195       302.7682            105.1718       103.3950    299963.1490       -11.7111       -12.4981
+
+TIMING: 430000  CPU: 441.469, 0.0010178/step  Wall: 445.391, 0.00103182/step, 167.471 ns/days, 0.0200632 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 430000  averaging 169.146 ns/day, 0.0010216 sec/step with standard deviation 3.90353e-05
+ENERGY:  430000       433.9844      1135.5950      1113.3735        73.1665        -114274.8363      9857.1490         0.0000         0.0000     18545.5947         -83115.9733       301.4931   -101661.5679    -82966.9253       302.6404            180.6388       178.6314    299385.8756        -9.3223       -10.3062
+
+TIMING: 435000  CPU: 446.363, 0.00097875/step  Wall: 450.354, 0.000992639/step, 174.081 ns/days, 0.0179227 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 435000  averaging 169.201 ns/day, 0.00102127 sec/step with standard deviation 3.89317e-05
+ENERGY:  435000       379.9994      1095.5865      1113.3989        60.8472        -113913.4918      9810.6423         0.0000         0.0000     18706.5976         -82746.4198       304.1105   -101453.0174    -82948.0525       302.6684            256.2798       255.7345    300137.9929        -3.3292        -3.9915
+
+TIMING: 440000  CPU: 451.428, 0.00101307/step  Wall: 455.489, 0.00102696/step, 168.263 ns/days, 0.0171161 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 440000  averaging 169.19 ns/day, 0.00102134 sec/step with standard deviation 3.87121e-05
+ENERGY:  440000       413.0071      1139.2479      1120.8678        78.5310        -114033.4234      9895.1846         0.0000         0.0000     18705.0784         -82681.5066       304.0858   -101386.5850    -82933.4945       302.7328             38.4371        36.5034    301856.9774         6.2891         5.4062
+
+TIMING: 445000  CPU: 456.43, 0.00100034/step  Wall: 460.562, 0.00101467/step, 170.301 ns/days, 0.0155019 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 445000  averaging 169.203 ns/day, 0.00102126 sec/step with standard deviation 3.8498e-05
+ENERGY:  445000       430.5715      1093.4528      1137.7206        76.3200        -114426.9738     10139.9996         0.0000         0.0000     18516.0259         -83032.8834       301.0124   -101548.9093    -82937.2351       302.7242            350.0577       355.7030    299293.2730        17.4410        16.7324
+
+TIMING: 450000  CPU: 461.384, 0.000990862/step  Wall: 465.587, 0.00100498/step, 171.943 ns/days, 0.0139581 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 450000  averaging 169.233 ns/day, 0.00102108 sec/step with standard deviation 3.83195e-05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  450000       452.0550      1151.1332      1142.3094        73.7106        -114360.7393      9893.4007         0.0000         0.0000     18571.4842         -83076.6461       301.9140   -101648.1303    -82944.9485       302.7294             15.6311        14.0969    301471.7695        19.8027        19.0855
+
+TIMING: 455000  CPU: 466.431, 0.00100931/step  Wall: 470.705, 0.0010235/step, 168.832 ns/days, 0.0127938 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 455000  averaging 169.228 ns/day, 0.00102111 sec/step with standard deviation 3.81069e-05
+ENERGY:  455000       434.8200      1160.9595      1103.6215        72.8324        -114385.8335      9825.3004         0.0000         0.0000     18511.6024         -83276.6972       300.9405   -101788.2996    -82954.5206       302.7251            -27.9434       -30.5055    299561.5904        10.8081         9.8874
+
+TIMING: 460000  CPU: 471.398, 0.00099356/step  Wall: 475.743, 0.00100768/step, 171.482 ns/days, 0.0111965 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 460000  averaging 169.252 ns/day, 0.00102096 sec/step with standard deviation 3.79228e-05
+ENERGY:  460000       439.3138      1139.7916      1104.5874        72.6951        -113721.3401      9599.6485         0.0000         0.0000     18747.0021         -82618.3016       304.7673   -101365.3037    -82942.3666       302.7536            -56.3597       -55.1684    301241.2555         4.9949         4.1353
+
+TIMING: 465000  CPU: 476.327, 0.00098578/step  Wall: 480.742, 0.000999733/step, 172.846 ns/days, 0.00971963 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 465000  averaging 169.29 ns/day, 0.00102073 sec/step with standard deviation 3.77803e-05
+ENERGY:  465000       400.7658      1158.9830      1122.3156        72.1375        -114224.3961      9997.9129         0.0000         0.0000     18504.4028         -82967.8786       300.8234   -101472.2813    -82947.0801       302.6416            196.4926       195.7392    300996.7061         4.6870         3.7452
+
+TIMING: 470000  CPU: 481.392, 0.00101291/step  Wall: 485.878, 0.00102723/step, 168.22 ns/days, 0.00856024 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 470000  averaging 169.279 ns/day, 0.0010208 sec/step with standard deviation 3.75826e-05
+ENERGY:  470000       445.0133      1142.6237      1129.7413        70.7922        -113898.4194      9652.5875         0.0000         0.0000     18471.7522         -82985.9092       300.2926   -101457.6615    -82953.2323       302.5296            -72.7172       -73.6143    299454.1023        -7.3273        -7.9242
+
+TIMING: 475000  CPU: 486.391, 0.000999816/step  Wall: 490.946, 0.00101364/step, 170.475 ns/days, 0.00703915 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 475000  averaging 169.291 ns/day, 0.00102073 sec/step with standard deviation 3.73894e-05
+ENERGY:  475000       411.0393      1144.5535      1117.6105        69.4811        -114370.5442      9984.4821         0.0000         0.0000     18453.3156         -83190.0620       299.9929   -101643.3777    -82960.8390       302.5355            117.3237       118.0288    301353.2206         5.0431         4.4552
+
+TIMING: 480000  CPU: 491.309, 0.000983671/step  Wall: 495.935, 0.000997876/step, 173.168 ns/days, 0.00554376 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 480000  averaging 169.331 ns/day, 0.00102049 sec/step with standard deviation 3.72651e-05
+ENERGY:  480000       443.9113      1145.2117      1118.3452        69.5920        -113614.1473      9672.0900         0.0000         0.0000     18337.8188         -82827.1784       298.1153   -101164.9972    -82955.8869       302.3152            -35.9566       -39.2076    301609.8546         3.0590         2.5211
+
+TIMING: 485000  CPU: 496.371, 0.00101243/step  Wall: 501.068, 0.00102651/step, 168.338 ns/days, 0.00427712 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 485000  averaging 169.32 ns/day, 0.00102055 sec/step with standard deviation 3.70755e-05
+ENERGY:  485000       405.0304      1119.0419      1099.9017        73.5795        -114358.0985      9962.7612         0.0000         0.0000     18566.4266         -83131.3572       301.8317   -101697.7839    -82949.0819       302.3568            226.5379       228.7700    300413.8253        22.6829        22.1461
+
+TIMING: 490000  CPU: 501.403, 0.00100626/step  Wall: 506.169, 0.00102017/step, 169.384 ns/days, 0.00283379 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 490000  averaging 169.321 ns/day, 0.00102055 sec/step with standard deviation 3.6884e-05
+ENERGY:  490000       420.8290      1112.4598      1107.7681        72.5066        -114604.4288     10044.8786         0.0000         0.0000     18636.3441         -83209.6425       302.9684   -101845.9866    -82956.6555       302.3914            133.0440       135.0695    299927.4145        33.2601        32.9280
+
+TIMING: 495000  CPU: 506.363, 0.000992121/step  Wall: 511.201, 0.0010065/step, 171.684 ns/days, 0.00139791 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 495000  averaging 169.345 ns/day, 0.0010204 sec/step with standard deviation 3.67224e-05
+ENERGY:  495000       394.0010      1125.9820      1109.6300        70.1374        -114391.1771      9946.2984         0.0000         0.0000     18578.0098         -83167.1184       302.0201   -101745.1281    -82978.8401       302.2193            331.8685       336.6389    299668.1786        59.8098        59.4445
+
+TIMING: 500000  CPU: 511.432, 0.00101367/step  Wall: 516.341, 0.00102792/step, 168.107 ns/days, 0 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 500000  averaging 169.332 ns/day, 0.00102048 sec/step with standard deviation 3.65442e-05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL       TOTALAVG        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  500000       446.8600      1159.3993      1113.1545        74.7638        -114196.4150      9837.4332         0.0000         0.0000     18625.2249         -82939.5792       302.7876   -101564.8042    -82994.1152       302.0224             54.2834        53.8013    301344.7722        63.7804        63.6750
+
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 500000
+WRITING COORDINATES TO OUTPUT FILE AT STEP 500000
+WRITING VELOCITIES TO OUTPUT FILE AT STEP 500000
+The last velocity output (seq=-2) takes 0.192 seconds, 0.000 MB of memory in use
+====================================================
+
+WallClock: 523.213013  CPUTime: 494.911469  Memory: 0.000000 MB
+[Partition 0][Node 0] End of program
