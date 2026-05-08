@@ -1,0 +1,34 @@
+# Ignore bin and output files
+bin/
+*.err
+*.out
+*.DS_Store
+
+# Don't ignore example files
+!**/example-*/
+!**/example-*/**
+
+# GROMACS output files
+**/GROMACS/output/**/*.*
+!**/GROMACS/output/**/*.log
+!**/GROMACS/output/**/*.mdp
+!**/GROMACS/output/**/job_info.log
+!**/GROMACS/output/**/*.out
+!**/GROMACS/output/**/*.csv
+
+# LAMMPS output files
+**/LAMMPS/input_old
+**/LAMMPS/output/**/*.*
+!**/LAMMPS/output/**/*.lammps
+!**/LAMMPS/output/**/*.log
+!**/LAMMPS/output/**/*.out
+!**/LAMMPS/output/**/*.csv
+
+# NAMD output files
+**/NAMD/output/**/*.*
+!**/NAMD/output/**/*.out
+!**/NAMD/output/**/*.log
+!**/NAMD/output/**/*.csv
+
+# **/NAMD/output/fileio
+# **/NAMD/output/streaming
